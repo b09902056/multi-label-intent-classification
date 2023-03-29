@@ -277,8 +277,8 @@ def evaluate(model, test_data):
 
 hidden_size = 768 # default = 768
 dropout = 0.5
-batch_size = 16
-EPOCHS = 20
+batch_size = 8
+EPOCHS = 10
 model = BertClassifier(hidden_size, dropout)
 LR = 1e-5
 print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
