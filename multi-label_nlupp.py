@@ -1,0 +1,287 @@
+import pandas as pd
+import torch
+import numpy as np
+from transformers import RobertaTokenizer, RobertaModel
+from torch import nn
+from torch.optim import AdamW
+from tqdm import tqdm
+import random
+import json
+from nlupp.data_loader import DataLoader
+import sys
+from sklearn.metrics import classification_report, accuracy_score, f1_score
+
+f = open('./nlupp/data/ontology.json')
+labels_data = json.load(f)
+num_intents = len(labels_data['intents'])
+print(num_intents) # 62
+label2id = {}
+for i, intent in enumerate(labels_data['intents']):
+    label2id[intent] = i
+
+loader = DataLoader("./nlupp/data/")
+banking_data = loader.get_data_for_experiment(domain="banking", regime="large")
+print(len(banking_data)) # 10
+print(banking_data[0]['train'][0])
+print(banking_data[0]['test'][0])
+
+train_data = {'text':[], 'intents':[], 'labels':[]}
+eval_data = {'text':[], 'intents':[], 'labels':[]}
+test_data = {'text':[], 'intents':[], 'labels':[]}
+for i in range(5):
+    for x in banking_data[i]['train']:
+        if 'intents' in x:
+            train_data['text'].append(x['text'])
+            train_data['intents'].append(x['intents'])
+            labels = [0] * num_intents
+            for intent in x['intents']:
+                labels[label2id[intent]] = 1
+            train_data['labels'].append(labels)
+    for x in banking_data[i]['test']:
+        if 'intents' in x:
+            eval_data['text'].append(x['text'])
+            eval_data['intents'].append(x['intents'])
+            labels = [0] * num_intents
+            for intent in x['intents']:
+                labels[label2id[intent]] = 1
+            eval_data['labels'].append(labels)
+for i in range(5, 10):
+    for x in banking_data[i]['test']:
+        if 'intents' in x:
+            test_data['text'].append(x['text'])
+            test_data['intents'].append(x['intents'])
+            labels = [0] * num_intents
+            for intent in x['intents']:
+                labels[label2id[intent]] = 1
+            test_data['labels'].append(labels)
+'''
+for key in train_data:
+    train_data[key] = train_data[key][:10]
+for key in eval_data:
+    eval_data[key] = eval_data[key][:10]
+for key in test_data:
+    test_data[key] = test_data[key][:10]
+'''
+
+print(len(train_data['text'])) # 8927
+print(len(eval_data['text'])) # 988
+print(len(test_data['text'])) # 800
+print(train_data['text'][0])
+print(train_data['intents'][0])
+print(train_data['labels'][0])
+
+def same_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)  
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        torch.cuda.manual_seed_all(seed)  
+    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = True
+same_seed(56)
+
+
+tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+
+class Dataset(torch.utils.data.Dataset):
+
+    def __init__(self, df):
+
+        self.labels = [label for label in df['labels']]
+        self.texts = [tokenizer(text, 
+                               padding='max_length', max_length = 128, truncation=True,
+                                return_tensors="pt") for text in df['text']]
+
+    def classes(self):
+        return self.labels
+
+    def __len__(self):
+        return len(self.labels)
+
+    def get_batch_labels(self, idx):
+        # Fetch a batch of labels
+        return np.array(self.labels[idx])
+
+    def get_batch_texts(self, idx):
+        # Fetch a batch of inputs
+        return self.texts[idx]
+
+    def __getitem__(self, idx):
+
+        batch_texts = self.get_batch_texts(idx)
+        batch_y = self.get_batch_labels(idx)
+
+        return batch_texts, batch_y
+
+class BertClassifier(nn.Module):
+
+    def __init__(self, hidden_size, dropout):
+
+        super(BertClassifier, self).__init__()
+
+        self.bert = RobertaModel.from_pretrained('roberta-base')
+        self.dropout = nn.Dropout(dropout)
+        self.linear = nn.Linear(hidden_size, num_intents)
+
+    def forward(self, input_id, mask):
+
+        _, pooled_output = self.bert(input_ids= input_id, attention_mask=mask,return_dict=False)
+        dropout_output = self.dropout(pooled_output)
+        linear_output = self.linear(dropout_output)
+
+
+        return linear_output
+
+def train(model, train_data, val_data, learning_rate, epochs):
+
+    train, val = Dataset(train_data), Dataset(val_data)
+
+    train_dataloader = torch.utils.data.DataLoader(train, batch_size=batch_size, shuffle=True)
+    val_dataloader = torch.utils.data.DataLoader(val, batch_size=batch_size)
+
+    use_cuda = torch.cuda.is_available()
+    device = torch.device("cuda" if use_cuda else "cpu")
+    print('device =', device)
+
+    criterion = nn.BCELoss()
+    optimizer = AdamW(model.parameters(), lr= learning_rate)
+
+    if use_cuda:
+        model = model.cuda()
+        criterion = criterion.cuda()
+
+    best_acc = 0
+    for epoch_num in range(epochs):
+        total_loss_train = 0
+        train_labels = []
+        train_output = []
+
+        for train_input, train_label in tqdm(train_dataloader):
+            train_labels.extend(train_label)
+            train_label = train_label.to(device)
+            mask = train_input['attention_mask'].to(device)
+            input_id = train_input['input_ids'].squeeze(1).to(device)
+
+            output = model(input_id, mask)
+            output = torch.sigmoid(output)
+            
+            batch_loss = criterion(output, train_label.float())
+            total_loss_train += batch_loss.item()
+            
+            optimizer.zero_grad()
+            batch_loss.backward()
+            optimizer.step()
+
+            for i in range(len(output)):
+                for j in range(len(output[i])):
+                    if (output[i][j] > 0.5):
+                        output[i][j] = 1
+                    else:
+                        output[i][j] = 0
+            train_output.extend(output)
+
+        
+        total_loss_val = 0
+        eval_labels = []
+        eval_output = []
+        with torch.no_grad():
+            for val_input, val_label in tqdm(val_dataloader):
+                eval_labels.extend(val_label)
+                val_label = val_label.to(device)
+                mask = val_input['attention_mask'].to(device)
+                input_id = val_input['input_ids'].squeeze(1).to(device)
+
+                output = model(input_id, mask)
+                output = torch.sigmoid(output)
+
+                batch_loss = criterion(output, val_label.float())
+                total_loss_val += batch_loss.item()
+                
+                for i in range(len(output)):
+                    for j in range(len(output[i])):
+                        if (output[i][j] > 0.5):
+                            output[i][j] = 1
+                        else:
+                            output[i][j] = 0
+                eval_output.extend(output)
+
+        train_labels = [label.cpu().detach().numpy() for label in train_labels]
+        train_output = [output.cpu().detach().numpy() for output in train_output]
+        eval_labels = [label.cpu().detach().numpy() for label in eval_labels]
+        eval_output = [output.cpu().detach().numpy() for output in eval_output]
+        print(f'Epochs: {epoch_num + 1} | Train Loss: {total_loss_train / len(train_data["text"]): .3f} | Val Loss: {total_loss_val / len(eval_data["text"]): .3f}')
+        train_accuracy = accuracy_score(train_labels, train_output)
+        train_f1_score_micro = f1_score(train_labels, train_output, average='micro')
+        train_f1_score_macro = f1_score(train_labels, train_output, average='macro')
+        print(f"train Accuracy Score = {train_accuracy}")
+        print(f"train F1 Score (Micro) = {train_f1_score_micro}")
+        print(f"train F1 Score (Macro) = {train_f1_score_macro}")
+        eval_accuracy = accuracy_score(eval_labels, eval_output)
+        eval_f1_score_micro = f1_score(eval_labels, eval_output, average='micro')
+        eval_f1_score_macro = f1_score(eval_labels, eval_output, average='macro')
+        print(f"eval Accuracy Score = {eval_accuracy}")
+        print(f"eval F1 Score (Micro) = {eval_f1_score_micro}")
+        print(f"eval F1 Score (Macro) = {eval_f1_score_macro}")
+        #print(classification_report(train_labels, train_output))
+
+        if eval_accuracy >= best_acc:
+            best_acc = eval_accuracy
+            torch.save(model.state_dict(), "./intent_model.ckpt")
+            print(f'save model: eval acc = {eval_accuracy}')
+
+                  
+def evaluate(model, test_data):
+
+    test = Dataset(test_data)
+
+    test_dataloader = torch.utils.data.DataLoader(test, batch_size=batch_size)
+
+    use_cuda = torch.cuda.is_available()
+    device = torch.device("cuda" if use_cuda else "cpu")
+
+    ckpt = torch.load('./intent_model.ckpt')
+    model.load_state_dict(ckpt)
+
+    if use_cuda:
+        model = model.cuda()
+
+    with torch.no_grad():
+        test_labels = []
+        test_output = []
+        for test_input, test_label in tqdm(test_dataloader):
+            test_labels.extend(test_label)
+            test_label = test_label.to(device)
+            mask = test_input['attention_mask'].to(device)
+            input_id = test_input['input_ids'].squeeze(1).to(device)
+
+            output = model(input_id, mask)
+            output = torch.sigmoid(output)
+
+            for i in range(len(output)):
+                for j in range(len(output[i])):
+                    if (output[i][j] > 0.5):
+                        output[i][j] = 1
+                    else:
+                        output[i][j] = 0
+            test_output.extend(output)
+        test_labels = [label.cpu().detach().numpy() for label in test_labels]
+        test_output = [output.cpu().detach().numpy() for output in test_output]
+        test_accuracy = accuracy_score(test_labels, test_output)
+        test_f1_score_micro = f1_score(test_labels, test_output, average='micro')
+        test_f1_score_macro = f1_score(test_labels, test_output, average='macro')
+        print(f"test Accuracy Score = {test_accuracy}")
+        print(f"test F1 Score (Micro) = {test_f1_score_micro}")
+        print(f"test F1 Score (Macro) = {test_f1_score_macro}")
+
+
+hidden_size = 768 # default = 768
+dropout = 0.5
+batch_size = 16
+EPOCHS = 20
+model = BertClassifier(hidden_size, dropout)
+LR = 1e-5
+print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
+              
+train(model, train_data, eval_data, LR, EPOCHS)
+evaluate(model, test_data)
