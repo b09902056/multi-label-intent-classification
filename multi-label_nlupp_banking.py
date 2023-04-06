@@ -223,8 +223,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
         print(f"eval Accuracy Score = {eval_accuracy}")
         print(f"eval F1 Score (Micro) = {eval_f1_score_micro}")
         print(f"eval F1 Score (Macro) = {eval_f1_score_macro}")
-        # print(classification_report(train_labels, train_output))
-        print(classification_report(eval_labels, eval_output))
+        #print(classification_report(eval_labels, eval_output))
 
         if eval_accuracy >= best_acc:
             best_acc = eval_accuracy
@@ -280,7 +279,7 @@ def evaluate(model, test_data):
 hidden_size = 768 # default = 768
 dropout = 0.5
 batch_size = 8
-EPOCHS = 10
+EPOCHS = 50
 model = BertClassifier(hidden_size, dropout)
 LR = 1e-5
 print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
