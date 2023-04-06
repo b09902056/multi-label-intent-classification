@@ -45,7 +45,7 @@ for i in range(1):
             for intent in x['intents']:
                 labels[label2id[intent]] = 1
             eval_data['labels'].append(labels)
-for i in range(1):
+for i in range(1,2):
     for x in banking_data[i]['test']:
         if 'intents' in x:
             test_data['text'].append(x['text'])
@@ -54,14 +54,14 @@ for i in range(1):
             for intent in x['intents']:
                 labels[label2id[intent]] = 1
             test_data['labels'].append(labels)
-'''
+# '''
 for key in train_data:
     train_data[key] = train_data[key][:10]
 for key in eval_data:
     eval_data[key] = eval_data[key][:10]
 for key in test_data:
     test_data[key] = test_data[key][:10]
-'''
+# '''
 
 print(len(train_data['text'])) # 8927
 print(len(eval_data['text'])) # 988
@@ -223,7 +223,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
         print(f"eval Accuracy Score = {eval_accuracy}")
         print(f"eval F1 Score (Micro) = {eval_f1_score_micro}")
         print(f"eval F1 Score (Macro) = {eval_f1_score_macro}")
-        #print(classification_report(train_labels, train_output))
+        # print(classification_report(train_labels, train_output))
+        print(classification_report(eval_labels, eval_output))
 
         if eval_accuracy >= best_acc:
             best_acc = eval_accuracy
@@ -273,6 +274,7 @@ def evaluate(model, test_data):
         print(f"test Accuracy Score = {test_accuracy}")
         print(f"test F1 Score (Micro) = {test_f1_score_micro}")
         print(f"test F1 Score (Macro) = {test_f1_score_macro}")
+        print(classification_report(test_labels, test_output))
 
 
 hidden_size = 768 # default = 768
@@ -285,6 +287,3 @@ print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
               
 train(model, train_data, eval_data, LR, EPOCHS)
 evaluate(model, test_data)
-
-
-print(0)
