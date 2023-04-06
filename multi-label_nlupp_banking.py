@@ -10,6 +10,15 @@ import json
 from nlupp.data_loader import DataLoader
 import sys
 from sklearn.metrics import classification_report, accuracy_score, f1_score
+import warnings
+warnings.filterwarnings('ignore')
+
+hidden_size = 768 # default = 768
+dropout = 0.5
+batch_size = 8
+EPOCHS = 50
+LR = 1e-5
+print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
 
 f = open('./nlupp/data/ontology.json')
 labels_data = json.load(f)
@@ -21,54 +30,11 @@ for i, intent in enumerate(labels_data['intents']):
 
 loader = DataLoader("./nlupp/data/")
 banking_data = loader.get_data_for_experiment(domain="banking", regime="large")
-print(len(banking_data)) # 10
+fold = len(banking_data)
+print('fold =', fold) # 10
 print(banking_data[0]['train'][0])
 print(banking_data[0]['test'][0])
 
-train_data = {'text':[], 'intents':[], 'labels':[]}
-eval_data = {'text':[], 'intents':[], 'labels':[]}
-test_data = {'text':[], 'intents':[], 'labels':[]}
-for i in range(1):
-    for x in banking_data[i]['train']:
-        if 'intents' in x:
-            train_data['text'].append(x['text'])
-            train_data['intents'].append(x['intents'])
-            labels = [0] * num_intents
-            for intent in x['intents']:
-                labels[label2id[intent]] = 1
-            train_data['labels'].append(labels)
-    for x in banking_data[i]['test']:
-        if 'intents' in x:
-            eval_data['text'].append(x['text'])
-            eval_data['intents'].append(x['intents'])
-            labels = [0] * num_intents
-            for intent in x['intents']:
-                labels[label2id[intent]] = 1
-            eval_data['labels'].append(labels)
-for i in range(1,2):
-    for x in banking_data[i]['test']:
-        if 'intents' in x:
-            test_data['text'].append(x['text'])
-            test_data['intents'].append(x['intents'])
-            labels = [0] * num_intents
-            for intent in x['intents']:
-                labels[label2id[intent]] = 1
-            test_data['labels'].append(labels)
-# '''
-for key in train_data:
-    train_data[key] = train_data[key][:10]
-for key in eval_data:
-    eval_data[key] = eval_data[key][:10]
-for key in test_data:
-    test_data[key] = test_data[key][:10]
-# '''
-
-print(len(train_data['text'])) # 8927
-print(len(eval_data['text'])) # 988
-print(len(test_data['text'])) # 800
-print(train_data['text'][0])
-print(train_data['intents'][0])
-print(train_data['labels'][0])
 
 def same_seed(seed):
     random.seed(seed)
@@ -214,16 +180,17 @@ def train(model, train_data, val_data, learning_rate, epochs):
         train_accuracy = accuracy_score(train_labels, train_output)
         train_f1_score_micro = f1_score(train_labels, train_output, average='micro')
         train_f1_score_macro = f1_score(train_labels, train_output, average='macro')
-        print(f"train Accuracy Score = {train_accuracy}")
-        print(f"train F1 Score (Micro) = {train_f1_score_micro}")
+        print(f"train Accuracy Score = {train_accuracy}", end = ', ')
+        print(f"train F1 Score (Micro) = {train_f1_score_micro}", end = ', ')
         print(f"train F1 Score (Macro) = {train_f1_score_macro}")
         eval_accuracy = accuracy_score(eval_labels, eval_output)
         eval_f1_score_micro = f1_score(eval_labels, eval_output, average='micro')
         eval_f1_score_macro = f1_score(eval_labels, eval_output, average='macro')
-        print(f"eval Accuracy Score = {eval_accuracy}")
-        print(f"eval F1 Score (Micro) = {eval_f1_score_micro}")
+        print(f"eval Accuracy Score = {eval_accuracy}", end = ', ')
+        print(f"eval F1 Score (Micro) = {eval_f1_score_micro}", end = ', ')
         print(f"eval F1 Score (Macro) = {eval_f1_score_macro}")
         #print(classification_report(eval_labels, eval_output))
+
 
         if eval_accuracy >= best_acc:
             best_acc = eval_accuracy
@@ -270,19 +237,76 @@ def evaluate(model, test_data):
         test_accuracy = accuracy_score(test_labels, test_output)
         test_f1_score_micro = f1_score(test_labels, test_output, average='micro')
         test_f1_score_macro = f1_score(test_labels, test_output, average='macro')
-        print(f"test Accuracy Score = {test_accuracy}")
-        print(f"test F1 Score (Micro) = {test_f1_score_micro}")
+        print(f"test Accuracy Score = {test_accuracy}", end = ', ')
+        print(f"test F1 Score (Micro) = {test_f1_score_micro}", end = ', ')
         print(f"test F1 Score (Macro) = {test_f1_score_macro}")
-        print(classification_report(test_labels, test_output))
+
+        report = classification_report(test_labels, test_output, output_dict=True)
+        return test_accuracy, report
 
 
-hidden_size = 768 # default = 768
-dropout = 0.5
-batch_size = 8
-EPOCHS = 50
-model = BertClassifier(hidden_size, dropout)
-LR = 1e-5
-print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
-              
-train(model, train_data, eval_data, LR, EPOCHS)
-evaluate(model, test_data)
+
+total_test_accuracy = 0
+total_report = pd.DataFrame()
+for i in range(fold):
+    train_data = {'text':[], 'intents':[], 'labels':[]}
+    eval_data = {'text':[], 'intents':[], 'labels':[]}
+    test_data = {'text':[], 'intents':[], 'labels':[]}
+    for j in range(len(banking_data[i]['test'])):
+        x = banking_data[i]['test'][j]
+        if 'intents' in x:
+            test_data['text'].append(x['text'])
+            test_data['intents'].append(x['intents'])
+            labels = [0] * num_intents
+            for intent in x['intents']:
+                labels[label2id[intent]] = 1
+            test_data['labels'].append(labels)
+    for j in range(len(banking_data[i]['test'])):
+        x = banking_data[i]['train'][j]
+        if 'intents' in x:
+            eval_data['text'].append(x['text'])
+            eval_data['intents'].append(x['intents'])
+            labels = [0] * num_intents
+            for intent in x['intents']:
+                labels[label2id[intent]] = 1
+            eval_data['labels'].append(labels)
+    for j in range(len(banking_data[i]['test']), len(banking_data[i]['train'])):
+        x = banking_data[i]['train'][j]
+        if 'intents' in x:
+            train_data['text'].append(x['text'])
+            train_data['intents'].append(x['intents'])
+            labels = [0] * num_intents
+            for intent in x['intents']:
+                labels[label2id[intent]] = 1
+            train_data['labels'].append(labels)
+    '''
+    for key in train_data:
+        train_data[key] = train_data[key][:10]
+    for key in eval_data:
+        eval_data[key] = eval_data[key][:10]
+    for key in test_data:
+        test_data[key] = test_data[key][:10]
+    '''
+
+    print(len(train_data['text'])) # 8927
+    print(len(eval_data['text'])) # 988
+    print(len(test_data['text'])) # 800
+    # print(train_data['text'][0])
+    # print(train_data['intents'][0])
+    # print(train_data['labels'][0])
+
+    model = BertClassifier(hidden_size, dropout)
+    train(model, train_data, eval_data, LR, EPOCHS)
+    test_accuracy, report = evaluate(model, test_data)
+    total_test_accuracy += test_accuracy
+    report_df = pd.DataFrame(report).transpose()
+    print(report_df)
+    if total_report.empty:
+        total_report = report_df
+    else:
+        total_report = total_report.add(report_df, fill_value=0)
+
+print(f'total test accuracy = {total_test_accuracy / fold}')
+total_report /= fold
+print(total_report)
+total_report.to_csv('./average report.csv', index=False) 
