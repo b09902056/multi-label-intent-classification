@@ -28,7 +28,7 @@ print(banking_data[0]['test'][0])
 train_data = {'text':[], 'intents':[], 'labels':[]}
 eval_data = {'text':[], 'intents':[], 'labels':[]}
 test_data = {'text':[], 'intents':[], 'labels':[]}
-for i in range(5):
+for i in range(1):
     for x in banking_data[i]['train']:
         if 'intents' in x:
             train_data['text'].append(x['text'])
@@ -45,7 +45,7 @@ for i in range(5):
             for intent in x['intents']:
                 labels[label2id[intent]] = 1
             eval_data['labels'].append(labels)
-for i in range(5, 10):
+for i in range(1):
     for x in banking_data[i]['test']:
         if 'intents' in x:
             test_data['text'].append(x['text'])
