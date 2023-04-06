@@ -285,3 +285,6 @@ print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
               
 train(model, train_data, eval_data, LR, EPOCHS)
 evaluate(model, test_data)
+
+
+print(0)
