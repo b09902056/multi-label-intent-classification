@@ -10,12 +10,15 @@ from tqdm import tqdm
 import random
 import json
 import sys
+from sklearn.metrics import classification_report, accuracy_score, f1_score
 
 categories_datapath = './banking_data/categories.json'
 train_datapath = './banking_data/train.csv'
 test_datapath = './banking_data/test.csv'
 df_train = pd.read_csv(train_datapath)
 df_test = pd.read_csv(test_datapath)
+#df_train = df_train[:10]
+#df_test = df_test[:10]
 f = open(categories_datapath)
 categories_data = json.load(f)
 labels = {}
@@ -167,19 +170,24 @@ def evaluate(model, test_data):
 
     total_acc_test = 0
     with torch.no_grad():
-
+        test_labels = []
+        test_output = []
         for test_input, test_label in test_dataloader:
-
+              test_labels.extend(test_label)
               test_label = test_label.to(device)
               mask = test_input['attention_mask'].to(device)
               input_id = test_input['input_ids'].squeeze(1).to(device)
 
               output = model(input_id, mask)
+              test_output.extend(output.argmax(dim=1))
 
               acc = (output.argmax(dim=1) == test_label).sum().item()
               total_acc_test += acc
-    
+              
+    test_labels = [label.cpu().detach().numpy() for label in test_labels]
+    test_output = [output.cpu().detach().numpy() for output in test_output]
     print(f'Test Accuracy: {total_acc_test / len(test_data): .3f}')
+    print(classification_report(test_labels, test_output))
 
 hidden_size = 768 # default = 768
 dropout = 0.5
