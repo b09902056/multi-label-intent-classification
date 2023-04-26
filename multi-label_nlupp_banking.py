@@ -12,29 +12,42 @@ import sys
 from sklearn.metrics import classification_report, accuracy_score, f1_score
 import warnings
 warnings.filterwarnings('ignore')
+import argparse
 
-hidden_size = 768 # default = 768
+# parse arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("--b", help = "batch size", type=int, default=8)
+parser.add_argument("--e", help = "epoch", type=int, default=50)
+parser.add_argument("--lr", help = "learning rate", type=float, default=1e-4)
+parser.add_argument("--regime", help = "regime", type=str, default='mid')
+parser.add_argument("--fold", help = "fold", type=int, default=None)
+args = parser.parse_args()
+
+hidden_size = 768 # roberta-base = 768, roberta-large=1024
 dropout = 0.5
-batch_size = 8
-EPOCHS = 50
-LR = 1e-5
-print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}')
+batch_size = args.b
+EPOCHS = args.e
+LR = args.lr
+threshold = 0.5
+regime = args.regime
+pretrained_model = 'roberta-base'
+print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}, regime={regime}')
 
 f = open('./nlupp/data/ontology.json')
-labels_data = json.load(f)
-num_intents = len(labels_data['intents'])
-print(num_intents) # 62
+ontology = json.load(f)
 label2id = {}
-for i, intent in enumerate(labels_data['intents']):
-    label2id[intent] = i
+intents = ontology['intents']
+for intent in intents:
+  if 'general' in intents[intent]['domain'] or 'banking' in intents[intent]['domain']:
+    label2id[intent] = len(label2id)
+num_intents = len(label2id) # 48
 
 loader = DataLoader("./nlupp/data/")
-banking_data = loader.get_data_for_experiment(domain="banking", regime="large")
+banking_data = loader.get_data_for_experiment(domain="banking", regime=regime)
 fold = len(banking_data)
-print('fold =', fold) # 10
-print(banking_data[0]['train'][0])
-print(banking_data[0]['test'][0])
-
+if args.fold != None:
+    fold = args.fold
+print('folds =', fold)
 
 def same_seed(seed):
     random.seed(seed)
@@ -48,7 +61,7 @@ def same_seed(seed):
 same_seed(56)
 
 
-tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+tokenizer = RobertaTokenizer.from_pretrained(pretrained_model)
 
 class Dataset(torch.utils.data.Dataset):
 
@@ -56,7 +69,7 @@ class Dataset(torch.utils.data.Dataset):
 
         self.labels = [label for label in df['labels']]
         self.texts = [tokenizer(text, 
-                               padding='max_length', max_length = 128, truncation=True,
+                               padding='max_length', max_length = 64, truncation=True,
                                 return_tensors="pt") for text in df['text']]
 
     def classes(self):
@@ -86,7 +99,7 @@ class BertClassifier(nn.Module):
 
         super(BertClassifier, self).__init__()
 
-        self.bert = RobertaModel.from_pretrained('roberta-base')
+        self.bert = RobertaModel.from_pretrained(pretrained_model)
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(hidden_size, num_intents)
 
@@ -141,7 +154,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
 
             for i in range(len(output)):
                 for j in range(len(output[i])):
-                    if (output[i][j] > 0.5):
+                    if (output[i][j] > threshold):
                         output[i][j] = 1
                     else:
                         output[i][j] = 0
@@ -166,7 +179,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
                 
                 for i in range(len(output)):
                     for j in range(len(output[i])):
-                        if (output[i][j] > 0.5):
+                        if (output[i][j] > threshold):
                             output[i][j] = 1
                         else:
                             output[i][j] = 0
@@ -176,7 +189,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
         train_output = [output.cpu().detach().numpy() for output in train_output]
         eval_labels = [label.cpu().detach().numpy() for label in eval_labels]
         eval_output = [output.cpu().detach().numpy() for output in eval_output]
-        print(f'Epochs: {epoch_num + 1} | Train Loss: {total_loss_train / len(train_data["text"]): .3f} | Val Loss: {total_loss_val / len(eval_data["text"]): .3f}')
+        print(f'Epochs: {epoch_num + 1} | Train Loss: {total_loss_train / len(train_data["text"]): .3f} | Val Loss: {total_loss_val / len(test_data["text"]): .3f}')
         train_accuracy = accuracy_score(train_labels, train_output)
         train_f1_score_micro = f1_score(train_labels, train_output, average='micro')
         train_f1_score_macro = f1_score(train_labels, train_output, average='macro')
@@ -191,24 +204,21 @@ def train(model, train_data, val_data, learning_rate, epochs):
         print(f"eval F1 Score (Macro) = {eval_f1_score_macro}")
         #print(classification_report(eval_labels, eval_output))
 
+        #if eval_accuracy >= best_acc:
+            #best_acc = eval_accuracy
+            #torch.save(model.state_dict(), "./intent_model.ckpt")
+            #print(f'save model: eval acc = {eval_accuracy}')
 
-        if eval_accuracy >= best_acc:
-            best_acc = eval_accuracy
-            torch.save(model.state_dict(), "./intent_model.ckpt")
-            print(f'save model: eval acc = {eval_accuracy}')
-
-                  
 def evaluate(model, test_data):
 
     test = Dataset(test_data)
-
     test_dataloader = torch.utils.data.DataLoader(test, batch_size=batch_size)
 
     use_cuda = torch.cuda.is_available()
     device = torch.device("cuda" if use_cuda else "cpu")
 
-    ckpt = torch.load('./intent_model.ckpt')
-    model.load_state_dict(ckpt)
+    #ckpt = torch.load('./intent_model.ckpt')
+    #model.load_state_dict(ckpt)
 
     if use_cuda:
         model = model.cuda()
@@ -227,7 +237,7 @@ def evaluate(model, test_data):
 
             for i in range(len(output)):
                 for j in range(len(output[i])):
-                    if (output[i][j] > 0.5):
+                    if (output[i][j] > threshold):
                         output[i][j] = 1
                     else:
                         output[i][j] = 0
@@ -241,14 +251,16 @@ def evaluate(model, test_data):
         print(f"test F1 Score (Micro) = {test_f1_score_micro}", end = ', ')
         print(f"test F1 Score (Macro) = {test_f1_score_macro}")
 
-        report = classification_report(test_labels, test_output, output_dict=True)
-        return test_accuracy, report
+        #report = classification_report(test_labels, test_output, output_dict=True)
+        return test_accuracy, test_f1_score_micro
+                  
 
+total_accuracy = 0
+total_f1 = 0
+#total_report = pd.DataFrame()
 
-
-total_test_accuracy = 0
-total_report = pd.DataFrame()
 for i in range(fold):
+    print('fold', i)
     train_data = {'text':[], 'intents':[], 'labels':[]}
     eval_data = {'text':[], 'intents':[], 'labels':[]}
     test_data = {'text':[], 'intents':[], 'labels':[]}
@@ -261,16 +273,7 @@ for i in range(fold):
             for intent in x['intents']:
                 labels[label2id[intent]] = 1
             test_data['labels'].append(labels)
-    for j in range(len(banking_data[i]['test'])):
-        x = banking_data[i]['train'][j]
-        if 'intents' in x:
-            eval_data['text'].append(x['text'])
-            eval_data['intents'].append(x['intents'])
-            labels = [0] * num_intents
-            for intent in x['intents']:
-                labels[label2id[intent]] = 1
-            eval_data['labels'].append(labels)
-    for j in range(len(banking_data[i]['test']), len(banking_data[i]['train'])):
+    for j in range(len(banking_data[i]['train'])):
         x = banking_data[i]['train'][j]
         if 'intents' in x:
             train_data['text'].append(x['text'])
@@ -282,31 +285,22 @@ for i in range(fold):
     '''
     for key in train_data:
         train_data[key] = train_data[key][:10]
-    for key in eval_data:
-        eval_data[key] = eval_data[key][:10]
     for key in test_data:
         test_data[key] = test_data[key][:10]
     '''
 
     print(len(train_data['text'])) # 8927
-    print(len(eval_data['text'])) # 988
     print(len(test_data['text'])) # 800
-    # print(train_data['text'][0])
-    # print(train_data['intents'][0])
-    # print(train_data['labels'][0])
 
     model = BertClassifier(hidden_size, dropout)
-    train(model, train_data, eval_data, LR, EPOCHS)
-    test_accuracy, report = evaluate(model, test_data)
-    total_test_accuracy += test_accuracy
-    report_df = pd.DataFrame(report).transpose()
-    print(report_df)
-    if total_report.empty:
-        total_report = report_df
-    else:
-        total_report = total_report.add(report_df, fill_value=0)
+    train(model, train_data, test_data, LR, EPOCHS)
 
-print(f'total test accuracy = {total_test_accuracy / fold}')
-total_report /= fold
-print(total_report)
-total_report.to_csv('./average report.csv', index=False) 
+    test_accuracy, test_f1 = evaluate(model, test_data)
+    total_accuracy += test_accuracy
+    total_f1 += test_f1
+
+print('---------------------')
+print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}, regime={regime}')
+print(f'total accuracy = {total_accuracy / fold}')
+print(f'total f1 = {total_f1 / fold}')
+print('---------------------')
