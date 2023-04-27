@@ -14,6 +14,8 @@ import warnings
 warnings.filterwarnings('ignore')
 import argparse
 
+
+
 # parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("--b", help = "batch size", type=int, default=8)
@@ -48,6 +50,22 @@ fold = len(banking_data)
 if args.fold != None:
     fold = args.fold
 print('folds =', fold)
+
+
+def read_synthetic_data(file_name):
+    synthetic_text = []
+    synthetic_intent = []
+    with open(file_name, 'r') as json_file:
+        json_list = list(json_file)
+    for json_str in json_list:
+        result = json.loads(json_str)
+        synthetic_text.append(result['text'])
+        synthetic_intent.append(result['intents'])
+    
+    return synthetic_text, synthetic_intent
+
+synthetic_text, synthetic_intent = read_synthetic_data('./data_intent1.jsonl')
+
 
 def same_seed(seed):
     random.seed(seed)
