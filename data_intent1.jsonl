@@ -3,18 +3,16 @@
 {"text": "Could you please clarify if affirm means a confirmation of a statement or a decision?", "intents": ["affirm"]}
 {"text": "Would it be accurate to say that the affirm intent is for confirming a previously stated fact?", "intents": ["affirm"]}
 {"text": "Is it correct to assume that affirm is used to acknowledge or validate a customer's statement or opinion?", "intents": ["affirm"]}
-{"text": "\"I'm sorry, but I have to decline your invitation. Is there anything else I can do for you?\"", "intents": ["deny"]}
-{"text": "\"That's not something I can agree with, but I'm open to hearing other options. Can you suggest any alternatives?\"", "intents": ["deny"]}
-{"text": "\"I'm afraid that's not possible, but could you explain to me why it's important?\"", "intents": ["deny"]}
-{"text": "\"I can't say for sure, but I don't think that's the case. Would you like me to look into it further?\"", "intents": ["deny"]}
-{"text": "\"I don't believe that's accurate, but have you considered seeking a second opinion?\"", "intents": ["deny"]}
+{"text": "I'm sorry, but I have to decline your invitation. Is there anything else I can do for you?", "intents": ["deny"]}
+{"text": "That's not something I can agree with, but I'm open to hearing other options. Can you suggest any alternatives?", "intents": ["deny"]}
+{"text": "I'm afraid that's not possible, but could you explain to me why it's important?", "intents": ["deny"]}
+{"text": "I can't say for sure, but I don't think that's the case. Would you like me to look into it further?", "intents": ["deny"]}
+{"text": "I don't believe that's accurate, but have you considered seeking a second opinion?", "intents": ["deny"]}
 {"text": "Can you clarify that for me? ", "intents": ["dont_know"]}
 {"text": "I'm not certain, can you explain that further? ", "intents": ["dont_know"]}
 {"text": "Could you repeat the question? ", "intents": ["dont_know"]}
 {"text": "Would you mind elaborating on that? ", "intents": ["dont_know"]}
 {"text": "Is there any way you could provide more information?", "intents": ["dont_know"]}
-{"text": "e, here are five multi-label examples for the \"acknowledge\" intent without starting with yes or no:", "intents": ["acknowledge"]}
-{"text": "", "intents": ["acknowledge"]}
 {"text": "I hear you, but can you clarify what you meant?", "intents": ["acknowledge"]}
 {"text": "Got it. Is there anything else you'd like to add?", "intents": ["acknowledge"]}
 {"text": "Thanks for letting me know. What's the next step?", "intents": ["acknowledge"]}
@@ -25,8 +23,6 @@
 {"text": "Hey, how's it going? ", "intents": ["greet"]}
 {"text": "Hello, how may I assist you? ", "intents": ["greet"]}
 {"text": "What's up, how has your day been so far?", "intents": ["greet"]}
-{"text": "e, here are 5 examples for the \"end_call\" intent:", "intents": ["end_call"]}
-{"text": "", "intents": ["end_call"]}
 {"text": "Thanks for chatting, have a great day!", "intents": ["end_call"]}
 {"text": "It was nice talking to you, goodbye!", "intents": ["end_call"]}
 {"text": "Before we end this call, is there anything else I can help you with?", "intents": ["end_call"]}
@@ -42,18 +38,16 @@
 {"text": "Could you please pass along my thanks to the team for all their hard work?", "intents": ["thank"]}
 {"text": "I just wanted to say thank you for taking the time to meet with me today. I really appreciate it.", "intents": ["thank"]}
 {"text": "Would it be appropriate to send a thank-you note to show my appreciation?", "intents": ["thank"]}
-{"text": "\"I'm sorry I didn't catch that, could you please say that again?\"", "intents": ["repeat"]}
-{"text": "\"Can you repeat what you just said for clarity?\"", "intents": ["repeat"]}
-{"text": "\"Pardon me, could you rephrase that last sentence?\"", "intents": ["repeat"]}
-{"text": "\"I didn't quite understand, could you say it again?\"", "intents": ["repeat"]}
-{"text": "\"Could you please repeat the previous sentence?\"", "intents": ["repeat"]}
+{"text": "I'm sorry I didn't catch that, could you please say that again?", "intents": ["repeat"]}
+{"text": "Can you repeat what you just said for clarity?", "intents": ["repeat"]}
+{"text": "Pardon me, could you rephrase that last sentence?", "intents": ["repeat"]}
+{"text": "I didn't quite understand, could you say it again?", "intents": ["repeat"]}
+{"text": "Could you please repeat the previous sentence?", "intents": ["repeat"]}
 {"text": "Will I be penalized if I cancel my reservation?", "intents": ["cancel_close_leave_freeze"]}
 {"text": "Can you provide me with the steps to close my account?", "intents": ["cancel_close_leave_freeze"]}
 {"text": "Is there a fee for freezing my gym membership?", "intents": ["cancel_close_leave_freeze"]}
 {"text": "What are the consequences of leaving my job without notice?", "intents": ["cancel_close_leave_freeze"]}
 {"text": "How do I cancel my subscription without affecting my credit score?", "intents": ["cancel_close_leave_freeze"]}
-{"text": "e, here are 5 multi-label examples with the \"change\" intent:", "intents": ["change"]}
-{"text": "", "intents": ["change"]}
 {"text": "Can you update the delivery address and change the shipping method for this order?", "intents": ["change"]}
 {"text": "I need to modify my reservation dates and add an additional room, can you help me with that?", "intents": ["change"]}
 {"text": "How can I adjust the font size and change the background color of my website?", "intents": ["change"]}
@@ -99,11 +93,11 @@
 {"text": "I bought a new printer, but it won't print anything. The status says it's connected, but it's not communicating with my computer. Do you know what could be causing this?", "intents": ["wrong_notworking_notshowing"]}
 {"text": "My TV remote suddenly stopped working. I replaced the batteries, but it's still not responding. What else can I try to get it to work again?", "intents": ["wrong_notworking_notshowing"]}
 {"text": "I'm trying to make a call on my phone, but it keeps saying \"call failed.\" I have full bars, so it's not the signal. What else could be causing this issue?", "intents": ["wrong_notworking_notshowing"]}
-{"text": "\"I can't seem to find my wallet anywhere, can you advise me on what to do if it's been lost or stolen?\"", "intents": ["lost_stolen"]}
-{"text": "\"My phone was taken from my car earlier, do I need to report it as stolen to the police or just to my service provider?\"", "intents": ["lost_stolen"]}
-{"text": "\"I realized my passport is missing after coming back from my trip, could it have been lost or stolen in the airport?\"", "intents": ["lost_stolen"]}
-{"text": "\"My friend's laptop got stolen at a coffee shop, do you know any good ways to prevent something like this from happening?\"", "intents": ["lost_stolen"]}
-{"text": "\"I left my jacket at the party last night but now it's not where I left it, is there a way to check if someone took it without my knowledge?\"", "intents": ["lost_stolen"]}
+{"text": "I can't seem to find my wallet anywhere, can you advise me on what to do if it's been lost or stolen?", "intents": ["lost_stolen"]}
+{"text": "My phone was taken from my car earlier, do I need to report it as stolen to the police or just to my service provider?", "intents": ["lost_stolen"]}
+{"text": "I realized my passport is missing after coming back from my trip, could it have been lost or stolen in the airport?", "intents": ["lost_stolen"]}
+{"text": "My friend's laptop got stolen at a coffee shop, do you know any good ways to prevent something like this from happening?", "intents": ["lost_stolen"]}
+{"text": "I left my jacket at the party last night but now it's not where I left it, is there a way to check if someone took it without my knowledge?", "intents": ["lost_stolen"]}
 {"text": "Can you provide me with additional information that is even more comprehensive than what you've already told me?", "intents": ["more_higher_after"]}
 {"text": "Is there a product similar to this but with a higher capacity or a greater range of features?", "intents": ["more_higher_after"]}
 {"text": "Are there any upcoming promotions or sales that will offer better deals than the current ones?", "intents": ["more_higher_after"]}
@@ -154,11 +148,11 @@
 {"text": "What types of fees do banks typically charge for using a debit card abroad? ", "intents": ["debit"]}
 {"text": "Can I use my debit card to purchase items online, and if so, how secure is it? ", "intents": ["debit"]}
 {"text": "Are there any rewards or cashback programs available for using a debit card frequently, and how do I enroll in them?", "intents": ["debit"]}
-{"text": "\"Can you tell me more about your contactless payment options and how to use them?\"", "intents": ["contactless"]}
-{"text": "\"Do I need to have a specific type of card to make contactless payments?\"", "intents": ["contactless"]}
-{"text": "\"Is there a limit on the amount I can spend using contactless payment?\"", "intents": ["contactless"]}
-{"text": "\"What is the difference between contactless payment and mobile payment?\"", "intents": ["contactless"]}
-{"text": "\"Can I use contactless payment at all of your store locations?\"", "intents": ["contactless"]}
+{"text": "Can you tell me more about your contactless payment options and how to use them?", "intents": ["contactless"]}
+{"text": "Do I need to have a specific type of card to make contactless payments?", "intents": ["contactless"]}
+{"text": "Is there a limit on the amount I can spend using contactless payment?", "intents": ["contactless"]}
+{"text": "What is the difference between contactless payment and mobile payment?", "intents": ["contactless"]}
+{"text": "Can I use contactless payment at all of your store locations?", "intents": ["contactless"]}
 {"text": "What countries are currently involved in the international trade dispute?", "intents": ["international"]}
 {"text": "Can you recommend any international organizations that focus on climate change?", "intents": ["international"]}
 {"text": "How do international laws differ from domestic laws?", "intents": ["international"]}

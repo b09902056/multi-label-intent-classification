@@ -14,8 +14,6 @@ import warnings
 warnings.filterwarnings('ignore')
 import argparse
 
-
-
 # parse arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("--b", help = "batch size", type=int, default=8)
@@ -44,14 +42,6 @@ for intent in intents:
     label2id[intent] = len(label2id)
 num_intents = len(label2id) # 48
 
-loader = DataLoader("./nlupp/data/")
-banking_data = loader.get_data_for_experiment(domain="banking", regime=regime)
-fold = len(banking_data)
-if args.fold != None:
-    fold = args.fold
-print('folds =', fold)
-
-
 def read_synthetic_data(file_name):
     synthetic_text = []
     synthetic_intent = []
@@ -66,6 +56,12 @@ def read_synthetic_data(file_name):
 
 synthetic_text, synthetic_intent = read_synthetic_data('./data_intent1.jsonl')
 
+loader = DataLoader("./nlupp/data/")
+banking_data = loader.get_data_for_experiment(domain="banking", regime=regime)
+fold = len(banking_data)
+if args.fold != None:
+    fold = args.fold
+print('folds =', fold)
 
 def same_seed(seed):
     random.seed(seed)
@@ -306,9 +302,19 @@ for i in range(fold):
     for key in test_data:
         test_data[key] = test_data[key][:10]
     '''
+    for j in range(len(synthetic_text)):
+        text = synthetic_text[j]
+        intents = synthetic_intent[j]
+        train_data['text'].append(text)
+        train_data['intents'].append(intents)
+        labels = [0] * num_intents
+        for intent in intents:
+            labels[label2id[intent]] = 1
+        train_data['labels'].append(labels)
 
-    print(len(train_data['text'])) # 8927
-    print(len(test_data['text'])) # 800
+    print('synthetic len =', len(synthetic_text))
+    print('train len =', len(train_data['text'])) # 8927
+    print('test len =', len(test_data['text'])) # 800
 
     model = BertClassifier(hidden_size, dropout)
     train(model, train_data, test_data, LR, EPOCHS)
@@ -318,7 +324,7 @@ for i in range(fold):
     total_f1 += test_f1
 
 print('---------------------')
-print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}, regime={regime}')
+print(f'dropout={dropout}, batch_size={batch_size}, epoch={EPOCHS}, LR={LR}, regime={regime}, fold={fold}')
 print(f'total accuracy = {total_accuracy / fold}')
 print(f'total f1 = {total_f1 / fold}')
 print('---------------------')
