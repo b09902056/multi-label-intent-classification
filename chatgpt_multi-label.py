@@ -5,7 +5,7 @@ import random
 
 items = ['banking', 'hotels']
 
-openai.api_key = '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'
+openai.api_key = ''
 
 # Collect descriptions of intents
 with open('nlupp/data/ontology.json') as f:

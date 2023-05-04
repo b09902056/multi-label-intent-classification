@@ -277,33 +277,42 @@ for i in range(fold):
     train_data = {'text':[], 'intents':[], 'labels':[]}
     eval_data = {'text':[], 'intents':[], 'labels':[]}
     test_data = {'text':[], 'intents':[], 'labels':[]}
+
+    # add original data to test data
     for j in range(len(ori_data[i]['test'])):
         x = ori_data[i]['test'][j]
-        if 'intents' in x:
-            test_data['text'].append(x['text'])
-            test_data['intents'].append(x['intents'])
-            labels = [0] * num_intents
-            for intent in x['intents']:
-                labels[label2id[intent]] = 1
-            test_data['labels'].append(labels)
+        if 'intents' not in x: x['intents'] = []
+        test_data['text'].append(x['text'])
+        test_data['intents'].append(x['intents'])
+        labels = [0] * num_intents
+        for intent in x['intents']:
+            labels[label2id[intent]] = 1
+        test_data['labels'].append(labels)
+
+    # add augmented data to train data
     for j in range(len(aug_data[i]['train'])):
         x = aug_data[i]['train'][j]
-        if 'intents' in x:
-            train_data['text'].append(x['text'])
-            train_data['intents'].append(x['intents'])
-            labels = [0] * num_intents
-            for intent in x['intents']:
-                labels[label2id[intent]] = 1
-            train_data['labels'].append(labels)
-    '''
-    for key in train_data:
-        train_data[key] = train_data[key][:10]
-    for key in test_data:
-        test_data[key] = test_data[key][:10]
-    '''
+        if 'intents' not in x: x['intents'] = []
+        train_data['text'].append(x['text'])
+        train_data['intents'].append(x['intents'])
+        labels = [0] * num_intents
+        for intent in x['intents']:
+            labels[label2id[intent]] = 1
+        train_data['labels'].append(labels)
 
-    print('train len =', len(train_data['text'])) # 8927
-    print('test len =', len(test_data['text'])) # 800
+    # add original data to train data
+    for j in range(len(ori_data[i]['train'])):
+        x = ori_data[i]['train'][j]
+        if 'intents' not in x: x['intents'] = []
+        train_data['text'].append(x['text'])
+        train_data['intents'].append(x['intents'])
+        labels = [0] * num_intents
+        for intent in x['intents']:
+            labels[label2id[intent]] = 1
+        train_data['labels'].append(labels)
+
+    print('train len =', len(train_data['text'])) 
+    print('test len =', len(test_data['text'])) 
 
     model = BertClassifier(hidden_size, dropout)
     train(model, train_data, test_data, LR, EPOCHS)
