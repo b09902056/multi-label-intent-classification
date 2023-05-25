@@ -1,0 +1,515 @@
+{"text": "Are there any limits on the amount of money I can transfer to my savings account?", "intents": ["limits", "transfer_payment_deposit"]}
+{"text": "How long does it take for a payment transfer to show up in my account and are there any limits on the amount that can be transferred?", "intents": ["limits", "transfer_payment_deposit"]}
+{"text": "Can I deposit a check by taking a picture with the mobile app and are there any transaction limits for this feature?", "intents": ["limits", "transfer_payment_deposit"]}
+{"text": "When is the next contactless payment event happening?", "intents": ["when", "contactless"]}
+{"text": "Can you please tell me what time the contactless feature will be enabled?", "intents": ["when", "contactless"]}
+{"text": "When and where can I use contactless payments?", "intents": ["when", "contactless"]}
+{"text": "I lost my phone and someone changed my PIN. What should I do?", "intents": ["lost_stolen", "pin"]}
+{"text": "My car was stolen and I can't find the PIN for the alarm system. Can you help me reset it?", "intents": ["lost_stolen", "pin"]}
+{"text": "I think my wallet was lost or stolen, and I need to know how to change the PIN on my bank account.", "intents": ["lost_stolen", "pin"]}
+{"text": "How much money was debited from my account?", "intents": ["how_much", "debit"]}
+{"text": "Can you tell me how much I can debit from my account per day?", "intents": ["how_much", "debit"]}
+{"text": "Is there a limit to how much I can debit from my account at once?", "intents": ["how_much", "debit"]}
+{"text": "Can you tell me how to open a new debit account?", "intents": ["debit", "account"]}
+{"text": "I need to check my account balance and debit card transactions.", "intents": ["debit", "account"]}
+{"text": "How to link my savings account to my debit card? Also, can I use it for international transactions?", "intents": ["debit", "account"]}
+{"text": "Can you please acknowledge that you understand how to complete the task?", "intents": ["acknowledge", "how"]}
+{"text": "How do I acknowledge an email that I have received?", "intents": ["acknowledge", "how"]}
+{"text": "Can you tell me how to acknowledge someone's input during a meeting?", "intents": ["acknowledge", "how"]}
+{"text": "My account is not showing my latest transactions and I think I might have overdraft fees.", "intents": ["wrong_notworking_notshowing", "overdraft"]}
+{"text": "I tried to use my credit card but it's not working and I need to know if I will be charged overdraft fees.", "intents": ["wrong_notworking_notshowing", "overdraft"]}
+{"text": "Something is wrong with my debit card and I'm worried about overdraft fees being charged to my account.", "intents": ["wrong_notworking_notshowing", "overdraft"]}
+{"text": "Can you repeat that? Do I need to cancel the reservation?", "intents": ["repeat", "cancel_close_leave_freeze"]}
+{"text": "I didn't catch what you said, can you repeat it? Should I leave the meeting early or can I freeze my participation?", "intents": ["repeat", "cancel_close_leave_freeze"]}
+{"text": "Sorry, can you say that again? Do I need to cancel the subscription or is there an option to leave it freezed?", "intents": ["repeat", "cancel_close_leave_freeze"]}
+{"text": "Can you provide me with information on my existing savings account?", "intents": ["existing", "savings"]}
+{"text": "How can I transfer funds from my existing checking account to my savings account?", "intents": ["existing", "savings"]}
+{"text": "I would like to know if I can add a co-owner to my existing savings account.", "intents": ["existing", "savings"]}
+{"text": "Can you tell me about any new features that have been added to the current account?", "intents": ["new", "current"]}
+{"text": "How can I switch from my current account to a new one with better benefits?", "intents": ["new", "current"]}
+{"text": "Is it possible to have multiple current accounts with different banks and constantly switch between them to take advantage of new offers?", "intents": ["new", "current"]}
+{"text": "Can you tell me how long the battery lasts before it starts decreasing in performance?", "intents": ["how_long", "less_lower_before"]}
+{"text": "How much less time will it take to complete this task if we lower the requirements beforehand?", "intents": ["how_long", "less_lower_before"]}
+{"text": "Can you tell me how to schedule an appointment and apply for a new card?", "intents": ["appointment", "card"]}
+{"text": "I need to reschedule my appointment and update my card information, can you assist me with that?", "intents": ["appointment", "card"]}
+{"text": "Can I check my card balance and make an appointment for a meeting with a representative?", "intents": ["appointment", "card"]}
+{"text": "Can you tell me how long it will take to cancel my account and close it for good?", "intents": ["cancel_close_leave_freeze", "how_long"]}
+{"text": "I want to freeze my gym membership, but how long can I freeze it for without cancelling it?", "intents": ["cancel_close_leave_freeze", "how_long"]}
+{"text": "Could you provide me with an estimate of how long it will take for my subscription to be cancelled and for the account to be closed?", "intents": ["cancel_close_leave_freeze", "how_long"]}
+{"text": "Why do I need to make an account and set it up to activate my subscription?", "intents": ["make_open_apply_setup_get_activate", "why"]}
+{"text": "How can I open and apply for multiple job positions at once? And why is it necessary to do so?", "intents": ["make_open_apply_setup_get_activate", "why"]}
+{"text": "Hello, do you know if this store has contactless payment options available?", "intents": ["greet", "contactless"]}
+{"text": "Good morning, can you tell me more about the contactless delivery service you offer?", "intents": ["greet", "contactless"]}
+{"text": "Hi there, I was wondering if you have any contactless options for in-store pick up? And also, could you tell me about your return policy?", "intents": ["greet", "contactless"]}
+{"text": "Okay, I think it's time to end this call. By the way, do you have any questions about your credit card?", "intents": ["end_call", "card"]}
+{"text": "I'm sorry, but I need to end the call now. Before I go, can I help you with any card-related inquiries?", "intents": ["end_call", "card"]}
+{"text": "Thank you for your time. Before we end the call, may I assist you with anything regarding your card account?", "intents": ["end_call", "card"]}
+{"text": "Can you schedule a meeting for our business account for next Monday?", "intents": ["business", "appointment"]}
+{"text": "Can I reschedule a business appointment that was previously made?", "intents": ["business", "appointment"]}
+{"text": "Can you let me know the current balance of my account and if there are any limits on daily withdrawals?", "intents": ["limits", "current"]}
+{"text": "What are the current fees on my account and are there any limits on the amount I can transfer to another account?", "intents": ["limits", "current"]}
+{"text": "I want to check the current interest rate on my account and whether there are any limits on the number of transactions I can make per day.", "intents": ["limits", "current"]}
+{"text": "What are the fees and interests for a personal loan?", "intents": ["fees_interests", "loan"]}
+{"text": "Can you tell me more about the loans available and their interest rates?", "intents": ["fees_interests", "loan"]}
+{"text": "How do I apply for a loan and what fees do I need to pay?", "intents": ["fees_interests", "loan"]}
+{"text": "My wallet was stolen and I'm worried about cancelling my direct debit payments.", "intents": ["lost_stolen", "direct_debit"]}
+{"text": "I lost my bank card and need to set up a new direct debit arrangement.", "intents": ["lost_stolen", "direct_debit"]}
+{"text": "Someone stole my phone and I need to cancel direct debits linked to mobile services.", "intents": ["lost_stolen", "direct_debit"]}
+{"text": "When will my account be activated?", "intents": ["when", "account"]}
+{"text": "Can you help me with my account settings and tell me when the next billing cycle begins?", "intents": ["when", "account"]}
+{"text": "When do I not need to worry about deactivating my account? And can I still access my information after deactivation?", "intents": ["when", "account"]}
+{"text": "Can I get a refund for this purchase? Also, can I inquire about overdraft fees on my account?", "intents": ["overdraft", "refund"]}
+{"text": "I have a question about overdraft protection and whether I am eligible for it. Additionally, can you help me understand my options for requesting a refund?", "intents": ["overdraft", "refund"]}
+{"text": "I accidentally made a payment using the wrong account. Can I request a refund for that transaction? Also, can you explain how overdraft fees are calculated?", "intents": ["overdraft", "refund"]}
+{"text": "How do I avoid overdraft fees?", "intents": ["how", "overdraft"]}
+{"text": "How can I qualify for an overdraft limit increase?", "intents": ["how", "overdraft"]}
+{"text": "How do I know if I've been charged an overdraft fee on my account?", "intents": ["how", "overdraft"]}
+{"text": "Can I transfer money from my savings account to pay my mortgage?", "intents": ["savings", "mortgage"]}
+{"text": "How much is the interest rate for a mortgage and savings account?", "intents": ["savings", "mortgage"]}
+{"text": "Is it required to have a savings account to qualify for a mortgage?", "intents": ["savings", "mortgage"]}
+{"text": "Thank you for letting me know. Would you like me to hand off the conversation to a human?", "intents": ["acknowledge", "handoff"]}
+{"text": "I understand and appreciate your feedback. Should I acknowledge this with a response or hand off to a human for further assistance\uff1f", "intents": ["acknowledge", "handoff"]}
+{"text": "Got it, I can certainly help with that. Just to confirm, would you like me to acknowledge your request or hand off to a human for more complex issues?", "intents": ["acknowledge", "handoff"]}
+{"text": "Are there any new credit card offers available?", "intents": ["new", "credit"]}
+{"text": "Can you explain how opening a new credit account affects my credit score?", "intents": ["new", "credit"]}
+{"text": "I want to apply for a loan, but my credit is less than perfect. Are there any options for me?", "intents": ["new", "credit"]}
+{"text": "Can I set up a direct debit to ensure my bill payments are less of a hassle?", "intents": ["less_lower_before", "direct_debit"]}
+{"text": "How do I cancel a direct debit from my bank account that has been lowered recently?", "intents": ["less_lower_before", "direct_debit"]}
+{"text": "Is it possible to decrease the amount of money taken out by direct debit each month?", "intents": ["less_lower_before", "direct_debit"]}
+{"text": "Yes, I understand that you want to transfer money to your savings account.", "intents": ["acknowledge", "transfer_payment_deposit"]}
+{"text": "Can you help me create a new pin number for my bank account?", "intents": ["new", "pin"]}
+{"text": "I forgot my current pin number, can I create a new one?", "intents": ["new", "pin"]}
+{"text": "Is it possible to get a new pin number for my credit card? And how long will it take?", "intents": ["new", "pin"]}
+{"text": "Yes, I would like to acknowledge what you said about the loan. Can you tell me more about the terms and conditions?", "intents": ["acknowledge", "loan"]}
+{"text": "I acknowledge your statement about needing a loan. What type of loan are you interested in?", "intents": ["acknowledge", "loan"]}
+{"text": "Can you acknowledge that you are seeking information about loans? Which specific loan product are you interested in?", "intents": ["acknowledge", "loan"]}
+{"text": "When does the movie start and how much are the tickets?", "intents": ["when", "how_much"]}
+{"text": "How much time do I have before the meeting and when is it scheduled?", "intents": ["when", "how_much"]}
+{"text": "When can I pick up my order and how much is the total cost?", "intents": ["when", "how_much"]}
+{"text": "Can you repeat the payment information for my account?", "intents": ["repeat", "account"]}
+{"text": "How do I access my account and can you repeat the steps?", "intents": ["repeat", "account"]}
+{"text": "I forgot my login, can you repeat how to reset my account password?", "intents": ["repeat", "account"]}
+{"text": "Can you help me change my debit card PIN number?", "intents": ["change", "debit"]}
+{"text": "I need to change my debit card information and review my recent transactions.", "intents": ["change", "debit"]}
+{"text": "How can I dispute a fraudulent debit charge and change my account balance limit?", "intents": ["change", "debit"]}
+{"text": "I'm sorry, I don't know much about the savings account. Can I help you with anything else?", "intents": ["dont_know", "savings"]}
+{"text": "Can you explain more about the savings account? I don't know much about it.", "intents": ["dont_know", "savings"]}
+{"text": "I'm not sure if I can answer that question. Would you like me to check with someone who knows more about savings accounts?", "intents": ["dont_know", "savings"]}
+{"text": "The printer is not working and I noticed a significant decrease in the print quality compared to before.", "intents": ["wrong_notworking_notshowing", "less_lower_before"]}
+{"text": "My laptop is showing an error message and the battery life seems to be lower than before.", "intents": ["wrong_notworking_notshowing", "less_lower_before"]}
+{"text": "The TV remote is not working properly and the volume level is much lower than I expected.", "intents": ["wrong_notworking_notshowing", "less_lower_before"]}
+{"text": "When will my credit card arrive?", "intents": ["arrival", "card"]}
+{"text": "Can you tell me the expected arrival time for my package and the balance on my credit card?", "intents": ["arrival", "card"]}
+{"text": "Is there a way to track the arrival of my new debit card and can you assist me in activating it?", "intents": ["arrival", "card"]}
+{"text": "Can you help me set up my new credit card?", "intents": ["make_open_apply_setup_get_activate", "card"]}
+{"text": "How do I activate my debit card and apply for a new one?", "intents": ["make_open_apply_setup_get_activate", "card"]}
+{"text": "Can you make sure my gift card balance is correct and help me open a new credit card account?", "intents": ["make_open_apply_setup_get_activate", "card"]}
+{"text": "Can I change the order and also get a refund for it?", "intents": ["change", "refund"]}
+{"text": "I want to change the address and also discuss the refund status of my order.", "intents": ["change", "refund"]}
+{"text": "How can I change my flight booking and also request a refund for it?", "intents": ["change", "refund"]}
+{"text": "Can you acknowledge what I said and also repeat it back to me?", "intents": ["acknowledge", "repeat"]}
+{"text": "I didn't quite catch that, can you repeat what you said and also acknowledge my response?", "intents": ["acknowledge", "repeat"]}
+{"text": "To clarify, I want you to acknowledge my request and then repeat it back to me.", "intents": ["acknowledge", "repeat"]}
+{"text": "Why did it take so long to complete the project, and how long do we have to wait for the results?", "intents": ["why", "how_long"]}
+{"text": "How long will it take to prepare the presentation, and why do we need to use these specific slides?", "intents": ["why", "how_long"]}
+{"text": "Why do we need to attend the meeting, and how long will it last?", "intents": ["why", "how_long"]}
+{"text": "When is the pin number for the ATM machine changing?", "intents": ["when", "pin"]}
+{"text": "What time will the new pin be implemented in the system?", "intents": ["when", "pin"]}
+{"text": "When can I reset my pin number and how do I do it?", "intents": ["when", "pin"]}
+{"text": "I understand your question about the current account, let me first acknowledge your concern.", "intents": ["acknowledge", "current"]}
+{"text": "To answer your question about the current account, let me first acknowledge the recent changes made to our policies.", "intents": ["acknowledge", "current"]}
+{"text": "Acknowledging your inquiry about the current account, I can confirm there was a recent transaction on your account.", "intents": ["acknowledge", "current"]}
+{"text": "Can you assist me in finding information on international student loans?", "intents": ["international", "loan"]}
+{"text": "What is the process for obtaining a loan for an overseas international education?", "intents": ["international", "loan"]}
+{"text": "I am interested in learning about how international trade agreements affect loan interest rates, can you provide me with some resources?", "intents": ["international", "loan"]}
+{"text": "Why did my account balance decrease and what is my current available balance?", "intents": ["why", "current"]}
+{"text": "What is the reason for my recent overdraft fee and can you provide me with my current interest rate?", "intents": ["why", "current"]}
+{"text": "Why was my credit limit decreased and what is my current outstanding balance on my account?", "intents": ["why", "current"]}
+{"text": "Can I cancel my subscription and lower my monthly bill?", "intents": ["cancel_close_leave_freeze", "less_lower_before"]}
+{"text": "How do I freeze my gym membership and cancel my personal training session to lower my monthly expenses?", "intents": ["cancel_close_leave_freeze", "less_lower_before"]}
+{"text": "Why did my package not arrive on time?", "intents": ["why", "arrival"]}
+{"text": "Can you explain why the flight arrival was delayed?", "intents": ["why", "arrival"]}
+{"text": "Why is the arrival time displayed differently on the website and the ticket?", "intents": ["why", "arrival"]}
+{"text": "Can you repeat the instructions on how to create a savings account?", "intents": ["repeat", "savings"]}
+{"text": "I didn't catch that, can you repeat the benefits of having a savings account?", "intents": ["repeat", "savings"]}
+{"text": "How can I transfer money from my checking account to my savings account? Can you repeat the steps for me?", "intents": ["repeat", "savings"]}
+{"text": "Can you show me some new options to change my hairstyle?", "intents": ["change", "new"]}
+{"text": "Is it possible to try something new and change the color of this shirt?", "intents": ["change", "new"]}
+{"text": "I want to change my workout routine, could you suggest some new exercises?", "intents": ["change", "new"]}
+{"text": "Can you provide me with the process to deposit a cheque into my business account?", "intents": ["business", "cheque"]}
+{"text": "What is the maximum amount of a cheque that can be deposited into a business account?", "intents": ["business", "cheque"]}
+{"text": "Do I need to sign the back of a cheque before depositing it into my business account?", "intents": ["business", "cheque"]}
+{"text": "Do you offer contactless payment options and can I schedule an appointment?", "intents": ["contactless", "appointment"]}
+{"text": "How do I make an appointment and can I expect a contactless checkout process?", "intents": ["contactless", "appointment"]}
+{"text": "Can I schedule an appointment online and does your establishment have contactless payment options?", "intents": ["contactless", "appointment"]}
+{"text": "Thank you for your help. Why did the printer stop working?", "intents": ["thank", "why"]}
+{"text": "Why do you think he deserves thanks for his actions? Thank you for your understanding.", "intents": ["thank", "why"]}
+{"text": "Thank you for explaining that to me. Why didn't you attend the meeting yesterday?", "intents": ["thank", "why"]}
+{"text": "Is there something wrong with my account? I can't seem to log in.", "intents": ["wrong_notworking_notshowing", "existing"]}
+{"text": "My package was delivered to the wrong address and the tracking information is not showing any updates. What should I do?", "intents": ["wrong_notworking_notshowing", "existing"]}
+{"text": "I cannot seem to remember my pin and I deny ever sharing it with anyone.", "intents": ["deny", "pin"]}
+{"text": "I want to deny access to my account with the incorrect pin number presented.", "intents": ["deny", "pin"]}
+{"text": "Can you please deny the request to change my pin number without my authorization and provide me with instructions on how to do it myself?", "intents": ["deny", "pin"]}
+{"text": "Can you tell me if my current balance is higher than it was last month, and if there will be any more deposits coming in soon?", "intents": ["more_higher_after", "current"]}
+{"text": "My current credit card has a high interest rate, can you suggest a card with more cashback rewards and a lower rate?", "intents": ["more_higher_after", "current"]}
+{"text": "I've been working hard to save money, but I'm worried that my current budget won't be enough for the increasing cost of living. Can you suggest any ways to increase my income or cut my expenses?", "intents": ["more_higher_after", "current"]}
+{"text": "Why was my phone stolen and how can I retrieve it?", "intents": ["why", "lost_stolen"]}
+{"text": "Why did I lose my wallet and what steps should I take now?", "intents": ["why", "lost_stolen"]}
+{"text": "Can you tell me why my bag was stolen and how I can report it to the authorities?", "intents": ["why", "lost_stolen"]}
+{"text": "I don't know if it's going to rain tomorrow, but I can affirm that the forecast says there is a chance of thunderstorms.", "intents": ["affirm", "dont_know"]}
+{"text": "I can affirm that I completed the first task, but I don't know if I have time to finish the second task today.", "intents": ["affirm", "dont_know"]}
+{"text": "I don't know where the meeting is being held, but I can affirm that it's scheduled for tomorrow afternoon.", "intents": ["affirm", "dont_know"]}
+{"text": "Hi there, is there something wrong with the website? I'm having trouble accessing some pages.", "intents": ["greet", "wrong_notworking_notshowing"]}
+{"text": "Good morning, the app is not working and some of the features are missing. Can you help me?", "intents": ["greet", "wrong_notworking_notshowing"]}
+{"text": "Hello, I'm having trouble with my device, it's not showing any prompts. Can you assist me in fixing it?", "intents": ["greet", "wrong_notworking_notshowing"]}
+{"text": "I understand what you're saying, but I have to deny your request for a raise.", "intents": ["deny", "acknowledge"]}
+{"text": "Yes, I acknowledge that I was late to the meeting, but I had a family emergency.", "intents": ["deny", "acknowledge"]}
+{"text": "I'm sorry, but I have to deny your application for the job. However, I acknowledge that you have impressive skills and experience.", "intents": ["deny", "acknowledge"]}
+{"text": "Can you please repeat the last transaction on my business account?", "intents": ["repeat", "business"]}
+{"text": "Sorry, could you repeat the instructions on how to access the business account?", "intents": ["repeat", "business"]}
+{"text": "Is there a way to repeat the confirmation number for my business account transfer?", "intents": ["repeat", "business"]}
+{"text": "How do I apply for a loan modification? ", "intents": ["change", "loan"]}
+{"text": "What is the process for changing the type of loan I have?", "intents": ["change", "loan"]}
+{"text": "Can you help me find my pin number and also check if I am eligible for a refund?", "intents": ["pin", "refund"]}
+{"text": "I received a refund for my order, but I also need assistance resetting my pin number. Can you help me with both?", "intents": ["pin", "refund"]}
+{"text": "I want to request a refund for my purchase and also inquire about how to update my pin number. Can you assist me with these two things?", "intents": ["pin", "refund"]}
+{"text": "Can you explain why the revenue for the business account is less than last quarter?", "intents": ["less_lower_before", "business"]}
+{"text": "Is there any idea to lower the cost of advertising for the business account?", "intents": ["less_lower_before", "business"]}
+{"text": "How can we decrease the number of customer complaints on the business account?", "intents": ["less_lower_before", "business"]}
+{"text": "Is there a limit to the number of files that can be stored in the existing folder?", "intents": ["existing", "limits"]}
+{"text": "What is the existing policy for exceeding limits on data usage?", "intents": ["existing", "limits"]}
+{"text": "Can you explain the existing limits on the number of users for this account?", "intents": ["existing", "limits"]}
+{"text": "Can I set up a standing order from my debit account?", "intents": ["debit", "standing_order"]}
+{"text": "How do I cancel a standing order from my debit card?", "intents": ["debit", "standing_order"]}
+{"text": "Which of my debit accounts can I use to create a new standing order?", "intents": ["debit", "standing_order"]}
+{"text": "Can you show me my balance and if there has been any decrease in my account?", "intents": ["less_lower_before", "balance"]}
+{"text": "Has my balance decreased or am I still in good standing when it comes to my accounts?", "intents": ["less_lower_before", "balance"]}
+{"text": "Could you tell me if my balance has been altered and if so, is it less than before?", "intents": ["less_lower_before", "balance"]}
+{"text": "Can you tell me how to transfer money to a new account and what the account requirements are?", "intents": ["request_info", "transfer_payment_deposit"]}
+{"text": "What is the process to request a deposit refund and how long does it usually take to process?", "intents": ["request_info", "transfer_payment_deposit"]}
+{"text": "I want to update my payment method for automatic transfers. Can you help me with the steps to do that?", "intents": ["request_info", "transfer_payment_deposit"]}
+{"text": "Can you assist me with a transfer from my business account to another account?", "intents": ["business", "transfer_payment_deposit"]}
+{"text": "Is there a limit on the amount I can transfer from my business account and how long does it take for the payment to deposit?", "intents": ["business", "transfer_payment_deposit"]}
+{"text": "Can you tell me my account balance and how to make a withdrawal?", "intents": ["balance", "withdrawal"]}
+{"text": "I would like to withdraw some money and also check my balance, is that possible?", "intents": ["balance", "withdrawal"]}
+{"text": "How much can I withdraw from my account and what is my current balance?", "intents": ["balance", "withdrawal"]}
+{"text": "I'm sorry, I can't confirm if the existing product is of high quality.", "intents": ["deny", "existing"]}
+{"text": "I deny that the existing team has any involvement in that project.", "intents": ["deny", "existing"]}
+{"text": "I'm afraid I can't deny the existence of the new feature in the existing software.", "intents": ["deny", "existing"]}
+{"text": "Can you tell me about the fees and interests associated with getting a credit card?", "intents": ["credit", "fees_interests"]}
+{"text": "I'm interested in opening a credit line, what kind of credit score do I need and what fees can I expect to pay?", "intents": ["credit", "fees_interests"]}
+{"text": "How does my credit score impact the fees and interests I will be charged on a personal loan?", "intents": ["credit", "fees_interests"]}
+{"text": "Could you please tell me if you offer contactless payment options and if I can still pay by cheque?", "intents": ["contactless", "cheque"]}
+{"text": "I am wondering if I can avoid touching anything by using contactless payment, or if I need to write a cheque instead?", "intents": ["contactless", "cheque"]}
+{"text": "Is there a way to make payments without using a physical cheque or by making contact, such as using contactless payment options?", "intents": ["contactless", "cheque"]}
+{"text": "Could you transfer some money from my card to my checking account?", "intents": ["transfer_payment_deposit", "card"]}
+{"text": "Can I make a deposit to my savings account using my debit card at the ATM?", "intents": ["transfer_payment_deposit", "card"]}
+{"text": "How much did the price decrease before the sale?", "intents": ["how_much", "less_lower_before"]}
+{"text": "Is the lower price for bulk orders available now?", "intents": ["how_much", "less_lower_before"]}
+{"text": "How much inventory decreased before the new shipment arrived?", "intents": ["how_much", "less_lower_before"]}
+{"text": "Yes, I want to confirm my appointment for next Monday.", "intents": ["affirm", "appointment"]}
+{"text": "Can you help me reschedule my appointment and also confirm the new date?", "intents": ["affirm", "appointment"]}
+{"text": "I need to change the time of my appointment, is that possible? And can you also send me a confirmation?", "intents": ["affirm", "appointment"]}
+{"text": "Can I change my overdraft limit?", "intents": ["change", "overdraft"]}
+{"text": "How can I avoid overdraft fees and change my account type?", "intents": ["change", "overdraft"]}
+{"text": "Is it possible to change my overdraft protection settings and opt for a different option?", "intents": ["change", "overdraft"]}
+{"text": "When is my next appointment and what time is it scheduled for?", "intents": ["when", "appointment"]}
+{"text": "Can you tell me what time my appointment is and when should I arrive?", "intents": ["when", "appointment"]}
+{"text": "When can I book an appointment and what are your available times?", "intents": ["when", "appointment"]}
+{"text": "Before we go, can you confirm if you want to make any changes to your order or should I end the call now and open a support ticket for you?", "intents": ["end_call", "make_open_apply_setup_get_activate"]}
+{"text": "What is the arrival time for my flight and what is the pin number for accessing the airport WiFi?", "intents": ["arrival", "pin"]}
+{"text": "When will my mortgage payment be due?", "intents": ["when", "mortgage"]}
+{"text": "Can you explain the mortgage rates and when they will increase?", "intents": ["when", "mortgage"]}
+{"text": "When is the best time to refinance my mortgage?", "intents": ["when", "mortgage"]}
+{"text": "What is the process to set up direct debit for international transactions?", "intents": ["international", "direct_debit"]}
+{"text": "Are there any legal requirements for processing international direct debit payments?", "intents": ["international", "direct_debit"]}
+{"text": "How do I manage direct debit for international vendors in our accounting system?", "intents": ["international", "direct_debit"]}
+{"text": "My direct debit isn't working, do you know what's wrong with it? ", "intents": ["wrong_notworking_notshowing", "direct_debit"]}
+{"text": "I've noticed that my bills aren't being paid through direct debit, is something not working properly? ", "intents": ["wrong_notworking_notshowing", "direct_debit"]}
+{"text": "Can you help me set up direct debit for my account? Let me know if there's anything I need to do or if something isn't showing up correctly.", "intents": ["wrong_notworking_notshowing", "direct_debit"]}
+{"text": "Hi there, have you heard about any new products on the market?", "intents": ["greet", "new"]}
+{"text": "Good morning, I wanted to say hello and get some information on the latest news in the industry.", "intents": ["greet", "new"]}
+{"text": "Hey, can you tell me if there\u2019s anything new and exciting going on in your life?", "intents": ["greet", "new"]}
+{"text": "Has my package arrived yet? I need to know if it's existing and the status of its arrival.", "intents": ["existing", "arrival"]}
+{"text": "I want to track my shipment. It's both about the existing package and asking when it will arrive.", "intents": ["existing", "arrival"]}
+{"text": "Could you check if my flight is delayed? It's important to know the existing information and the expected arrival time.", "intents": ["existing", "arrival"]}
+{"text": "Could you please tell me if my cheque amount is less than the previous one I issued?", "intents": ["less_lower_before", "cheque"]}
+{"text": "Is it possible to decrease the amount on the cheque I already wrote?", "intents": ["less_lower_before", "cheque"]}
+{"text": "I need your help with cancelling a cheque that was written for a lower amount than intended.", "intents": ["less_lower_before", "cheque"]}
+{"text": "I'm sorry, I don't know the answer to your question. Do you want me to hand you off to a human representative?", "intents": ["dont_know", "handoff"]}
+{"text": "I'm not sure about that. Should I transfer you to a live agent for assistance?", "intents": ["dont_know", "handoff"]}
+{"text": "I apologize, but I don't have the information you're looking for. Would you like me to connect you with a human expert?", "intents": ["dont_know", "handoff"]}
+{"text": "Can I change the address if my credit card has been lost or stolen?", "intents": ["change", "lost_stolen"]}
+{"text": "How do I report a lost or stolen passport and change my flight itinerary at the same time?", "intents": ["change", "lost_stolen"]}
+{"text": "What steps should I take to change my password if my device has been lost or stolen?", "intents": ["change", "lost_stolen"]}
+{"text": "Thank you for helping me set up my new phone.", "intents": ["thank", "make_open_apply_setup_get_activate"]}
+{"text": "I want to thank you for activating my bank account and setting up online banking.", "intents": ["thank", "make_open_apply_setup_get_activate"]}
+{"text": "Thanks for making it possible to apply for and get the job.", "intents": ["thank", "make_open_apply_setup_get_activate"]}
+{"text": "Can you repeat the details for my standing order? I think I missed something.", "intents": ["repeat", "standing_order"]}
+{"text": "I don't know if this is a standing order or not, but can you repeat the instructions for this transaction?", "intents": ["repeat", "standing_order"]}
+{"text": "Sorry, I didn't catch that. Can you repeat if this is related to a standing order or not?", "intents": ["repeat", "standing_order"]}
+{"text": "I am not sure if I understood correctly, but can you help me with transferring funds and making a payment?", "intents": ["dont_know", "transfer_payment_deposit"]}
+{"text": "I don't know if this is the right place to ask, but can you assist me with a deposit and transfer to my account?", "intents": ["dont_know", "transfer_payment_deposit"]}
+{"text": "If I don't know how to transfer money and make a payment, can you guide me through the process?", "intents": ["dont_know", "transfer_payment_deposit"]}
+{"text": "Can you tell me when is the best time to speak with a representative about my issue handoff?", "intents": ["handoff", "when"]}
+{"text": "I want to hand off my call to a human. When can I expect to speak with someone?", "intents": ["handoff", "when"]}
+{"text": "When is the best time to hand off my inquiry to a customer service representative to get a quicker response?", "intents": ["handoff", "when"]}
+{"text": "Can you confirm the arrival date of my package and how I can transfer funds to my savings account?", "intents": ["savings", "arrival"]}
+{"text": "Can you help me track the arrival of my parcel while also providing some information about the various savings account options available?", "intents": ["savings", "arrival"]}
+{"text": "Can you tell me the status of my account? I also need to schedule an appointment with my account manager.", "intents": ["account", "appointment"]}
+{"text": "How do I change my appointment time? I want to inquire about my account balance too.", "intents": ["account", "appointment"]}
+{"text": "When is my next appointment with my advisor? I also need to update my account information.", "intents": ["account", "appointment"]}
+{"text": "Hi there, can I speak to a human about my issue?", "intents": ["greet", "handoff"]}
+{"text": "Good morning, it looks like I need to be handed off to a live agent.", "intents": ["greet", "handoff"]}
+{"text": "Hello, is there someone I can talk to or do I need to choose from a menu?", "intents": ["greet", "handoff"]}
+{"text": "Can you acknowledge how much money I owe you?", "intents": ["acknowledge", "how_much"]}
+{"text": "How much did you acknowledge at the fundraiser last night?", "intents": ["acknowledge", "how_much"]}
+{"text": "Could you acknowledge how much time you spent working on the project?", "intents": ["acknowledge", "how_much"]}
+{"text": "Why do I need to open a savings account?", "intents": ["why", "savings"]}
+{"text": "How much savings have I accumulated so far, and why is it important to continue saving?", "intents": ["why", "savings"]}
+{"text": "Why are the interest rates on my savings account so low, and what can I do to increase them?", "intents": ["why", "savings"]}
+{"text": "Thank you for helping me out. Can you also tell me about the fees and interests associated with this service?", "intents": ["thank", "fees_interests"]}
+{"text": "I just wanted to express my gratitude for your assistance. Speaking of which, could you clarify the fees and interests for this product?", "intents": ["thank", "fees_interests"]}
+{"text": "Thanks a lot for your help. By the way, could you share some information regarding the fees and interests for this account?", "intents": ["thank", "fees_interests"]}
+{"text": "Can you repeat what time the meeting is scheduled for again?", "intents": ["repeat", "when"]}
+{"text": "When is the deadline for submitting the report, and can you repeat the instructions on how to submit it?", "intents": ["repeat", "when"]}
+{"text": "Could you please clarify when the event starts, and can you repeat the dress code for the occasion?", "intents": ["repeat", "when"]}
+{"text": "I lost my credit card and I'm worried about hitting my spending limit. Can you advise me on what to do?", "intents": ["lost_stolen", "limits"]}
+{"text": "What are the limits for withdrawing money from my account if my debit card gets stolen?", "intents": ["lost_stolen", "limits"]}
+{"text": "I think my phone was stolen. How do I set a limit on data usage until I can get a new one?", "intents": ["lost_stolen", "limits"]}
+{"text": "Can I cancel my existing subscription and leave the service for now?", "intents": ["cancel_close_leave_freeze", "existing"]}
+{"text": "Is there a way to freeze my existing account and cancel my subscription?", "intents": ["cancel_close_leave_freeze", "existing"]}
+{"text": "I want to request to close my existing account and leave your service for good. Can you assist me with that?", "intents": ["cancel_close_leave_freeze", "existing"]}
+{"text": "Can I apply for a credit card for my business account?", "intents": ["business", "card"]}
+{"text": "Is there a fee for adding authorized users to my business card account?", "intents": ["business", "card"]}
+{"text": "What is the process for disputing charges on my business card statement?", "intents": ["business", "card"]}
+{"text": "I'm sorry, I don't know how long it takes to get there", "intents": ["dont_know", "how_long"]}
+{"text": "Can you tell me how long it would take to prepare dinner, I don't know", "intents": ["dont_know", "how_long"]}
+{"text": "I don't know how long it will take to finish this project, can you give me an estimate?", "intents": ["dont_know", "how_long"]}
+{"text": "I think my wallet was lost or stolen during the transfer I made yesterday, what should I do?", "intents": ["lost_stolen", "transfer_payment_deposit"]}
+{"text": "Can you please confirm the balance on my account and whether the standing order for my rent has been processed?", "intents": ["balance", "standing_order"]}
+{"text": "I need to set up a new standing order for my credit card payment and check the balance on my savings account. ", "intents": ["balance", "standing_order"]}
+{"text": "Could you help me cancel a standing order for my gym membership and also let me know the available balance in my checking account?", "intents": ["balance", "standing_order"]}
+{"text": "Can I cancel my account or freeze it temporarily?", "intents": ["cancel_close_leave_freeze", "account"]}
+{"text": "How do I go about closing my account and what happens to my balance?", "intents": ["cancel_close_leave_freeze", "account"]}
+{"text": "How do I open and activate a new debit card?", "intents": ["make_open_apply_setup_get_activate", "debit"]}
+{"text": "Can you help me apply for a new debit card and set up automatic payments?", "intents": ["make_open_apply_setup_get_activate", "debit"]}
+{"text": "I want to make a purchase but my debit card isn't working, what should I do to get it to activate?", "intents": ["make_open_apply_setup_get_activate", "debit"]}
+{"text": "Can I transfer money from my savings account to make a credit card payment?", "intents": ["savings", "credit"]}
+{"text": "How much interest does my savings account earn and what credit score do I need to apply for a credit card?", "intents": ["savings", "credit"]}
+{"text": "I want to save for a down payment on a house, but I also want to improve my credit score. What is the best strategy for me?", "intents": ["savings", "credit"]}
+{"text": "My wallet was stolen last week and I also want to know about the loan eligibility.", "intents": ["lost_stolen", "loan"]}
+{"text": "Can I apply for a loan if my car has been lost or stolen?", "intents": ["lost_stolen", "loan"]}
+{"text": "I lost my phone which had all the details about my loan, what should I do to get the loan amount?", "intents": ["lost_stolen", "loan"]}
+{"text": "How do I activate my new cheque book and set up online banking?", "intents": ["make_open_apply_setup_get_activate", "cheque"]}
+{"text": "I need to apply for a new cheque book and open a savings account. Can you assist me?", "intents": ["make_open_apply_setup_get_activate", "cheque"]}
+{"text": "I'm sorry, I don't know when the package will arrive.", "intents": ["dont_know", "arrival"]}
+{"text": "Could you tell me the expected arrival time or do you not know?", "intents": ["dont_know", "arrival"]}
+{"text": "I don't know when the train will arrive, can you check for me?", "intents": ["dont_know", "arrival"]}
+{"text": "Can you tell me the balance of my savings account and when was the last time I made a deposit?", "intents": ["account", "balance"]}
+{"text": "How can I create a new account and what is the minimum balance requirement?", "intents": ["account", "balance"]}
+{"text": "What is the procedure to close my account and can I transfer my balance to another account?", "intents": ["account", "balance"]}
+{"text": "Can you assist me in getting a refund and also help me activate my new credit card?", "intents": ["make_open_apply_setup_get_activate", "refund"]}
+{"text": "I want to return this product for a refund, but also need to set up a new account. Can you help me do both?", "intents": ["make_open_apply_setup_get_activate", "refund"]}
+{"text": "Can you guide me in applying for a refund for my cancelled flight and also help me set up automatic payments for my utility bills?", "intents": ["make_open_apply_setup_get_activate", "refund"]}
+{"text": "My savings account is not showing the correct balance. Something is wrong.", "intents": ["wrong_notworking_notshowing", "savings"]}
+{"text": "Can you help me troubleshoot why my savings account is not working?", "intents": ["wrong_notworking_notshowing", "savings"]}
+{"text": "I have a question about the savings account, but also something seems to be missing from my account. Could you help me with both issues?", "intents": ["wrong_notworking_notshowing", "savings"]}
+{"text": "Can I activate my new debit card and set up a PIN number at the same time?", "intents": ["debit", "card"]}
+{"text": "How much does it cost to get a new credit card?", "intents": ["how_much", "card"]}
+{"text": "What is the process to get a replacement debit card and how much will it cost?", "intents": ["how_much", "card"]}
+{"text": "Hi there! How long will it take for my order to arrive?", "intents": ["greet", "how_long"]}
+{"text": "Hello! Can you tell me how long the meeting will last for?", "intents": ["greet", "how_long"]}
+{"text": "Hey, how's it going? How long does it usually take to complete this task?", "intents": ["greet", "how_long"]}
+{"text": "My appointment is not showing up on the calendar and I think there may be something wrong with the system.", "intents": ["wrong_notworking_notshowing", "appointment"]}
+{"text": "I need to reschedule my appointment because the system is not working properly and I am unable to do it online.", "intents": ["wrong_notworking_notshowing", "appointment"]}
+{"text": "The appointment I scheduled is not showing up in my email confirmation and I am concerned there may be something wrong with the booking process.", "intents": ["wrong_notworking_notshowing", "appointment"]}
+{"text": "Hi! Yes, I am affirming your request for assistance. How may I help you?", "intents": ["affirm", "greet"]}
+{"text": "Good morning! I would like to greet you and also affirm that I have received your email.", "intents": ["affirm", "greet"]}
+{"text": "Hey there! Just wanted to affirm that I have successfully completed the task you assigned me. By the way, how have you been? Nice to greet you again!", "intents": ["affirm", "greet"]}
+{"text": "Can you schedule a new appointment for me?", "intents": ["new", "appointment"]}
+{"text": "Do you have any new available appointment slots?", "intents": ["new", "appointment"]}
+{"text": "I need to reschedule my upcoming appointment. Can you book me a new one?", "intents": ["new", "appointment"]}
+{"text": "Can you help me check if my lost credit card is linked to my current account?", "intents": ["lost_stolen", "current"]}
+{"text": "I think my wallet with my bank card was stolen, can you assist me with canceling the card and reviewing my account transactions?", "intents": ["lost_stolen", "current"]}
+{"text": "How do I report a lost checkbook linked to my current and savings account?", "intents": ["lost_stolen", "current"]}
+{"text": "I'm sorry, but I don't know if my laptop was lost or stolen. ", "intents": ["dont_know", "lost_stolen"]}
+{"text": "Can you tell me what I should do if I don't know whether my phone was lost or stolen? ", "intents": ["dont_know", "lost_stolen"]}
+{"text": "Is there a way to report something as lost or stolen even if I don't know for sure?", "intents": ["dont_know", "lost_stolen"]}
+{"text": "Can you cancel my appointment and freeze the account?", "intents": ["cancel_close_leave_freeze", "appointment"]}
+{"text": "I need to know if I can leave early from my appointment or close the session completely.", "intents": ["cancel_close_leave_freeze", "appointment"]}
+{"text": "What is the process to cancel, reschedule, or leave feedback for my appointment?", "intents": ["cancel_close_leave_freeze", "appointment"]}
+{"text": "Can you help me report my lost phone and also check if my account has overdraft protection?", "intents": ["lost_stolen", "overdraft"]}
+{"text": "My wallet was stolen and I need to cancel my credit card. Can you also explain the overdraft fees on my account?", "intents": ["lost_stolen", "overdraft"]}
+{"text": "I think I lost my debit card and I'm worried about unauthorized charges. Could you also let me know if I have overdraft coverage on my checking account?", "intents": ["lost_stolen", "overdraft"]}
+{"text": "Can you tell me how to reset my PIN and also explain what will happen if I have an overdraft on my account?", "intents": ["overdraft", "pin"]}
+{"text": "I forgot my PIN and I need to withdrawal money, but I am not sure if I have an overdraft option, can you please assist me?", "intents": ["overdraft", "pin"]}
+{"text": "Is it possible to have multiple PIN numbers for one bank account and does it affect the overdraft limit on the account?", "intents": ["overdraft", "pin"]}
+{"text": "When will my mortgage payment arrive and how much is left on my mortgage?", "intents": ["arrival", "mortgage"]}
+{"text": "What is the estimated time of arrival for my mortgage documents?", "intents": ["arrival", "mortgage"]}
+{"text": "How do I calculate my mortgage interest and when will my payment arrive?", "intents": ["arrival", "mortgage"]}
+{"text": "Thank you for your help! Can you also assist me with my business account?", "intents": ["thank", "business"]}
+{"text": "I really appreciate your quick response. I need to discuss some business matters with you.", "intents": ["thank", "business"]}
+{"text": "Thanks a lot for your time. Can you tell me more about the business features available in our account?", "intents": ["thank", "business"]}
+{"text": "My bank account is not showing the withdrawal transaction I made yesterday, is something wrong?", "intents": ["wrong_notworking_notshowing", "withdrawal"]}
+{"text": "I am having trouble withdrawing money from the ATM, is it not working properly?", "intents": ["wrong_notworking_notshowing", "withdrawal"]}
+{"text": "There seems to be a mistake with my recent withdrawal, it is not showing up in my account. Is there something wrong?", "intents": ["wrong_notworking_notshowing", "withdrawal"]}
+{"text": "Thank you for helping me with my withdrawal request.", "intents": ["thank", "withdrawal"]}
+{"text": "Can you please confirm the withdrawal amount and also thank the finance team on my behalf?", "intents": ["thank", "withdrawal"]}
+{"text": "Thank you for assisting me with the withdrawal process. Is there an update on when the request will be completed?", "intents": ["thank", "withdrawal"]}
+{"text": "I'm sorry, I cannot greet you right now because I am busy with work, but please don't deny that we'll talk later.", "intents": ["deny", "greet"]}
+{"text": "Good morning, I want to deny any rumors about me leaving the company and just want to greet everyone a happy Monday!", "intents": ["deny", "greet"]}
+{"text": "Hey there, while I deny any involvement in that incident last night, let me greet you a happy birthday and hope you enjoy your special day.", "intents": ["deny", "greet"]}
+{"text": "How long does it take to learn a new language?", "intents": ["how_long", "new"]}
+{"text": "What are some new and innovative ways to workout for a shorter amount of time?", "intents": ["how_long", "new"]}
+{"text": "How long is the expected wait time for new product releases?", "intents": ["how_long", "new"]}
+{"text": "Can I cancel my subscription as it's not showing all the features I need?", "intents": ["cancel_close_leave_freeze", "wrong_notworking_notshowing"]}
+{"text": "My account is not working properly so can you help me freeze it until the issue is resolved?", "intents": ["cancel_close_leave_freeze", "wrong_notworking_notshowing"]}
+{"text": "Is there something wrong with my booking as it's not showing up in my account, and can I cancel it if necessary?", "intents": ["cancel_close_leave_freeze", "wrong_notworking_notshowing"]}
+{"text": "I'm sorry, I don't know the answer. Can you please provide more information about your request?", "intents": ["dont_know", "request_info"]}
+{"text": "Could you tell me more about what you're looking for? I want to make sure I can provide the information you need.", "intents": ["dont_know", "request_info"]}
+{"text": "I'm not sure if I have the information you requested, but I can try to help. What specifically are you looking for?", "intents": ["dont_know", "request_info"]}
+{"text": "Can I request a refund and initiate a withdrawal at the same time?", "intents": ["withdrawal", "refund"]}
+{"text": "I received a refund for my purchase, but can I still make a withdrawal from my account?", "intents": ["withdrawal", "refund"]}
+{"text": "What is the process for requesting a refund and withdrawing money from my account?", "intents": ["withdrawal", "refund"]}
+{"text": "Can you please provide me with information about overdraft limits and fees?", "intents": ["request_info", "overdraft"]}
+{"text": "What do I need to know about overdraft protection and how to enable it?", "intents": ["request_info", "overdraft"]}
+{"text": "I would like to request more information about my current overdraft status and how to avoid it in the future.", "intents": ["request_info", "overdraft"]}
+{"text": "Has your credit card been lost or stolen? Do you need to report a fraudulent charge on your card?", "intents": ["lost_stolen", "card"]}
+{"text": "My debit card was stolen, should I contact my bank? How do I cancel my lost credit card?", "intents": ["lost_stolen", "card"]}
+{"text": "Can I track my lost gift card? How do I request a replacement card for my lost or damaged loyalty card?", "intents": ["lost_stolen", "card"]}
+{"text": "Can I make contactless payments with my card?", "intents": ["contactless", "card"]}
+{"text": "How do I request a replacement card and make it contactless?", "intents": ["contactless", "card"]}
+{"text": "Is it possible to link multiple contactless cards to one account?", "intents": ["contactless", "card"]}
+{"text": "Can you please repeat the steps for shuffling a deck of cards?", "intents": ["repeat", "card"]}
+{"text": "I missed what you said earlier, could you repeat it and also explain how to play this card game?", "intents": ["repeat", "card"]}
+{"text": "Is it possible to use the same card to pay for multiple purchases? And also, could you repeat the conditions for applying for a credit card?", "intents": ["repeat", "card"]}
+{"text": "Can I cancel my account and check my balance at the same time?", "intents": ["cancel_close_leave_freeze", "balance"]}
+{"text": "How can I freeze my account to prevent withdrawals and get an update on my balance?", "intents": ["cancel_close_leave_freeze", "balance"]}
+{"text": "Is it possible to close my credit card and transfer the balance to another card?", "intents": ["cancel_close_leave_freeze", "balance"]}
+{"text": "Can I withdraw my funds and then freeze my account?", "intents": ["cancel_close_leave_freeze", "withdrawal"]}
+{"text": "How do I cancel my account and get a withdrawal of my remaining funds?", "intents": ["cancel_close_leave_freeze", "withdrawal"]}
+{"text": "Is it possible to close my account and make a withdrawal at the same time?", "intents": ["cancel_close_leave_freeze", "withdrawal"]}
+{"text": "How can I update my business account information?", "intents": ["how", "business"]}
+{"text": "How to cancel a subscription from my business account?", "intents": ["how", "business"]}
+{"text": "How to check the payment history of my business account?", "intents": ["how", "business"]}
+{"text": "Can I set up a direct debit for my monthly rent payment and transfer it from my savings account automatically?", "intents": ["transfer_payment_deposit", "direct_debit"]}
+{"text": "How can I reverse a transfer or deposit that was made from my bank account using direct debit?", "intents": ["transfer_payment_deposit", "direct_debit"]}
+{"text": "Is it possible to transfer money from my checking account to my savings account using a direct debit arrangement?", "intents": ["transfer_payment_deposit", "direct_debit"]}
+{"text": "Hi there, can you tell me where the nearest gas station is?", "intents": ["greet", "request_info"]}
+{"text": "Hello, I was wondering if you could give me some advice on what to order from the menu?", "intents": ["greet", "request_info"]}
+{"text": "Good morning, can you please tell me what time the concert starts and where it will be held?", "intents": ["greet", "request_info"]}
+{"text": "When will my package arrive and can I cancel the withdrawal of the payment for it?", "intents": ["arrival", "withdrawal"]}
+{"text": "Is it possible to track the status of my withdrawal and arrival of my package simultaneously?", "intents": ["arrival", "withdrawal"]}
+{"text": "Can you confirm the arrival date and the withdrawal amount for the transaction I made?", "intents": ["arrival", "withdrawal"]}
+{"text": "Can I set up direct debit for automatic withdrawals?", "intents": ["direct_debit", "withdrawal"]}
+{"text": "How long does it take for a withdrawal to be processed through direct debit?", "intents": ["direct_debit", "withdrawal"]}
+{"text": "Is direct debit the only option for making withdrawals from my account?", "intents": ["direct_debit", "withdrawal"]}
+{"text": "Can I cancel my subscription and activate a new one?", "intents": ["cancel_close_leave_freeze", "make_open_apply_setup_get_activate"]}
+{"text": "I want to speak to a human, but also I must deny those charges.", "intents": ["deny", "handoff"]}
+{"text": "I don't want to handoff to a representative, but I deny any wrongdoing.", "intents": ["deny", "handoff"]}
+{"text": "I need to handoff to someone, but before that, I must deny these allegations.", "intents": ["deny", "handoff"]}
+{"text": "I'm interested in purchasing a house, could you tell me more about the fees and increasing interest rates?", "intents": ["more_higher_after", "fees_interests"]}
+{"text": "Is there anything else I should know about my bank account, like upcoming fee changes or higher interest rates?", "intents": ["more_higher_after", "fees_interests"]}
+{"text": "Can you repeat that again? I feel like the volume is less than before.", "intents": ["repeat", "less_lower_before"]}
+{"text": "Sorry, could you repeat what you just said? I think the price was lower before.", "intents": ["repeat", "less_lower_before"]}
+{"text": "I didn't quite catch that, can you repeat it? The temperature seems to be decreasing.", "intents": ["repeat", "less_lower_before"]}
+{"text": "Is there a new way to deposit cheques?", "intents": ["new", "cheque"]}
+{"text": "How long does it take to receive a cheque for the new job offer?", "intents": ["new", "cheque"]}
+{"text": "Yes, can you please repeat that again?", "intents": ["affirm", "repeat"]}
+{"text": "Sorry, I didn't catch that. Could you repeat what you just said and confirm if it's true?", "intents": ["affirm", "repeat"]}
+{"text": "That's correct, can you say it again for me?", "intents": ["affirm", "repeat"]}
+{"text": "How long does it take to transfer a payment from my bank account?", "intents": ["how_long", "transfer_payment_deposit"]}
+{"text": "What is the typical time frame for a deposit to be processed and credited to my account?", "intents": ["how_long", "transfer_payment_deposit"]}
+{"text": "Can you tell me how long a transfer between two accounts within the same bank usually takes, and whether there are any fees involved?", "intents": ["how_long", "transfer_payment_deposit"]}
+{"text": "Can I cancel my debit card and freeze my account at the same time?", "intents": ["cancel_close_leave_freeze", "debit"]}
+{"text": "I want to leave my current bank and cancel my monthly debit payment.", "intents": ["cancel_close_leave_freeze", "debit"]}
+{"text": "How long does it take to close a debit account and can I freeze it temporarily?", "intents": ["cancel_close_leave_freeze", "debit"]}
+{"text": "Why did my mortgage application get rejected?", "intents": ["why", "mortgage"]}
+{"text": "Can you explain why my mortgage rates have increased?", "intents": ["why", "mortgage"]}
+{"text": "Why do I need to provide a down payment for my mortgage?", "intents": ["why", "mortgage"]}
+{"text": "Yes, I understand you're asking about mortgage, is there a specific type you're interested in?", "intents": ["acknowledge", "mortgage"]}
+{"text": "I acknowledge that you've been waiting to discuss mortgage options with a loan officer.", "intents": ["acknowledge", "mortgage"]}
+{"text": "While I can't give mortgage advice, I can certainly acknowledge that you're concerned about refinancing your home loan.", "intents": ["acknowledge", "mortgage"]}
+{"text": "How long does the loan approval process take?", "intents": ["how_long", "loan"]}
+{"text": "Can you tell me about the different types of loans available and how long it takes to qualify for each?", "intents": ["how_long", "loan"]}
+{"text": "How long are the repayment periods for the different loan options?", "intents": ["how_long", "loan"]}
+{"text": "How can I dispute a debit transaction?", "intents": ["how", "debit"]}
+{"text": "How do I activate my new debit card?", "intents": ["how", "debit"]}
+{"text": "What is the process for reporting a lost debit card?", "intents": ["how", "debit"]}
+{"text": "Can you help me with my loan application for my account?", "intents": ["account", "loan"]}
+{"text": "What is the process to close my loan and also cancel my account?", "intents": ["account", "loan"]}
+{"text": "How can I check my account balance and apply for a loan at the same time?", "intents": ["account", "loan"]}
+{"text": "Thank you for the update on the new project.", "intents": ["thank", "new"]}
+{"text": "Can you tell me about any new promotions or discounts, and also I wanted to say thank you for your help last time.", "intents": ["thank", "new"]}
+{"text": "I just wanted to say thank you for letting me know about the new deadline, when will we receive the new materials for the project?", "intents": ["thank", "new"]}
+{"text": "Hey there, it was great chatting with you. I should probably end this call now, goodbye!", "intents": ["greet", "end_call"]}
+{"text": "his sentence contains both the intent to greet someone and the intent to end the call or say goodbye.", "intents": ["greet", "end_call"]}
+{"text": "Good morning! Before we end our call, could I ask you one more question?", "intents": ["greet", "end_call"]}
+{"text": "his sentence starts with a greeting and ends with the intent to end the call or say goodbye, but also includes an additional intent to ask a question.", "intents": ["greet", "end_call"]}
+{"text": "Hi, thanks for calling me. I hate to do this, but I really need to end our conversation now. Have a great day!", "intents": ["greet", "end_call"]}
+{"text": "his sentence includes a greeting, an apology for ending the call and the intent to do so, and then a farewell wish.", "intents": ["greet", "end_call"]}
+{"text": "My phone is not showing any signal and I need to make an international call, is something wrong with my network connection?", "intents": ["wrong_notworking_notshowing", "international"]}
+{"text": "I am having trouble with my international online order, the website seems to not be working, can you help me?", "intents": ["wrong_notworking_notshowing", "international"]}
+{"text": "I am not able to connect my international bank account to my mobile app, is there something wrong with the app or my account?", "intents": ["wrong_notworking_notshowing", "international"]}
+{"text": "Thank you for giving me information on the international news.", "intents": ["thank", "international"]}
+{"text": "Can you please elaborate on the recent international events? Also, I wanted to thank you for your time.", "intents": ["thank", "international"]}
+{"text": "I just wanted to thank you for your insights on the international political scenario. Is there anything new that you can update me on?", "intents": ["thank", "international"]}
+{"text": "Can you assist me in resetting my PIN number and also transferring money to my savings account?", "intents": ["savings", "pin"]}
+{"text": "How can I check the balance on my savings account and update my PIN number at the same time?", "intents": ["savings", "pin"]}
+{"text": "Is it possible to link my savings account to my debit card and change my PIN number at the same time?", "intents": ["savings", "pin"]}
+{"text": "How much would be the monthly payment for my mortgage?", "intents": ["how_much", "mortgage"]}
+{"text": "Can you tell me how much I would need to put down for a mortgage?", "intents": ["how_much", "mortgage"]}
+{"text": "How much interest would I be paying on my mortgage?", "intents": ["how_much", "mortgage"]}
+{"text": "Can I schedule an appointment for next week at a higher time or do I need to choose a more expensive option?", "intents": ["more_higher_after", "appointment"]}
+{"text": "Is there a way to reschedule my appointment for a later time or do I need to cancel and make a new one with a higher priority?", "intents": ["more_higher_after", "appointment"]}
+{"text": "I'm interested in booking an appointment for a later date; is there a possibility of it being at a higher cost due to increased demand?", "intents": ["more_higher_after", "appointment"]}
+{"text": "Can I set up a direct debit for my monthly bill and also get a refund for my previous overpayments?", "intents": ["direct_debit", "refund"]}
+{"text": "How long does it take for a refund to process and can I also update my direct debit details at the same time?", "intents": ["direct_debit", "refund"]}
+{"text": "I am having issues with my direct debit payment, is it possible to also inquire about whether I am eligible for a refund?", "intents": ["direct_debit", "refund"]}
+{"text": "How can I cancel my subscription and leave the service?", "intents": ["cancel_close_leave_freeze", "how"]}
+{"text": "How do I freeze my gym membership or cancel it altogether?", "intents": ["cancel_close_leave_freeze", "how"]}
+{"text": "Can you explain how to cancel my reservation and close my account on your website?", "intents": ["cancel_close_leave_freeze", "how"]}
+{"text": "Can I set up a standing order through my mobile banking app? Also, how can I reset my PIN number if I forget it?", "intents": ["standing_order", "pin"]}
+{"text": "How do I cancel a standing order and change my PIN number? Is there any way to check my PIN without going to the bank?", "intents": ["standing_order", "pin"]}
+{"text": "I have a standing order set up for my rent, but I need to update my PIN number. How can I do that online? Also, can you explain the process for cancelling a standing order?", "intents": ["standing_order", "pin"]}
+{"text": "Can you help me change the color and activate the night mode on my phone settings?", "intents": ["change", "make_open_apply_setup_get_activate"]}
+{"text": "Could you please help me set up my new printer and get it to connect to wifi?", "intents": ["change", "make_open_apply_setup_get_activate"]}
+{"text": "Can you tell me what types of loans are available and how to schedule an appointment to apply?", "intents": ["appointment", "loan"]}
+{"text": "I have some questions about the loan application process. Can I make an appointment with someone to discuss it further?", "intents": ["appointment", "loan"]}
+{"text": "I am interested in applying for a loan. What is the process for scheduling an appointment and what documentation will I need to bring?", "intents": ["appointment", "loan"]}
+{"text": "Can you tell me my account balance and how to set up direct debit?", "intents": ["balance", "direct_debit"]}
+{"text": "How do I check my balance and update my direct debit preferences?", "intents": ["balance", "direct_debit"]}
+{"text": "I want to know my current balance and if there are any issues with my direct debit payments.", "intents": ["balance", "direct_debit"]}
+{"text": "Can I get a refund on my unused gift card?", "intents": ["card", "refund"]}
+{"text": "I need to cancel my membership and receive a refund on the annual fee and the card I received.", "intents": ["card", "refund"]}
+{"text": "Yes, I would like to know what my credit limit is on my card. Can you please explain it to me?", "intents": ["affirm", "credit"]}
+{"text": "Absolutely, I confirm that I want to apply for a credit card. Can you guide me through the application process?", "intents": ["affirm", "credit"]}
+{"text": "Yes, I am aware of the new regulations for credit reporting agencies. Could you provide me with some more information about them?", "intents": ["affirm", "credit"]}
+{"text": "Thank you so much! When will the meeting start?", "intents": ["thank", "when"]}
+{"text": "When is the best time to call you? Thank you for your help.", "intents": ["thank", "when"]}
+{"text": "Thank you for your email. When is the deadline for this project?", "intents": ["thank", "when"]}
+{"text": "I didn't make that purchase, can you check my debit account statement?", "intents": ["deny", "debit"]}
+{"text": "I refuse to authorize this payment on my debit card.", "intents": ["deny", "debit"]}
+{"text": "I did not receive my debit card in the mail, can you cancel it and issue me a new one?", "intents": ["deny", "debit"]}
+{"text": "What are the fees and interests associated with this credit card? Will I be able to get a refund if I am not satisfied with it?", "intents": ["fees_interests", "refund"]}
+{"text": "Can you provide me with more information about the refund policy for this product and any fees or interests that might apply? ", "intents": ["fees_interests", "refund"]}
+{"text": "How do the fees and interests for this loan compare to others in the market? Also, what is the refund process if there are any issues?", "intents": ["fees_interests", "refund"]}
+{"text": "Can I open a contactless savings account online?", "intents": ["savings", "contactless"]}
+{"text": "How does contactless technology work for savings accounts?", "intents": ["savings", "contactless"]}
+{"text": "Is there a limit to the number of contactless transactions I can make with my savings account?", "intents": ["savings", "contactless"]}
+{"text": "Can you tell me how to reset my pin for my loan account?", "intents": ["loan", "pin"]}
+{"text": "What are the options available for me to apply for a loan with a low interest rate and how do I update my pin for my account?", "intents": ["loan", "pin"]}
+{"text": "How does my credit score impact my eligibility for a loan and how often do I need to change my pin for my online banking account?", "intents": ["loan", "pin"]}
+{"text": "Can you tell me the current account balance and the process for activating a new card?", "intents": ["current", "card"]}
+{"text": "Is there any promotion on credit card balance transfer and what is the limit of concurrent cards under a single account?", "intents": ["current", "card"]}
+{"text": "How do I report a lost credit card and check the current status of my account?", "intents": ["current", "card"]}
+{"text": "I'm sorry, I don't know anything about the pin number. Can I help you with anything else?", "intents": ["dont_know", "pin"]}
+{"text": "I don't know the answer to that question, but regarding your pin number, please make sure to keep it secure and change it frequently.", "intents": ["dont_know", "pin"]}
+{"text": "I'm not sure about the pin number, but if you have any questions or concerns about security please let me know.", "intents": ["dont_know", "pin"]}
+{"text": "Can you tell me if there are any new features on the latest update and if there are any limits to how many times I can use them?", "intents": ["new", "limits"]}
+{"text": "Is there a limit to the number of users I can add to my team at once, and are there any new policies I should be aware of?", "intents": ["new", "limits"]}
+{"text": "I heard about some new security measures. Could you tell me if they have any established limits and how they compare to previous protocols?", "intents": ["new", "limits"]}
+{"text": "Can I set up both a standing order and direct debit for my rent payments?", "intents": ["direct_debit", "standing_order"]}
+{"text": "Will my direct debit for my car insurance automatically renew, or do I need to set up a new standing order each year?", "intents": ["direct_debit", "standing_order"]}
+{"text": "How do I cancel both my standing order for my gym membership and direct debit for my phone plan?", "intents": ["direct_debit", "standing_order"]}
