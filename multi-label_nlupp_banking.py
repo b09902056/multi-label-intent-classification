@@ -13,6 +13,7 @@ from sklearn.metrics import classification_report, accuracy_score, f1_score
 import warnings
 warnings.filterwarnings('ignore')
 import argparse
+import copy
 
 # parse arguments
 parser = argparse.ArgumentParser()
@@ -42,19 +43,48 @@ for intent in intents:
     label2id[intent] = len(label2id)
 num_intents = len(label2id) # 48
 
-def read_synthetic_data(file_name):
+def read_chatgpt_intent1(file_name):
     synthetic_text = []
     synthetic_intent = []
     with open(file_name, 'r') as json_file:
         json_list = list(json_file)
-    for json_str in json_list:
-        result = json.loads(json_str)
+
+    for i in range(0, len(json_list), 5):
+        result = json.loads(json_list[i])
         synthetic_text.append(result['text'])
         synthetic_intent.append(result['intents'])
     
     return synthetic_text, synthetic_intent
 
-synthetic_text, synthetic_intent = read_synthetic_data('./data_intent1.jsonl')
+def read_chatgpt_data(file_name, n):
+    synthetic_text = []
+    synthetic_intent = []
+    with open(file_name, 'r') as json_file:
+        json_list = list(json_file)
+
+    target = list(range(len(json_list)))
+    for i in range(n):
+        id = random.choice(target)
+        target.remove(id)
+        result = json.loads(json_list[id])
+        synthetic_text.append(result['text'])
+        synthetic_intent.append(result['intents'])
+    
+    return synthetic_text, synthetic_intent
+
+synthetic_text, synthetic_intent = [], []
+new_text, new_intent = read_chatgpt_intent1('./new_data/new_data_1.jsonl')
+synthetic_text.extend(new_text)
+synthetic_intent.extend(new_intent)
+new_text, new_intent = read_chatgpt_data('./new_data/new_data_2.jsonl', 300)
+synthetic_text.extend(new_text)
+synthetic_intent.extend(new_intent)
+new_text, new_intent = read_chatgpt_data('./new_data/new_data_3.jsonl', 300)
+synthetic_text.extend(new_text)
+synthetic_intent.extend(new_intent)
+new_text, new_intent = read_chatgpt_data('./new_data/new_data_4.jsonl', 50)
+synthetic_text.extend(new_text)
+synthetic_intent.extend(new_intent)
 
 loader = DataLoader("./nlupp/data/")
 banking_data = loader.get_data_for_experiment(domain="banking", regime=regime)
@@ -116,15 +146,17 @@ class BertClassifier(nn.Module):
         self.bert = RobertaModel.from_pretrained(pretrained_model)
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(hidden_size, num_intents)
+        self.sigmoid = nn.Sigmoid()
 
     def forward(self, input_id, mask):
 
         _, pooled_output = self.bert(input_ids= input_id, attention_mask=mask,return_dict=False)
         dropout_output = self.dropout(pooled_output)
-        linear_output = self.linear(dropout_output)
+        output = self.linear(dropout_output)
+        output = self.sigmoid(output)
 
 
-        return linear_output
+        return output
 
 def train(model, train_data, val_data, learning_rate, epochs):
 
@@ -157,7 +189,6 @@ def train(model, train_data, val_data, learning_rate, epochs):
             input_id = train_input['input_ids'].squeeze(1).to(device)
 
             output = model(input_id, mask)
-            output = torch.sigmoid(output)
             
             batch_loss = criterion(output, train_label.float())
             total_loss_train += batch_loss.item()
@@ -186,7 +217,6 @@ def train(model, train_data, val_data, learning_rate, epochs):
                 input_id = val_input['input_ids'].squeeze(1).to(device)
 
                 output = model(input_id, mask)
-                output = torch.sigmoid(output)
 
                 batch_loss = criterion(output, val_label.float())
                 total_loss_val += batch_loss.item()
@@ -240,14 +270,18 @@ def evaluate(model, test_data):
     with torch.no_grad():
         test_labels = []
         test_output = []
+        original_output = []
         for test_input, test_label in tqdm(test_dataloader):
             test_labels.extend(test_label)
+
             test_label = test_label.to(device)
             mask = test_input['attention_mask'].to(device)
             input_id = test_input['input_ids'].squeeze(1).to(device)
 
             output = model(input_id, mask)
-            output = torch.sigmoid(output)
+
+            output_copy = copy.deepcopy(output)
+            original_output.extend(output_copy)
 
             for i in range(len(output)):
                 for j in range(len(output[i])):
@@ -256,14 +290,31 @@ def evaluate(model, test_data):
                     else:
                         output[i][j] = 0
             test_output.extend(output)
+
+
         test_labels = [label.cpu().detach().numpy() for label in test_labels]
         test_output = [output.cpu().detach().numpy() for output in test_output]
+        original_output = [output.cpu().detach().numpy() for output in original_output]
+            
+        # for i in range(len(original_output)):
+        #     maxId = np.argmax(original_output[i])
+        #     test_output[i][maxId] = 1
+
+
         test_accuracy = accuracy_score(test_labels, test_output)
         test_f1_score_micro = f1_score(test_labels, test_output, average='micro')
         test_f1_score_macro = f1_score(test_labels, test_output, average='macro')
         print(f"test Accuracy Score = {test_accuracy}", end = ', ')
         print(f"test F1 Score (Micro) = {test_f1_score_micro}", end = ', ')
         print(f"test F1 Score (Macro) = {test_f1_score_macro}")
+
+        # for i in range(len(original_output)):
+        #     original_output[i] = [round(num, 4) for num in original_output[i]]
+        # for i in range(min(5, len(test_labels), len(output), len(original_output))):
+        #     print(i)
+        #     print('correct answer:', test_labels[i])
+        #     print('threshold 0.5:', test_output[i])
+        #     print('original:', original_output[i])
 
         #report = classification_report(test_labels, test_output, output_dict=True)
         return test_accuracy, test_f1_score_micro
@@ -287,6 +338,12 @@ for i in range(fold):
             for intent in x['intents']:
                 labels[label2id[intent]] = 1
             test_data['labels'].append(labels)
+        else:
+            test_data['text'].append(x['text'])
+            test_data['intents'].append([])
+            labels = [0] * num_intents
+            test_data['labels'].append(labels)
+
     for j in range(len(banking_data[i]['train'])):
         x = banking_data[i]['train'][j]
         if 'intents' in x:
@@ -296,12 +353,20 @@ for i in range(fold):
             for intent in x['intents']:
                 labels[label2id[intent]] = 1
             train_data['labels'].append(labels)
+        else:
+            train_data['text'].append(x['text'])
+            train_data['intents'].append([])
+            labels = [0] * num_intents
+            train_data['labels'].append(labels)
+
     '''
     for key in train_data:
         train_data[key] = train_data[key][:10]
     for key in test_data:
         test_data[key] = test_data[key][:10]
     '''
+    # print(synthetic_text[:5])
+    # print(synthetic_intent[:5])
     for j in range(len(synthetic_text)):
         text = synthetic_text[j]
         intents = synthetic_intent[j]
