@@ -1,0 +1,1558 @@
+[
+    {
+        "text": "Hey Siri, play some jazz music and text John that I'll be there in 10 minutes.",
+        "intents": []
+    },
+    {
+        "text": "I need to modify my existing booking, but I'm not sure if you can help me with that.",
+        "intents": [
+            "booking",
+            "existing"
+        ]
+    },
+    {
+        "text": "Can you help me open the menu for room service, I want to place an order?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "room_service"
+        ]
+    },
+    {
+        "text": "Can you help me book a table at the restaurant and activate my new credit card?",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Can I change the booking for next week to a different hotel?",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Thanks for answering all my questions, I appreciate it! Alright, I will let you go now, bye!",
+        "intents": [
+            "thank",
+            "end_call"
+        ]
+    },
+    {
+        "text": "Could you recommend any good parking garages in the downtown area, and what are the hourly rates?",
+        "intents": [
+            "request_info",
+            "parking"
+        ]
+    },
+    {
+        "text": "Can you please close my account and cancel my current subscription?",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "booking"
+        ]
+    },
+    {
+        "text": "Could we have a room with a spa and a pool view, please?",
+        "intents": [
+            "room_ammenities"
+        ]
+    },
+    {
+        "text": "I need to find a good Italian restaurant for dinner tonight and also set an alarm for 6:30am tomorrow morning.",
+        "intents": []
+    },
+    {
+        "text": "Can you confirm my booking for a table at a restaurant that is both more expensive than my usual budget and has a dress code?",
+        "intents": [
+            "restaurant",
+            "booking",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "My flight has been canceled, and I need to rebook it for a later date. Can you assist me with booking the new flight and also transfer me to someone to help with the refund for the previous booking?",
+        "intents": [
+            "handoff",
+            "existing",
+            "booking"
+        ]
+    },
+    {
+        "text": "I need a clean set of sheets and I also want to order a bottle of wine to my room.",
+        "intents": [
+            "room_service"
+        ]
+    },
+    {
+        "text": "Could you play some relaxing music and turn off the lights?",
+        "intents": []
+    },
+    {
+        "text": "When is the latest I can check-out of my hotel room on my last day?",
+        "intents": [
+            "when",
+            "check_out"
+        ]
+    },
+    {
+        "text": "Is it possible to reserve a spot at the swimming pool ahead of time, and are there any restrictions or limitations on how long visitors can stay?",
+        "intents": [
+            "limits",
+            "swimming_pool",
+            "request_info"
+        ]
+    },
+    {
+        "text": "You did a fantastic job. I can't thank you enough!",
+        "intents": [
+            "affirm"
+        ]
+    },
+    {
+        "text": "I just moved to this city and I'm looking for a new gym to join. Do you have any recommendations?",
+        "intents": [
+            "new"
+        ]
+    },
+    {
+        "text": "What are the payment options for parking and are there any discounts for frequent parkers?",
+        "intents": [
+            "request_info",
+            "parking"
+        ]
+    },
+    {
+        "text": "Could you please help me set up my new printer and also show me how to connect it to my Wi-Fi network?",
+        "intents": []
+    },
+    {
+        "text": "Hey, I want to update some of my personal information in my existing account with you.",
+        "intents": [
+            "change",
+            "existing",
+            "booking",
+            "greet"
+        ]
+    },
+    {
+        "text": "Your help has been amazing, thank you so much for your time and effort.",
+        "intents": [
+            "thank"
+        ]
+    },
+    {
+        "text": "I want to order a pepperoni pizza and also want to know if you have any specials or deals today. [food, promotion]",
+        "intents": []
+    },
+    {
+        "text": "I need to cancel my hotel booking and rebook it for a later date.",
+        "intents": [
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you please tidy up my bedroom and also change the bed sheets?",
+        "intents": [
+            "housekeeping"
+        ]
+    },
+    {
+        "text": "Can you provide instructions on how to connect my phone to the Bluetooth speaker and play music at the same time?",
+        "intents": []
+    },
+    {
+        "text": "Is there a limit to how long you can swim for at the swimming pool?",
+        "intents": [
+            "when",
+            "swimming_pool"
+        ]
+    },
+    {
+        "text": "Could you activate my account and help me make a booking for a rental car in Los Angeles for next weekend?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you help me order a pizza and tell me how to get to the nearest bus stop?",
+        "intents": []
+    },
+    {
+        "text": "I think I left my scarf on the train yesterday, is there a lost and found that I should contact? ['lost_stolen']",
+        "intents": [
+            "lost_stolen"
+        ]
+    },
+    {
+        "text": "Let's go for a jog in the park and then get some ice cream afterwards.",
+        "intents": []
+    },
+    {
+        "text": "The fridge is not working, and I need extra pillows for my bed.",
+        "intents": [
+            "wrong_notworking_notshowing",
+            "room_ammenities"
+        ]
+    },
+    {
+        "text": "Can you remind me to buy groceries on my way back from work and also schedule an appointment with my hair stylist for Saturday?",
+        "intents": []
+    },
+    {
+        "text": "Can I park in the underground parking lot, and also is there a limitation to the number of hours that I can leave my car there?",
+        "intents": [
+            "request_info",
+            "parking"
+        ]
+    },
+    {
+        "text": "Certainly, I agree with you about the importance of exercise.",
+        "intents": [
+            "affirm"
+        ]
+    },
+    {
+        "text": "Thanks for the update, I'll talk to you later. Goodbye and have a good one!",
+        "intents": [
+            "end_call"
+        ]
+    },
+    {
+        "text": "My parrot has been acting strangely lately. Do you have any tips on how to effectively train parrots to stop biting?",
+        "intents": [
+            "pets",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I would like to book a table for two people at your restaurant for tonight, but I might need to change the time later. Is that possible?",
+        "intents": [
+            "restaurant",
+            "booking",
+            "change"
+        ]
+    },
+    {
+        "text": "My room is missing a mini-fridge which is listed as an amenity, can you have one brought in?",
+        "intents": [
+            "room_ammenities",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "I want to get my eyebrows done and also inquire about the different workshops they have to offer.",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking",
+            "spa"
+        ]
+    },
+    {
+        "text": "Hi, I need to return this shirt and also pay my credit card bill, can I do that at this store?",
+        "intents": []
+    },
+    {
+        "text": "We are planning to check out tomorrow morning and then head to the mountains, where we can enjoy even higher views.",
+        "intents": [
+            "check_out",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "Could you recommend some local attractions to visit and make a dinner reservation for four at a seafood restaurant?",
+        "intents": []
+    },
+    {
+        "text": "I need to change the booking details for my upcoming trip.",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you set a timer for 20 minutes and remind me to take the cake out of the oven?",
+        "intents": []
+    },
+    {
+        "text": "Order a pizza for delivery and find out the latest scores of the basketball game.",
+        "intents": []
+    },
+    {
+        "text": "Do you have any information on whether the number of attendees will increase after the first day of the conference?",
+        "intents": [
+            "request_info",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "I'm looking for a dress to wear to my friend's wedding but also need help finding a gift for her bridal shower next week.",
+        "intents": []
+    },
+    {
+        "text": "I need to close my credit card account and make a booking for the conference next month.",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you tell me how to get to the closest grocery store and what the weather will be like tomorrow?",
+        "intents": []
+    },
+    {
+        "text": "Can you help me set up a reservation at the new Italian restaurant for 7pm tonight?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "Can you help me set up an appointment for a haircut? The scheduling system seems to be down.",
+        "intents": [
+            "why",
+            "booking",
+            "wrong_notworking_notshowing",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Definitely, our new puppy has been a wonderful addition to our family.",
+        "intents": [
+            "affirm",
+            "pets"
+        ]
+    },
+    {
+        "text": "Can you please turn up the volume and order me a medium pepperoni pizza?",
+        "intents": []
+    },
+    {
+        "text": "I accidentally made two bookings for the same day, can I change one to a different date and still keep the other one?",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Is it possible to get some late-night room service options, like pizza or sandwiches?",
+        "intents": [
+            "room_service"
+        ]
+    },
+    {
+        "text": "How do I make my own website from scratch?",
+        "intents": [
+            "how"
+        ]
+    },
+    {
+        "text": "Do you offer any housekeeping services for guests, or should I expect to clean my room myself during my stay? (housekeeping + inquiry)",
+        "intents": [
+            "housekeeping"
+        ]
+    },
+    {
+        "text": "I'm trying to eat healthier, so I'll have a salad for lunch instead of my usual sandwich. Also, can you remind me to call the dentist to schedule an appointment?",
+        "intents": []
+    },
+    {
+        "text": "Could you apply a discount to my bill and also provide me with the housekeeping service?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "room_service"
+        ]
+    },
+    {
+        "text": "Can we change the meeting location to the conference room on the second floor?",
+        "intents": [
+            "change"
+        ]
+    },
+    {
+        "text": "How do I close my account with your service and get a refund for the remaining time?",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "how",
+            "booking"
+        ]
+    },
+    {
+        "text": "What is the wait time for a table and do you take reservations at this restaurant?",
+        "intents": [
+            "request_info",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "Can you provide me with the phone number for the restaurant that has a ramp for wheelchair access?",
+        "intents": [
+            "request_info",
+            "restaurant",
+            "accesibility"
+        ]
+    },
+    {
+        "text": "Can you suggest a spa that has both luxurious treatments and accessible amenities for people with mobility issues?",
+        "intents": [
+            "spa",
+            "accesibility"
+        ]
+    },
+    {
+        "text": "My wallet was stolen from my car. How do I report this and protect my identity?",
+        "intents": [
+            "lost_stolen"
+        ]
+    },
+    {
+        "text": "Could you please add milk to my grocery list and tell me what the weather will be like tomorrow morning?",
+        "intents": []
+    },
+    {
+        "text": "How do I check in at the airport and can I check in online before I get to the airport?",
+        "intents": [
+            "how",
+            "check_in"
+        ]
+    },
+    {
+        "text": "I want to renew my gym membership and also ask my friend to pick up my package from the post office.",
+        "intents": []
+    },
+    {
+        "text": "I need to schedule an appointment with Dr. Smith for next week, can you help me with that?",
+        "intents": []
+    },
+    {
+        "text": "I have to disagree with your statement, it is not accurate.",
+        "intents": [
+            "deny"
+        ]
+    },
+    {
+        "text": "What's the weather like today and what time does the nearest movie theater close tonight?",
+        "intents": []
+    },
+    {
+        "text": "I'd like to modify my booking to include a late check-out.",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you change the date of my booking to a week later? I'm also looking for a higher room with a better view.",
+        "intents": [
+            "change",
+            "more_higher_after",
+            "booking"
+        ]
+    },
+    {
+        "text": "Is there any information available on the parking rates around the tourist attractions?",
+        "intents": [
+            "request_info",
+            "parking"
+        ]
+    },
+    {
+        "text": "Why is my phone not showing any signal even though I just paid my bill?",
+        "intents": [
+            "why",
+            "booking",
+            "cancel_close_leave_freeze",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "Could you tell me how much the parking fees are for the weekend and if there is a special rate for hotel guests?",
+        "intents": [
+            "how_much",
+            "parking"
+        ]
+    },
+    {
+        "text": "I have already created an account on your website and it was really easy to do so.",
+        "intents": [
+            "existing",
+            "affirm"
+        ]
+    },
+    {
+        "text": "Add eggs, milk, and bread to my grocery list and set a reminder to buy them on my way home from work.",
+        "intents": []
+    },
+    {
+        "text": "I'm not quite sure I understand. Can you repeat it with different words?",
+        "intents": [
+            "repeat"
+        ]
+    },
+    {
+        "text": "Good afternoon, I stayed in room 205 last night and accidentally left something there after checking out. Can you help me get it back?",
+        "intents": [
+            "greet",
+            "check_out",
+            "lost_stolen"
+        ]
+    },
+    {
+        "text": "Is it possible to get some hot water for my tea and also to order some snacks from the room service?",
+        "intents": [
+            "room_service"
+        ]
+    },
+    {
+        "text": "What are the steps to make a reservation for the sauna? Also, can you tell me what spa packages are available? (make_open_apply_setup_get_activate, booking, spa)",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking",
+            "spa"
+        ]
+    },
+    {
+        "text": "I am struggling to activate the heating system and also need additional towels for my room. (make_open_apply_setup_get_activate, housekeeping)",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "housekeeping"
+        ]
+    },
+    {
+        "text": "My boss wants me to modify the presentation slides and add more data on the company's revenue.",
+        "intents": [
+            "change"
+        ]
+    },
+    {
+        "text": "Can you tell me some information about the restaurant's menu before I make a booking for dinner tonight?",
+        "intents": [
+            "less_lower_before",
+            "booking",
+            "restaurant",
+            "request_info"
+        ]
+    },
+    {
+        "text": "Can you send me a list of nearby coffee shops that are open early in the morning and provide directions to the closest gas station?",
+        "intents": []
+    },
+    {
+        "text": "I would like to book a spot in the yoga class tonight and also know if the indoor pool is open at this time.",
+        "intents": [
+            "request_info",
+            "booking",
+            "gym"
+        ]
+    },
+    {
+        "text": "Please send me the invoice for last month's subscription fee and also let me know if there are any new updates to the software.",
+        "intents": []
+    },
+    {
+        "text": "Could you please set a timer for 15 minutes and then remind me to take the cake out of the oven?",
+        "intents": []
+    },
+    {
+        "text": "I want to buy a birthday gift for my friend who loves hiking. Do you have any recommendations and can you also tell me if they offer gift wrapping services?",
+        "intents": []
+    },
+    {
+        "text": "How much does it cost to reserve a group fitness class along with the gym membership, and do I need to bring my own yoga mat?",
+        "intents": [
+            "how_much",
+            "gym"
+        ]
+    },
+    {
+        "text": "I am interested in a room with air conditioning and a bathtub.",
+        "intents": [
+            "room_ammenities"
+        ]
+    },
+    {
+        "text": "I made a reservation at the Italian restaurant for 6 pm, but I need to change it to 8 pm.",
+        "intents": [
+            "change",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "I need to buy a new laptop for work that is both lightweight and has a long battery life. Can you suggest any good models?",
+        "intents": []
+    },
+    {
+        "text": "Why is my WiFi not showing up on my phone?",
+        "intents": [
+            "wifi",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "Schedule a dentist appointment for next week and set an alarm for me to wake up at 7:30 AM every day this week.",
+        "intents": []
+    },
+    {
+        "text": "Of course, that sounds like a great plan to me.",
+        "intents": [
+            "affirm"
+        ]
+    },
+    {
+        "text": "Hi, do you have any good restaurant recommendations for dinner tonight?",
+        "intents": [
+            "greet",
+            "cancel_close_leave_freeze",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "I'd like to change my booking from a table for two to a private room for a business meeting, and also change the time to 5pm instead of 7pm.",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "I have used this service before, and I can definitely recommend it to anyone.",
+        "intents": [
+            "existing",
+            "affirm"
+        ]
+    },
+    {
+        "text": "Say that again, I didn't understand what you meant. ['repeat']",
+        "intents": [
+            "repeat"
+        ]
+    },
+    {
+        "text": "Can you remind me what time we need to check-in for the flight? All set, thanks! Just wanted to make sure I had the right time.",
+        "intents": [
+            "when",
+            "check_in",
+            "acknowledge"
+        ]
+    },
+    {
+        "text": "Change my flight from Boston to New York to a later time, and also book a rental car for me.",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "That's all I needed. Talk to you another time, farewell!",
+        "intents": [
+            "end_call"
+        ]
+    },
+    {
+        "text": "I want to open the window in my room and also request some extra blankets from room service.",
+        "intents": [
+            "room_service",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Do you have any recommendations for a restaurant that can cater for a party of 30 people?",
+        "intents": [
+            "request_info",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "The booking for the beautiful beachside resort is brand new, and you can get a room quickly.",
+        "intents": [
+            "booking",
+            "new"
+        ]
+    },
+    {
+        "text": "I think I dropped my keys somewhere while I was running errands this afternoon.",
+        "intents": [
+            "lost_stolen"
+        ]
+    },
+    {
+        "text": "Could you please turn off the lights and adjust the thermostat to 68 degrees?",
+        "intents": []
+    },
+    {
+        "text": "I need to make an appointment to get my car's oil changed and also activate my roadside assistance membership.",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "I need to lose weight but I don't know where to start. Can you recommend a diet plan and some exercise routines for me to follow?",
+        "intents": []
+    },
+    {
+        "text": "What's the latest news and remind me to call my mom at 3 PM?",
+        "intents": []
+    },
+    {
+        "text": "Can you help me change my flight to a later date and find a hotel near the airport?",
+        "intents": [
+            "change"
+        ]
+    },
+    {
+        "text": "What is the price of the new iPhone and can you tell me the closest Apple store location to my current address?",
+        "intents": []
+    },
+    {
+        "text": "I'm not able to see any wireless networks available, is there something wrong with my Wi-Fi card?",
+        "intents": [
+            "wifi",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "I need to cancel my reservation at the Italian restaurant for this evening.",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "It would be great if you could provide me with some information on how much I should exercise to lower my blood pressure.",
+        "intents": [
+            "request_info",
+            "gym",
+            "less_lower_before"
+        ]
+    },
+    {
+        "text": "Is there a gym in the area where I can work out and also buy some fitness equipment to use at home?",
+        "intents": []
+    },
+    {
+        "text": "Could you recommend a good restaurant in the area and give me directions to get there?",
+        "intents": []
+    },
+    {
+        "text": "Thanks for your assistance. By the way, can you give me some suggestions for some good books to read?",
+        "intents": [
+            "thank",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I need some information about my internet plan and also how to reset my wifi password.",
+        "intents": [
+            "request_info",
+            "wifi"
+        ]
+    },
+    {
+        "text": "I need to open a new account and make a booking for the conference next week.",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "How can I set up an automatic booking system for my restaurant's website?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "I accidentally booked a single room instead of a double, can we change it to a double room for me and my partner?",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "How much do I need to pay for parking my car in the disabled parking space and is there a limit on how long I can park there?",
+        "intents": [
+            "how_much",
+            "parking"
+        ]
+    },
+    {
+        "text": "I need to modify my hotel booking. Can you help me with that?",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Without a doubt, my dog has made my life so much happier and less stressful.",
+        "intents": [
+            "affirm",
+            "pets"
+        ]
+    },
+    {
+        "text": "I'm sorry but I don't think I can make it to the meeting, I have other plans tonight and I really can't cancel them.",
+        "intents": [
+            "deny"
+        ]
+    },
+    {
+        "text": "I need to take my car to the mechanic because it's making a weird noise and I'm running late for work.",
+        "intents": []
+    },
+    {
+        "text": "I want to start eating healthier and exercise more often to improve my overall health and well-being.",
+        "intents": []
+    },
+    {
+        "text": "Can you confirm if there is an opening for a table booking at the restaurant for tomorrow evening?",
+        "intents": [
+            "existing",
+            "booking",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "I can assure you that the report is accurate, as I have personally reviewed it.",
+        "intents": [
+            "existing",
+            "affirm"
+        ]
+    },
+    {
+        "text": "Please remind me to buy milk when I leave work at 5 pm.",
+        "intents": []
+    },
+    {
+        "text": "Is there a cap on the amount of money I can withdraw from the ATM, and can you also provide me with the location of the nearest branch?",
+        "intents": [
+            "limits",
+            "request_info"
+        ]
+    },
+    {
+        "text": "Set an alarm for 7 a.m. and play my workout playlist on Spotify.",
+        "intents": []
+    },
+    {
+        "text": "Thanks for your assistance, that will be all for now. Goodbye!",
+        "intents": [
+            "end_call"
+        ]
+    },
+    {
+        "text": "I can't say for sure, but I think it might be possible to get a refund.",
+        "intents": [
+            "dont_know"
+        ]
+    },
+    {
+        "text": "What time does the train leave and how much will the ticket cost me?",
+        "intents": []
+    },
+    {
+        "text": "Can I check in earlier than the standard check-in time? And, can you inform me about any attractions nearby?",
+        "intents": [
+            "request_info",
+            "check_in"
+        ]
+    },
+    {
+        "text": "I'm going to run some errands and then meet up with friends for dinner at our favorite restaurant in the city.",
+        "intents": []
+    },
+    {
+        "text": "Is there a fee to use the sauna and steam room facilities at the gym?",
+        "intents": [
+            "how_much",
+            "gym"
+        ]
+    },
+    {
+        "text": "Can you recommend a good restaurant for dinner tonight and make a reservation for four people?",
+        "intents": []
+    },
+    {
+        "text": "Hello, I saw an advertisement for your products and I'm interested in purchasing a laptop. Could you advise me on the available options and their respective specifications? (intents: greet, request_info, make_open_apply_setup_get_activate)",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate",
+            "greet",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I can't find my purse anywhere, is there a lost and found I can check? ['lost_stolen']",
+        "intents": [
+            "lost_stolen"
+        ]
+    },
+    {
+        "text": "Housekeeping, could you please let me know why my towels were not replaced yesterday?",
+        "intents": [
+            "housekeeping",
+            "why"
+        ]
+    },
+    {
+        "text": "I want to book a hotel room for three days, and also activate the free breakfast option.",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Is there an ATM nearby where I can withdraw cash, and also do you have change for a $20 bill?",
+        "intents": []
+    },
+    {
+        "text": "I'm wondering if the gym offers any virtual workout classes, could you please connect me to a representative?",
+        "intents": [
+            "handoff",
+            "gym"
+        ]
+    },
+    {
+        "text": "I want to know if there's an existing booking for John Smith on July 3rd.",
+        "intents": [
+            "existing",
+            "booking"
+        ]
+    },
+    {
+        "text": "I need to adjust the number of people on my reservation.",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you recommend a restaurant nearby that is wheelchair accessible?",
+        "intents": [
+            "request_info",
+            "restaurant",
+            "accesibility"
+        ]
+    },
+    {
+        "text": "What's the weather forecast for tomorrow and can you play some relaxing music for me?",
+        "intents": []
+    },
+    {
+        "text": "Please set a timer for 15 minutes and tell me a joke while I wait.",
+        "intents": []
+    },
+    {
+        "text": "How much does it cost to rent a car for two days and is insurance included?",
+        "intents": [
+            "how_much"
+        ]
+    },
+    {
+        "text": "I can't seem to find my credit card, maybe it fell out of my pocket at the restaurant... or maybe it was stolen.",
+        "intents": [
+            "lost_stolen",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "I'm thinking of getting a dog, but I'm not sure what breed would suit me best. Can you provide me with some guidance?",
+        "intents": [
+            "pets",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I really should get going now, but it was nice chatting with you.",
+        "intents": [
+            "end_call"
+        ]
+    },
+    {
+        "text": "What time is it in New York and can you turn on the living room lights?",
+        "intents": []
+    },
+    {
+        "text": "I need to book a flight to New York and find a good Italian restaurant for dinner.",
+        "intents": []
+    },
+    {
+        "text": "How much does it cost to get my nails done and are there any spa packages available for couples?",
+        "intents": [
+            "how_much",
+            "spa"
+        ]
+    },
+    {
+        "text": "Can you book me a flight to Paris for next Friday and reserve a hotel room in the city center for three nights?",
+        "intents": []
+    },
+    {
+        "text": "Good morning, I need to know about the hotel's parking policy. Oh, and can you give me some recommendations on vegetarian options from the room service menu?",
+        "intents": [
+            "request_info",
+            "room_service"
+        ]
+    },
+    {
+        "text": "I need to buy a new laptop before my current one dies, can you suggest a good brand and also remind me to back up my files?",
+        "intents": []
+    },
+    {
+        "text": "What time does the museum open tomorrow? I'm planning to go with my friend.",
+        "intents": []
+    },
+    {
+        "text": "I want to freeze my gym membership for the next three months, can you help me with that?",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "booking"
+        ]
+    },
+    {
+        "text": "I need to modify my existing reservation for a single room to a double one.",
+        "intents": [
+            "change",
+            "existing",
+            "booking"
+        ]
+    },
+    {
+        "text": "Please remind me to buy milk and eggs when I pass by the grocery store on my way to work tomorrow.",
+        "intents": []
+    },
+    {
+        "text": "I am interested to know if you provide any pet amenities such as pet toys and beds and how can I request them?",
+        "intents": [
+            "pets",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I am sorry, but I forgot my ID and I need to check in later, can you help me with that?",
+        "intents": [
+            "deny",
+            "check_in",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "When is the latest I can request a refund for my booking?",
+        "intents": [
+            "when",
+            "refund",
+            "booking"
+        ]
+    },
+    {
+        "text": "What's the latest time I can check out and is there a shuttle service to the airport available after I'm done?",
+        "intents": [
+            "check_out"
+        ]
+    },
+    {
+        "text": "Could you tell me what time the nearest movie theater is playing the latest action movie?",
+        "intents": []
+    },
+    {
+        "text": "Can you tell me the weather and set an alarm for 6 AM?",
+        "intents": []
+    },
+    {
+        "text": "I want to hire a bigger car for the family trip; I'd like to change my reservation from a compact to a minivan; do you have any better options available?",
+        "intents": [
+            "affirm",
+            "change",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "Can you please book me a flight to New York and also remind me to buy groceries when I get home?",
+        "intents": []
+    },
+    {
+        "text": "I'm curious, do you have a poolside bar near the swimming pool?",
+        "intents": [
+            "request_info",
+            "swimming_pool"
+        ]
+    },
+    {
+        "text": "I want to watch a romantic movie tonight, do you have any recommendations, and can you also order some popcorn and soda for me?",
+        "intents": []
+    },
+    {
+        "text": "Play some jazz music and read me the latest news headlines.",
+        "intents": []
+    },
+    {
+        "text": "Can I get some information about the booking process for this hotel?",
+        "intents": [
+            "booking"
+        ]
+    },
+    {
+        "text": "I lost my phone on the way to work this morning and I'm not sure where it could have fallen out of my pocket.",
+        "intents": [
+            "lost_stolen"
+        ]
+    },
+    {
+        "text": "Can you tell me how to apply for a job at your restaurant and book an outdoor table for four tonight?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "Can you help me book a reservation at a hotel and set up a wake-up call for 7 am?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking"
+        ]
+    },
+    {
+        "text": "Thanks for helping me with the booking process, that was very helpful!",
+        "intents": [
+            "booking",
+            "thank"
+        ]
+    },
+    {
+        "text": "I need help finding a recipe for chicken and also directions to the nearest gas station.",
+        "intents": []
+    },
+    {
+        "text": "I want to make a quick phone call to room service to set up a dinner reservation.",
+        "intents": [
+            "room_service",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "I am running late for my flight. Is there any parking available at the airport?",
+        "intents": [
+            "parking"
+        ]
+    },
+    {
+        "text": "Can you book a flight for me to New York and also let me know what the weather will be like there next week?",
+        "intents": []
+    },
+    {
+        "text": "I would like to order a large pepperoni pizza for delivery and also ask if there are any current discounts or promotions available.",
+        "intents": []
+    },
+    {
+        "text": "I need to buy a new laptop that is less than $1000 and has a good battery life, could you recommend me some models?",
+        "intents": []
+    },
+    {
+        "text": "I am trying to sign-up for gym classes but the website is not showing them, what is wrong?",
+        "intents": [
+            "why",
+            "gym",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "I need to buy a new rug for the living room and schedule an appointment with a plumber to fix the faucet.\" (intents: housekeeping, appointment)",
+        "intents": [
+            "housekeeping"
+        ]
+    },
+    {
+        "text": "Please book a flight to Paris and also reserve a hotel room for two nights.",
+        "intents": []
+    },
+    {
+        "text": "Can I request a late check-out? I am willing to pay more if necessary.",
+        "intents": [
+            "check_out",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "How much does it cost to bring my cat with me on the flight?",
+        "intents": [
+            "request_info",
+            "pets",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "There seems to be something wrong with the A/C. Can the temperature be set to something that's cooler than 65 degrees?",
+        "intents": [
+            "check_out",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "Can you help me set up a reservation for a dinner party with four people, and apply a 10% discount code?",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "What is the latest news on the stock market and can you dim the lights in the room?",
+        "intents": []
+    },
+    {
+        "text": "I'm new to the area, where is the nearest gym located?",
+        "intents": [
+            "request_info",
+            "gym"
+        ]
+    },
+    {
+        "text": "I need to modify the check-in date for my existing hotel booking.",
+        "intents": [
+            "change",
+            "booking",
+            "existing"
+        ]
+    },
+    {
+        "text": "How do I make a perfectly crispy and juicy fried chicken at home?",
+        "intents": [
+            "how"
+        ]
+    },
+    {
+        "text": "I made an online booking for a spa appointment, but I need to reschedule. Can you assist me with that?",
+        "intents": [
+            "existing",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can I reschedule my booking for next weekend to the following week and change the check-in time to 2 pm?",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "I want to buy a new laptop with a good graphics card and also learn more about coding.",
+        "intents": []
+    },
+    {
+        "text": "Are there rooms available with both a king-sized bed and a fireplace?",
+        "intents": [
+            "room_ammenities"
+        ]
+    },
+    {
+        "text": "I need to modify my booking for four people at the Indian restaurant from tomorrow to next week, and I also have a question about the menu at your Chinese restaurant.",
+        "intents": [
+            "change",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you book a flight to San Francisco leaving next Wednesday and also check the weather forecast for that week?",
+        "intents": []
+    },
+    {
+        "text": "Can you recommend a restaurant that also offers catering services for booking events?",
+        "intents": [
+            "how",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you add \"buy flowers\" to my to-do list for this weekend and tell me the weather for tomorrow?",
+        "intents": []
+    },
+    {
+        "text": "Can you tell me what time it is and how long until the next bus arrives?",
+        "intents": []
+    },
+    {
+        "text": "I need to buy a new laptop that's lightweight and has a long battery life, where can I find one and how much does it cost?",
+        "intents": []
+    },
+    {
+        "text": "I need to cancel my booking and make a new one for a different date, can you help me with that?",
+        "intents": [
+            "change",
+            "booking",
+            "existing"
+        ]
+    },
+    {
+        "text": "Can you recommend any new hotels in the area? If so, could you help me make a booking there?",
+        "intents": [
+            "booking",
+            "affirm",
+            "new"
+        ]
+    },
+    {
+        "text": "Is it possible to make a reservation at that steakhouse restaurant for tonight?",
+        "intents": [
+            "request_info",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "Are there any electric vehicle charging stations in the parking lot so I can charge my car while I shop?",
+        "intents": [
+            "parking"
+        ]
+    },
+    {
+        "text": "My daughter is allergic to peanuts, so I need to make sure the food we order doesn't have any peanuts in it.",
+        "intents": []
+    },
+    {
+        "text": "Can you let me know about the hourly fee for parking and the maximum cost for the whole day?",
+        "intents": [
+            "how_much",
+            "parking"
+        ]
+    },
+    {
+        "text": "Indeed, I have no objections at all.",
+        "intents": [
+            "affirm"
+        ]
+    },
+    {
+        "text": "Can you remind me to book a dentist appointment and pick up my dry cleaning on Thursday?",
+        "intents": []
+    },
+    {
+        "text": "I'm not quite sure what the capital of Peru is, but I believe it starts with an L.",
+        "intents": [
+            "dont_know"
+        ]
+    },
+    {
+        "text": "What is the price range of the seafood options at the restaurant near the beach?",
+        "intents": [
+            "how_much",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "Is there a way to extend our stay and check out later than the standard time?",
+        "intents": [
+            "check_out"
+        ]
+    },
+    {
+        "text": "Can you please tell me if my spa reservation for next week is still on the books?",
+        "intents": [
+            "booking",
+            "existing",
+            "spa"
+        ]
+    },
+    {
+        "text": "I'm looking to book a makeup application for a special event in two weeks, and also wanted to know if you have any recommendations for natural skincare products.",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking",
+            "spa"
+        ]
+    },
+    {
+        "text": "I would like to order some snacks and drinks to my room. Can you transfer me to room service and also make sure that someone will bring the food to my room promptly?",
+        "intents": [
+            "room_service",
+            "handoff"
+        ]
+    },
+    {
+        "text": "Can you show me how to set up my new phone, it's not working properly?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "Sorry, I didn't understand. Could you say that one more time?",
+        "intents": [
+            "repeat"
+        ]
+    },
+    {
+        "text": "Can you recommend a good restaurant for a business lunch for six people and then help me book a table there?",
+        "intents": [
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "Sorry, I'm late for my reservation, but I can't seem to find the restaurant. Can you give me directions and also let them know I'm on my way?",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you please send up some towels to my room and activate the air conditioning?",
+        "intents": [
+            "room_service",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "How much does it cost to upgrade to premium WiFi?",
+        "intents": [
+            "how_much",
+            "wifi"
+        ]
+    },
+    {
+        "text": "I want to cancel my online order, but I need to make sure it still exists in the system.",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "existing"
+        ]
+    },
+    {
+        "text": "Is there any possibility of upgrading my current reservation to a better room at a higher price point?",
+        "intents": [
+            "change",
+            "booking",
+            "existing",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "Can I know when can I check in and if there are any limits on the number of guests staying in the room?",
+        "intents": [
+            "request_info",
+            "check_in",
+            "when",
+            "limits"
+        ]
+    },
+    {
+        "text": "I would like to change my booking to a different hotel that is closer to the downtown area.",
+        "intents": [
+            "change",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you confirm the hotel reservation for next week? Also, can you recommend any local attractions to visit during our stay?",
+        "intents": []
+    },
+    {
+        "text": "Can you remind me to submit my report by the end of the day and also schedule a meeting with my boss tomorrow morning?",
+        "intents": []
+    },
+    {
+        "text": "Can I book a spa appointment for next Wednesday and set up a recurring appointment every month?",
+        "intents": [
+            "booking",
+            "spa",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Thank you for helping me with my refund. Can you tell me when it will be processed?",
+        "intents": [
+            "when",
+            "refund",
+            "thank"
+        ]
+    },
+    {
+        "text": "Book a flight to Los Angeles for next month and also reserve a rental car for the duration of my stay there.",
+        "intents": []
+    },
+    {
+        "text": "Please send a message to my boss about the project status and set a reminder for me to pick up my dry cleaning after work today.",
+        "intents": []
+    },
+    {
+        "text": "Can I change my restaurant reservation to tomorrow at 7 pm and add one more person to the booking?",
+        "intents": [
+            "restaurant",
+            "booking",
+            "change"
+        ]
+    },
+    {
+        "text": "I need assistance booking a new flight and cancelling my existing one.",
+        "intents": [
+            "change",
+            "booking",
+            "existing"
+        ]
+    },
+    {
+        "text": "Could you please give me more information on pet-friendly restaurants in the area, including the ones with outdoor seating?",
+        "intents": [
+            "request_info",
+            "pets",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "I'm interested in applying for a student loan. Can you guide me through the process and help me fill out the necessary forms?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking"
+        ]
+    },
+    {
+        "text": "Can you tell me the pricing for a couple's massage and facial?",
+        "intents": [
+            "how_much",
+            "spa"
+        ]
+    },
+    {
+        "text": "I'm looking to book a reservation for dinner tonight at any available restaurant, can you help me with that?",
+        "intents": [
+            "existing",
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "I would like to make a reservation for the private room for a party of ten next Saturday at the steakhouse.",
+        "intents": [
+            "restaurant",
+            "booking"
+        ]
+    },
+    {
+        "text": "I want to buy a new book and also find a good Italian restaurant nearby.",
+        "intents": []
+    },
+    {
+        "text": "I need to buy groceries on the way to the doctor's office and schedule an appointment for next week.",
+        "intents": []
+    },
+    {
+        "text": "What time does the restaurant open and can I book a table for four people on Friday evening?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "booking",
+            "restaurant"
+        ]
+    },
+    {
+        "text": "I need to book a room for next month and would like to activate my membership as well.",
+        "intents": [
+            "booking",
+            "make_open_apply_setup_get_activate"
+        ]
+    }
+]
