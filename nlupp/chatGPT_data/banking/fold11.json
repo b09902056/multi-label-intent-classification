@@ -1,3733 +1,783 @@
 [
     {
-        "text": "Can you clarify the fees for wire transfers and what is the limit for the amount that can be transferred at once?",
+        "text": "Can you give me instructions on how to use this software?",
         "intents": [
-            "transfer_payment_deposit",
-            "fees_interests",
-            "international",
-            "how_much"
+            "how"
         ]
     },
     {
-        "text": "I noticed that the international transfer fee was charged twice, can you clarify why it happened and initiate a refund if necessary?",
+        "text": "How do I set up a direct debit for my monthly payments?",
         "intents": [
-            "international",
-            "transfer_payment_deposit",
-            "fees_interests"
+            "make_open_apply_setup_get_activate",
+            "direct_debit",
+            "how"
         ]
     },
     {
-        "text": "I'd like to know if paying off a portion of my loan now will reduce the fees and interest charged in the future.",
-        "intents": [
-            "more_higher_after",
-            "why",
-            "loan",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "Don't ask me about my pin, I have no clue.",
-        "intents": [
-            "pin",
-            "dont_know"
-        ]
-    },
-    {
-        "text": "Can you send me the latest news about technology and also set a reminder for tomorrow's meeting?",
-        "intents": []
-    },
-    {
-        "text": "I didn't authorize any transfer of funds, and I don't want to deposit any payment right now.",
-        "intents": [
-            "deny",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "What's the highest amount I can change my limit to and will there be any additional charges applied for making the change?",
-        "intents": [
-            "how_much",
-            "limits",
-            "change",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "Can you cancel my appointment and close my account?",
+        "text": "What's the process for canceling my subscription?",
         "intents": [
             "cancel_close_leave_freeze"
         ]
     },
     {
-        "text": "I see that the button is missing, and I can affirm that it was there before.",
+        "text": "I want to set up an appointment to discuss about opening a new business account.",
         "intents": [
-            "wrong_notworking_notshowing",
-            "affirm"
+            "appointment",
+            "make_open_apply_setup_get_activate",
+            "business"
         ]
     },
     {
-        "text": "My friend sent me some money through a deposit, but I haven't received it yet. Can you help me check if there's been an issue with the transfer?",
+        "text": "I would like to apply for a new credit card.",
         "intents": [
-            "request_info",
-            "card",
-            "transfer_payment_deposit"
+            "make_open_apply_setup_get_activate",
+            "credit",
+            "card"
         ]
     },
     {
-        "text": "I cannot seem to transfer money to my account, is there something wrong with my balance?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "balance",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "If I make a deposit now, how long will it take to become effective and will the account balance increase subsequently?",
+        "text": "I need to transfer money from my current account to my friend's account. What is the procedure?",
         "intents": [
             "transfer_payment_deposit",
-            "withdrawal",
+            "how",
+            "current"
+        ]
+    },
+    {
+        "text": "My debit card was stolen yesterday, what should I do now?",
+        "intents": [
+            "lost_stolen",
+            "debit",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "Why was there an overdraft fee charged to my account?",
+        "intents": [
+            "fees_interests",
+            "overdraft",
+            "why"
+        ]
+    },
+    {
+        "text": "I want to know my current balance in my credit account.",
+        "intents": [
+            "balance",
+            "account",
+            "credit"
+        ]
+    },
+    {
+        "text": "Hi, could you tell me how to reset my password?",
+        "intents": [
+            "request_info",
+            "how"
+        ]
+    },
+    {
+        "text": "Who do I talk to if there's an issue with my credit card?",
+        "intents": [
+            "handoff",
+            "credit"
+        ]
+    },
+    {
+        "text": "I want to apply for a business overdraft.",
+        "intents": [
+            "business",
+            "overdraft",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Can you tell me why I was charged an extra fee on my credit card statement?",
+        "intents": [
+            "why",
+            "fees_interests",
+            "credit"
+        ]
+    },
+    {
+        "text": "My card got lost or stolen. What should I do?",
+        "intents": [
+            "card",
+            "lost_stolen",
+            "request_info"
+        ]
+    },
+    {
+        "text": "What is the interest rate on the new savings account?",
+        "intents": [
+            "savings",
+            "request_info"
+        ]
+    },
+    {
+        "text": "How long does it take to activate a new credit card?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "credit",
             "how_long",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "Okay, I will take note of that. Thanks for your help. Catch you later.",
-        "intents": [
-            "acknowledge",
-            "end_call"
-        ]
-    },
-    {
-        "text": "I have a question about my credit balance and when my new card will be activated.",
-        "intents": [
-            "arrival",
-            "credit",
-            "card",
-            "when",
             "new"
         ]
     },
     {
-        "text": "He played the volume much louder than before, and it soared to levels higher than I ever imagined.",
+        "text": "The ATM ate my debit card. What should I do now?",
         "intents": [
-            "more_higher_after"
+            "debit",
+            "card",
+            "wrong_notworking_notshowing"
         ]
     },
     {
-        "text": "How much do I need to transfer to cover the increased rent this month?",
+        "text": "Can you tell me when my next appointment is scheduled?",
         "intents": [
-            "more_higher_after",
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you tell me how much the annual maintenance fee is and what your hours of operation are?",
-        "intents": [
-            "fees_interests",
-            "request_info"
-        ]
-    },
-    {
-        "text": "When will the new season of my favorite show arrive on Netflix?",
-        "intents": [
-            "arrival",
+            "appointment",
             "when"
         ]
     },
     {
-        "text": "Can you tell me whether the existing contract covers the new requirements?",
+        "text": "What is the maximum limit that I can withdraw from my current account?",
         "intents": [
+            "current",
+            "limits",
+            "withdrawal",
+            "how_much"
+        ]
+    },
+    {
+        "text": "Can you tell me how to increase my credit limit?",
+        "intents": [
+            "how",
+            "credit",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "How much does this cost?",
+        "intents": [
+            "how_much",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I lost my debit card, how can I get a replacement?",
+        "intents": [
+            "card",
+            "lost_stolen",
+            "make_open_apply_setup_get_activate",
+            "debit"
+        ]
+    },
+    {
+        "text": "Thank you for your help. Have a nice day!",
+        "intents": [
+            "thank",
+            "greet"
+        ]
+    },
+    {
+        "text": "Can I schedule an appointment with a loan officer this week?",
+        "intents": [
+            "appointment",
+            "loan",
+            "request_info",
+            "when"
+        ]
+    },
+    {
+        "text": "What is the interest rate on my savings account?",
+        "intents": [
+            "request_info",
+            "savings",
+            "fees_interests"
+        ]
+    },
+    {
+        "text": "How much do I need to pay for the ATM withdrawal fee?",
+        "intents": [
+            "how_much",
+            "withdrawal",
+            "fees_interests"
+        ]
+    },
+    {
+        "text": "Can you tell me the interest rates for your savings accounts?",
+        "intents": [
+            "savings",
+            "request_info"
+        ]
+    },
+    {
+        "text": "Can I withdraw money from an ATM using my savings account?",
+        "intents": [
+            "withdrawal",
+            "savings",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "I need to cancel my appointment that was scheduled for next week",
+        "intents": [
+            "appointment",
+            "cancel_close_leave_freeze",
             "existing"
         ]
     },
     {
-        "text": "I need to know my account number to ensure I transfer the money to the correct account and also to avoid overdraft, can you help me with it?",
+        "text": "Can you explain why my payment was declined?",
         "intents": [
-            "overdraft",
-            "request_info",
-            "account"
+            "wrong_notworking_notshowing",
+            "transfer_payment_deposit",
+            "why"
         ]
     },
     {
-        "text": "Is it possible to have a joint account on one debit card?",
+        "text": "I need to change my address on my account.",
         "intents": [
+            "change",
+            "account",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "My credit score went down, why is that?",
+        "intents": [
+            "credit",
+            "why"
+        ]
+    },
+    {
+        "text": "I lost my debit card and I need to order a new one.",
+        "intents": [
+            "lost_stolen",
+            "make_open_apply_setup_get_activate",
+            "card"
+        ]
+    },
+    {
+        "text": "How much is the interest rate on your savings account?",
+        "intents": [
+            "savings",
+            "how_much",
+            "request_info"
+        ]
+    },
+    {
+        "text": "Hello, can you tell me how to activate the contactless payment feature on my card?",
+        "intents": [
+            "card",
+            "make_open_apply_setup_get_activate",
+            "contactless",
+            "greet"
+        ]
+    },
+    {
+        "text": "How can I increase my credit limit?",
+        "intents": [
+            "limits",
+            "credit",
+            "how",
+            "more_higher_after"
+        ]
+    },
+    {
+        "text": "What\u2019s the difference between a loan and a mortgage?",
+        "intents": [
+            "loan",
+            "mortgage",
+            "request_info"
+        ]
+    },
+    {
+        "text": "What time is the branch open tomorrow?",
+        "intents": [
+            "request_info",
+            "when",
+            "business"
+        ]
+    },
+    {
+        "text": "Can you explain the difference between a savings and a current account?",
+        "intents": [
+            "savings",
+            "current",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I think my card has been stolen, what should I do?",
+        "intents": [
+            "card",
+            "lost_stolen",
+            "handoff"
+        ]
+    },
+    {
+        "text": "I need to make a transfer to my savings account.",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "transfer_payment_deposit",
+            "savings"
+        ]
+    },
+    {
+        "text": "My credit score dropped unexpectedly, why did this happen?",
+        "intents": [
+            "credit",
+            "why",
+            "wrong_notworking_notshowing"
+        ]
+    },
+    {
+        "text": "I am trying to book an appointment to discuss a business account. Can you help me?",
+        "intents": [
+            "business",
+            "appointment",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "I want to apply for a new debit card.",
+        "intents": [
+            "make_open_apply_setup_get_activate",
             "debit",
             "card"
         ]
     },
     {
-        "text": "I requested a withdrawal of $1000 in euros from an ATM, but it only gave me $800 in dollars - this seems like a problem with currency conversion.",
+        "text": "My current balance is not showing up on my account. Can you help me with this?",
         "intents": [
-            "withdrawal",
             "wrong_notworking_notshowing",
-            "international"
+            "balance",
+            "request_info"
         ]
     },
     {
-        "text": "The rankings for the competition were much higher this year than last year, with many more participants.",
+        "text": "I want to apply for a new credit card. How do I proceed?",
         "intents": [
-            "more_higher_after"
+            "make_open_apply_setup_get_activate",
+            "credit",
+            "how"
         ]
     },
     {
-        "text": "Can I speak with a real person? I am not sure if the automated system can help me with my issue.",
+        "text": "Thanks for the help, goodbye!",
         "intents": [
-            "handoff"
+            "thank",
+            "end_call",
+            "acknowledge"
         ]
     },
     {
-        "text": "Is there a limit on the amount I can withdraw from the ATM each day and is there any way to decrease this limit for security purposes?",
+        "text": "How much money is left in my current account?",
         "intents": [
-            "transfer_payment_deposit",
-            "limits",
-            "less_lower_before",
+            "current",
             "how_much"
         ]
     },
     {
-        "text": "Can I use my debit card to withdraw cash from an ATM?",
+        "text": "Can you tell me the fees and interests associated with my savings account?",
         "intents": [
-            "debit"
+            "request_info",
+            "fees_interests",
+            "savings"
         ]
     },
     {
-        "text": "I want to know if there are any good movies playing tonight and also check my email for any important messages.",
-        "intents": []
-    },
-    {
-        "text": "Sorry, I cannot confirm if this direct debit already exists, can you please provide more details?",
-        "intents": [
-            "direct_debit",
-            "deny",
-            "existing"
-        ]
-    },
-    {
-        "text": "I need to make some changes to the presentation and set it up for tomorrow's meeting.",
-        "intents": [
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "Can you tell me how much of my overdraft is left in my account?",
-        "intents": [
-            "how_much",
-            "overdraft"
-        ]
-    },
-    {
-        "text": "Yes, I did not receive the product, please refund my money.",
-        "intents": [
-            "refund",
-            "affirm"
-        ]
-    },
-    {
-        "text": "I would like to know more about your mortgage options and the fees involved. Could you please connect me to a human agent?",
-        "intents": [
-            "handoff",
-            "mortgage",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "Sorry, could you repeat that one more time?",
+        "text": "I don't understand, can you repeat that?",
         "intents": [
             "repeat"
         ]
     },
     {
-        "text": "Is it possible to complete a payment transaction with contactless without requesting additional information?",
+        "text": "I want to know more about the fees and interests on my saving account.",
         "intents": [
-            "pin",
-            "contactless",
-            "transfer_payment_deposit",
+            "savings",
+            "fees_interests",
             "request_info"
         ]
     },
     {
-        "text": "I need to open a new bank account and apply for a credit card, can you guide me through the process?",
-        "intents": [
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "Can I cancel a standing order that I scheduled from my account?",
-        "intents": [
-            "standing_order"
-        ]
-    },
-    {
-        "text": "Can I cancel an international payment after it's been transferred onto the recipient's card, and if so, when would the cancellation take effect?",
-        "intents": [
-            "international",
-            "transfer_payment_deposit",
-            "card",
-            "when"
-        ]
-    },
-    {
-        "text": "Hi, I just wanted to thank you again for your help last week.",
-        "intents": [
-            "thank",
-            "greet"
-        ]
-    },
-    {
-        "text": "Can you tell me the length of time required for your company to process and deliver the new cards if they are for overseas customers?",
-        "intents": [
-            "arrival",
-            "international",
-            "card",
-            "how_long"
-        ]
-    },
-    {
-        "text": "Yes, I'd like to activate my new credit card and make a purchase online.",
-        "intents": [
-            "affirm",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "Can I use a contactless card to withdraw money from your ATM?",
-        "intents": [
-            "withdrawal",
-            "contactless",
-            "card",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Of course, I believe that learning new things is crucial for personal growth.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "I want to cancel my gym membership, but I'm not sure if they will ask for my card information to do so.",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "debit",
-            "card"
-        ]
-    },
-    {
-        "text": "What time is the meeting scheduled for, and can you provide me with a brief overview of the agenda?",
-        "intents": []
-    },
-    {
-        "text": "Can you tell me the interest rates on loans for a 5-year repayment period and is there any option to apply online?",
-        "intents": [
-            "request_info",
-            "make_open_apply_setup_get_activate",
-            "loan"
-        ]
-    },
-    {
-        "text": "Greetings! Yes, I confirm that I would like to attend the meeting at 2 pm today",
-        "intents": [
-            "affirm",
-            "greet"
-        ]
-    },
-    {
-        "text": "Hey there! Can you please give me an update on my account balance?",
-        "intents": [
-            "greet",
-            "request_info",
-            "account"
-        ]
-    },
-    {
-        "text": "Add milk and bread to my grocery list and set a reminder for tomorrow morning.",
-        "intents": []
-    },
-    {
-        "text": "Can you share some information on the history and cultural significance of the traditional dance performed at the festival last night?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "I wanted to thank you for your assistance earlier. By the way, I need to cancel that appointment and get a refund for my deposit.",
-        "intents": [
-            "transfer_payment_deposit",
-            "cancel_close_leave_freeze",
-            "thank"
-        ]
-    },
-    {
-        "text": "How much did I spend on groceries using my debit card in the last two weeks?",
+        "text": "How much credit would I need to apply for a mortgage?",
         "intents": [
             "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I have a conflict with my schedule, can I move my appointment to next month?",
-        "intents": [
-            "change",
-            "appointment"
-        ]
-    },
-    {
-        "text": "Can I cancel a payment once it's been initiated, and if so, what steps do I need to take to cancel it?",
-        "intents": [
-            "transfer_payment_deposit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "We are hoping to stay within the budget, but also don't want to exceed the time limit we were given.",
-        "intents": [
-            "limits"
-        ]
-    },
-    {
-        "text": "I would like to know more about how overdrafts work before I open a new account and schedule an appointment with a banker.",
-        "intents": [
-            "overdraft",
-            "appointment",
-            "make_open_apply_setup_get_activate",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I need to leave the account and close my loan, can you assist me or direct me to someone who can?",
-        "intents": [
-            "loan",
-            "cancel_close_leave_freeze",
-            "handoff"
-        ]
-    },
-    {
-        "text": "A bank representative helped me set up contactless payments so that I could transfer money to my friend in need.",
-        "intents": [
-            "contactless",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I'm sorry, I can't help you with that.",
-        "intents": [
-            "deny"
-        ]
-    },
-    {
-        "text": "I want to deposit a check from my employer in my bank account using my debit card, can you guide me through the process?",
-        "intents": [
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I couldn't agree with you more, this is exactly what we needed to do.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "I made a payment using my credit card, but the transaction is not showing up on my account. Do I need to wait for some time or is there something wrong with the system?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "request_info",
-            "current",
-            "transfer_payment_deposit",
-            "account"
-        ]
-    },
-    {
-        "text": "No, I cannot make the new appointment and I need to reschedule.",
-        "intents": [
-            "affirm",
-            "appointment",
-            "new"
-        ]
-    },
-    {
-        "text": "Can you help me activate my new credit card and transfer some funds to it?",
-        "intents": [
-            "card",
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Hey there, I'm looking to change some information, could you assist me?",
-        "intents": [
-            "change",
-            "greet"
-        ]
-    },
-    {
-        "text": "What are the different types of accounts you offer and how can I open one, also what is the maximum amount of loan I can apply for with my current account balance?",
-        "intents": [
-            "loan",
-            "current",
-            "account",
-            "request_info"
-        ]
-    },
-    {
-        "text": "The ATM is not working, and I need to withdraw money.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "withdrawal"
-        ]
-    },
-    {
-        "text": "Can you please tell me if my direct debit for the electric bill has been processed this month?",
-        "intents": [
-            "direct_debit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "No, I did not send that email to the boss, and I don't know who did.",
-        "intents": [
-            "deny"
-        ]
-    },
-    {
-        "text": "I need to activate this card and set a PIN code. Is there a specific number I should use?",
-        "intents": [
-            "pin",
-            "card"
-        ]
-    },
-    {
-        "text": "Hi! Would you happen to know how much I can withdraw without going below my balance limit?",
-        "intents": [
-            "greet",
-            "how_much",
-            "balance"
-        ]
-    },
-    {
-        "text": "I made a mistake with my debit card payment, can I close the transaction and get my money back?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "debit",
-            "card"
-        ]
-    },
-    {
-        "text": "Absolutely, I am ready to start the new project tomorrow.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "Ok, got it. No other questions or concerns right now. Thank you for your assistance. Take care!",
-        "intents": [
-            "acknowledge",
-            "end_call"
-        ]
-    },
-    {
-        "text": "What is the weather forecast for tomorrow and play some jazz music?",
-        "intents": []
-    },
-    {
-        "text": "It seems like you've lowered the prices since my purchase. Can I get a partial refund to match the lower price, or any other kind of compensation for the price difference before?",
-        "intents": [
-            "refund",
-            "less_lower_before",
-            "affirm"
-        ]
-    },
-    {
-        "text": "Can I please cancel my credit card and freeze the account immediately?",
-        "intents": [
-            "affirm",
-            "cancel_close_leave_freeze",
-            "card",
+            "mortgage",
             "credit"
         ]
     },
     {
-        "text": "Hey, I have a question about my appointment. Thank you in advance for your help.",
+        "text": "I need to cancel my appointment, can you help me with that?",
         "intents": [
             "appointment",
-            "thank"
-        ]
-    },
-    {
-        "text": "The ATM is not showing any balance, and I can't withdraw any money.",
-        "intents": [
-            "withdrawal",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "The printer is not printing anything and the ink levels seem fine.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "The fridge is not cooling properly and some of my food is going bad.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "How much can I borrow for a personal loan and what documents do I need to provide?",
-        "intents": [
-            "loan",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Absolutely, I am happy to help you with your project.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "There's a new exhibit at the museum, are you interested in checking it out?",
-        "intents": [
-            "new"
-        ]
-    },
-    {
-        "text": "Are there any fees associated with cashing a cheque that was issued by an out-of-state bank?",
-        "intents": [
-            "cheque"
-        ]
-    },
-    {
-        "text": "No, I haven't seen any charges from that account.",
-        "intents": [
-            "deny",
-            "account"
-        ]
-    },
-    {
-        "text": "I want to activate my credit card and check my account balance.",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "savings",
-            "account"
-        ]
-    },
-    {
-        "text": "How much did I spend on my car insurance last year and can I make a direct deposit for my current month's premium?",
-        "intents": [
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I'm not quite sure what happened to my account, can you check and see if everything's okay?",
-        "intents": [
-            "dont_know",
-            "account"
-        ]
-    },
-    {
-        "text": "Update my hair appointment from Friday at 2 pm to Saturday at 11 am.",
-        "intents": [
-            "change"
-        ]
-    },
-    {
-        "text": "I am requesting information about the closing costs associated with buying a home and how to pay them.",
-        "intents": [
-            "mortgage",
-            "make_open_apply_setup_get_activate",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I received less money in my paycheck this month, can you help me understand why my salary seems to have decreased?",
-        "intents": [
-            "why",
-            "fees_interests",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "What is the current state of international cooperation regarding climate change, and can you also tell me the prices of your services?",
-        "intents": [
-            "international",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Direct debit is a convenient and secure way to pay bills automatically.",
-        "intents": [
-            "direct_debit"
-        ]
-    },
-    {
-        "text": "Yes, that's exactly what I was thinking.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "How much amount can I deposit at once using ATMs, and how can I transfer money to my friend's account?",
-        "intents": [
-            "how",
-            "transfer_payment_deposit",
-            "account"
-        ]
-    },
-    {
-        "text": "I'm worried that my card was lost during shipping since it should have arrived by now, and there has been no update on its status.",
-        "intents": [
-            "card",
-            "arrival"
-        ]
-    },
-    {
-        "text": "Check the weather and book a table for two at a restaurant.",
-        "intents": []
-    },
-    {
-        "text": "I'd like to inquire about my balance and the interest rates on my savings account.",
-        "intents": [
-            "balance"
-        ]
-    },
-    {
-        "text": "My payment was declined, and I received an error message on the screen; can you tell me what went wrong?",
-        "intents": [
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Is it possible to make a transfer from my current account to a friend's account that is not affiliated with our bank?",
-        "intents": [
-            "account",
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit",
-            "current",
-            "existing"
-        ]
-    },
-    {
-        "text": "I affirm that I want to close my account because I am moving out of the country, can you guide me through the process, please?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "appointment",
-            "affirm"
-        ]
-    },
-    {
-        "text": "Can you transfer the funds from my savings account to my checking account using online banking?",
-        "intents": [
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "My account was charged an overdraft fee, but I didn't think I had gone over the limit. Can you tell me how much I owe and what the limits are for my account?",
-        "intents": [
-            "overdraft",
-            "limits",
-            "how_much"
-        ]
-    },
-    {
-        "text": "I appreciate your help in solving this issue. Is there any way to track the status of my order?",
-        "intents": [
-            "thank",
-            "request_info"
-        ]
-    },
-    {
-        "text": "The font size of my application is too small, and some icons are not showing properly.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "My card is not working and I'm not sure if the transfer I made yesterday went through, can you please check and let me know what's going on?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "She used to work longer hours, but now she wants to have less stress.",
-        "intents": [
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "Sorry, I'm not sure if I should transfer the money yet, can you confirm the details first?",
-        "intents": [
-            "transfer_payment_deposit",
-            "affirm"
-        ]
-    },
-    {
-        "text": "Yes, I am certain that my overdraft limit is within the set limits. (Intents: Affirm, Overdraft, Limits)",
-        "intents": [
-            "affirm",
-            "overdraft",
-            "limits"
-        ]
-    },
-    {
-        "text": "Could you repeat that please?",
-        "intents": [
-            "repeat"
-        ]
-    },
-    {
-        "text": "I am interested in buying this product, but can you tell me more about its features and pricing options without signing up for direct debit payment?",
-        "intents": [
-            "direct_debit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "The cashier told me that I could make a transfer or payment using the contactless function of their payment terminal.",
-        "intents": [
-            "transfer_payment_deposit",
-            "contactless"
-        ]
-    },
-    {
-        "text": "Every time I try to transfer money, it says the transaction failed, what does this mean?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you tell me how to change the PIN number on my debit card, it seems to have the wrong one?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "change",
-            "card",
-            "how"
-        ]
-    },
-    {
-        "text": "Add eggs to my grocery list and play my favorite music playlist.",
-        "intents": []
-    },
-    {
-        "text": "I'm not sure if there are any limits to the amount I can overdraft, but I need to change it to a higher amount if there are.",
-        "intents": [
-            "more_higher_after",
-            "overdraft",
-            "limits",
-            "dont_know",
-            "change",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "The website looks different today, why did it change and where is the search bar?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "why",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "My computer is not working and it keeps freezing, why is this happening and how do I fix it? Also, should I be concerned about my files?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "why",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "I think my credit card is expired, can you help me order a new one?",
-        "intents": [
-            "debit",
-            "lost_stolen",
-            "card"
-        ]
-    },
-    {
-        "text": "No, my phone is not connecting to the Wi-Fi and I don't think resetting it will help.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "deny"
-        ]
-    },
-    {
-        "text": "I want to apply for a loan and transfer funds to my checking account.",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit",
-            "account",
-            "existing"
-        ]
-    },
-    {
-        "text": "Can you provide me information about savings accounts and the fees associated with them?",
-        "intents": [
-            "fees_interests",
-            "savings",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I want to make sure that I can deny any automatic direct debit charges from my bank account.",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "direct_debit",
-            "deny"
-        ]
-    },
-    {
-        "text": "I need to withdraw a large sum of money, can you tell me the withdrawal limit for my account and if it requires an overdraft?",
-        "intents": [
-            "limits",
-            "overdraft",
-            "request_info"
-        ]
-    },
-    {
-        "text": "What are the overdraft limits on my checking account and can you tell me how much money I have left on my card?",
-        "intents": [
-            "how_much",
-            "card",
-            "credit",
-            "overdraft",
-            "limits"
-        ]
-    },
-    {
-        "text": "No, I didn't make that purchase with my card. I also want to double-check that there were no other unauthorized transactions.",
-        "intents": [
-            "debit",
-            "deny",
-            "card"
-        ]
-    },
-    {
-        "text": "I am sure that I cancelled the order on time, can you affirm that my refund will be credited to my account soon?",
-        "intents": [
-            "refund",
-            "affirm"
-        ]
-    },
-    {
-        "text": "I would like to know how long it might take to change my phone number on the account?",
-        "intents": [
-            "change",
-            "how"
-        ]
-    },
-    {
-        "text": "What are the documents required to get a new credit card, and when will it be approved?",
-        "intents": [
-            "debit",
-            "arrival",
-            "card",
-            "when"
-        ]
-    },
-    {
-        "text": "Thank you so much for your help, I really appreciate it!",
-        "intents": [
-            "thank"
-        ]
-    },
-    {
-        "text": "What information do I need to provide when requesting a new debit card?",
-        "intents": [
-            "card",
-            "debit",
-            "international",
-            "request_info"
-        ]
-    },
-    {
-        "text": "What are the steps I need to follow to open a new account with your institution?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "current",
-            "account"
-        ]
-    },
-    {
-        "text": "I tried to use my debit card for a cash withdrawal, but the ATM is not working at all.",
-        "intents": [
-            "withdrawal",
-            "card",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I need to know the balance on my account before I can transfer funds to another account. Can you give me the account balance and process the transfer?",
-        "intents": [
-            "balance",
-            "when",
-            "transfer_payment_deposit",
-            "account"
-        ]
-    },
-    {
-        "text": "Can you confirm if my order has been processed and charged to my account, which already exists with you?",
-        "intents": [
-            "account",
-            "existing"
-        ]
-    },
-    {
-        "text": "That's right, you hit the nail on the head.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "Please provide me with the schedule for the upcoming soccer games for the Premier League.",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "Hey, can you let me know what is the process to pay my credit card bill through this bank's website?",
-        "intents": [
-            "greet",
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Could you please clarify the delivery policies and how long it takes to receive the order?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "My TV screen is not showing any image, but the sound is working fine.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Is there anything else you need me to provide for the transfer or should I just proceed with the payment of the deposit?",
-        "intents": [
-            "acknowledge",
-            "more_higher_after",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you explain to me the fees and interests for the mortgage I want to apply for?",
-        "intents": [
-            "dont_know",
-            "mortgage",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "It has been great talking to you, but I have to go. Talk to you later!",
-        "intents": [
-            "end_call"
-        ]
-    },
-    {
-        "text": "How can I return my purchase or speak to someone in customer service to guide me through the process?",
-        "intents": [
-            "how",
-            "handoff"
-        ]
-    },
-    {
-        "text": "One of my appointments is showing the wrong time, and I can't seem to find the option to reschedule on the website.",
-        "intents": [
-            "appointment",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Can you tell me how much money I have in my account?",
-        "intents": [
-            "account",
-            "balance",
-            "how_much"
-        ]
-    },
-    {
-        "text": "The website is not loading and I keep getting a \"server error\" message.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "The United States is facing criticism for its international climate change policies.",
-        "intents": [
-            "international"
-        ]
-    },
-    {
-        "text": "I need to make a debit card payment, but I don't know if I'm supposed to enter my pin number or not.",
-        "intents": [
-            "debit",
-            "pin",
-            "dont_know",
-            "card",
-            "new"
-        ]
-    },
-    {
-        "text": "Can you play some music and send a message to my friend asking if they're free later tonight?",
-        "intents": []
-    },
-    {
-        "text": "I need to change the date of my doctor's appointment, can you help me with that?",
-        "intents": [
-            "appointment",
-            "change"
-        ]
-    },
-    {
-        "text": "Hey, can you assist me in setting up automatic savings transfer from my checking account to my savings account and also change my account mailing address?",
-        "intents": [
-            "greet",
-            "change",
-            "savings",
-            "account"
-        ]
-    },
-    {
-        "text": "If I pay off my existing mortgage early, will it decrease the total amount I owe in the future?",
-        "intents": [
-            "mortgage",
-            "request_info",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "What is the daily withdrawal limit for my card? Can you provide some information on how to use my card for online purchases?",
-        "intents": [
-            "request_info",
-            "limits",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "My credit card payment was due yesterday and I can't seem to find it on my statement anywhere.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I deposited cash into my account, but it's not showing up yet - could there be an issue with the transfer?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "international",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I need to freeze my business account temporarily, can you assist me with that?",
-        "intents": [
-            "account",
-            "business",
             "cancel_close_leave_freeze"
         ]
     },
     {
-        "text": "No, I don't have a card and it's not showing up in my account.",
-        "intents": [
-            "affirm",
-            "card",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I'm not able to find what I'm looking for in the app. Can I please speak with someone about it?",
-        "intents": [
-            "handoff"
-        ]
-    },
-    {
-        "text": "Can I upgrade my subscription to get additional benefits? (change, more_higher_after)",
-        "intents": [
-            "change",
-            "limits",
-            "more_higher_after",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you explain why my payment is being held for review and if there are any fees associated with the review process?",
-        "intents": [
-            "why",
-            "transfer_payment_deposit",
-            "fees_interests",
-            "international"
-        ]
-    },
-    {
-        "text": "Hello, can you help me with a payment related issue?",
-        "intents": [
-            "greet",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I completely support your decision and I have nothing but positive things to say.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "I'm trying to withdraw money from my account while traveling, but the machine keeps saying that my card is invalid - it's frustrating and I don't know what's causing it.",
-        "intents": [
-            "withdrawal",
-            "wrong_notworking_notshowing",
-            "international"
-        ]
-    },
-    {
-        "text": "The value of my investments has been decreasing steadily, and it's less than what I had hoped for.",
-        "intents": [
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "I received a notification that my mortgage payment was processed, but the money didn't show up in my account and now I'm worried something went wrong.",
-        "intents": [
-            "mortgage",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I am not sure if I want to close my account, but I definitely need to reschedule the appointment for a later date.",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "appointment",
-            "affirm",
-            "account"
-        ]
-    },
-    {
-        "text": "I noticed a strange charge on my credit card statement, and I think there might be fraud.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "card"
-        ]
-    },
-    {
-        "text": "How much money can I deposit into my account each month without incurring fees, and is there a limit for international transfers?",
-        "intents": [
-            "how_much",
-            "transfer_payment_deposit",
-            "fees_interests",
-            "international"
-        ]
-    },
-    {
-        "text": "Can you make sure to apply the sunscreen before opening the beach umbrella?",
-        "intents": [
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "Please help me revise my subscription plan and switch to a different tariff.",
-        "intents": [
-            "change"
-        ]
-    },
-    {
-        "text": "I need to cancel my subscription to the gym. I've been going less frequently due to my work schedule and I'm trying to cut back on unnecessary expenses.",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "I need to update my contact information for my savings account and also inquire about any credit card rewards programs that are available.",
-        "intents": [
-            "savings"
-        ]
-    },
-    {
-        "text": "Could you explain to me how to tie a tie and where I can buy one?",
-        "intents": [
-            "how"
-        ]
-    },
-    {
-        "text": "Please help me set up a meeting with my boss to discuss my performance and activate my new employee account.",
-        "intents": [
-            "appointment",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "Can you tell me the weather forecast for tomorrow and what time the concert starts tonight?",
-        "intents": []
-    },
-    {
-        "text": "What's the weather like today and can you tell me a joke?",
-        "intents": []
-    },
-    {
-        "text": "My international card isn't working, and I can't withdraw any money from the ATM.",
-        "intents": [
-            "deny",
-            "card",
-            "withdrawal",
-            "wrong_notworking_notshowing",
-            "international"
-        ]
-    },
-    {
-        "text": "I need to transfer $500 to my friend for the concert tickets, how long will it take to process the payment?",
-        "intents": [
-            "transfer_payment_deposit",
-            "how_much"
-        ]
-    },
-    {
-        "text": "My deposit isn't showing up in my account even though I made the payment a few days ago. What's wrong?",
-        "intents": [
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Sorry, but I can't affirm that I received the payment because I haven't checked my account yet.",
-        "intents": [
-            "affirm",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I can't believe you're accusing me of lying - I'm telling the truth!",
-        "intents": [
-            "deny"
-        ]
-    },
-    {
-        "text": "Are there any special perks associated with using this particular card, and can you explain the process for making a payment and also any options available to me?",
-        "intents": [
-            "limits",
-            "transfer_payment_deposit",
-            "card",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you tell me the amount of money I spent on credit card payments in the last quarter?",
-        "intents": [
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I'm afraid I don't have the answer to that question.",
-        "intents": [
-            "dont_know"
-        ]
-    },
-    {
-        "text": "Why do I have a balance showing even though I made a transfer, but the amount is not deposited yet? (why, transfer_payment_deposit, wrong_notworking_notshowing)",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit",
-            "why"
-        ]
-    },
-    {
-        "text": "Can you tell me about some good restaurants near my location that serve vegetarian food and have outdoor seating?",
-        "intents": []
-    },
-    {
-        "text": "The online banking platform is not loading properly on my phone and I need to check if a payment I made this morning to a vendor in France went through successfully.",
-        "intents": [
-            "transfer_payment_deposit",
-            "international",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I need to change my flight schedule from an afternoon flight to an early morning one.",
-        "intents": [
-            "change"
-        ]
-    },
-    {
-        "text": "Can you please turn on the lights in the living room and tell me what's on my calendar for tomorrow morning at 9am?",
-        "intents": []
-    },
-    {
-        "text": "Absolutely, I agree with you that she is one of the best singers around.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "What's the maximum amount I can deposit into my savings account right now?",
-        "intents": [
-            "limits",
-            "current",
-            "transfer_payment_deposit",
-            "account",
-            "how_much"
-        ]
-    },
-    {
-        "text": "Can you tell me how much I spent on my debit card last week and update my balance accordingly?",
-        "intents": [
-            "how_much",
-            "account",
-            "balance"
-        ]
-    },
-    {
-        "text": "I want to open a new bank account, can I do it online, and how can I get it set up?",
-        "intents": [
-            "refund",
-            "request_info",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "I need to put a freeze on my mortgage payments for a while. Also, can you tell me how to cancel my appointment with the real estate agent?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "appointment",
-            "mortgage"
-        ]
-    },
-    {
-        "text": "Can you please confirm the deposit amount and transfer it to my savings account?",
-        "intents": [
-            "affirm",
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "What steps do I need to take to make an international transfer to an existing account?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit",
-            "account",
-            "existing"
-        ]
-    },
-    {
-        "text": "I want to open a savings account and learn about the interest rates.",
-        "intents": [
-            "savings"
-        ]
-    },
-    {
-        "text": "I'm interested in opening a new account. Could you tell me how much the fees are and why they are set that way?",
-        "intents": [
-            "fees_interests",
-            "why",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "Can you give me an idea of how much I need to transfer to cover my rent and utilities?",
-        "intents": [
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Please activate a new credit card and transfer some funds from my current account.",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit",
-            "current",
-            "account"
-        ]
-    },
-    {
-        "text": "I need to set up a new standing order, can you help me with that and also check if my previous standing orders are working correctly?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "standing_order",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I need to cancel my card as I lost it yesterday.",
-        "intents": [
-            "card"
-        ]
-    },
-    {
-        "text": "When is the best time to visit France, and can I modify my travel itinerary once I've booked my tickets?",
-        "intents": [
-            "international",
-            "change",
-            "request_info"
-        ]
-    },
-    {
-        "text": "My account balance is not displaying on the mobile app, can you fix it?",
-        "intents": [
-            "current",
-            "account",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Thank you for your time. I appreciate it and your advice has been invaluable.",
-        "intents": [
-            "thank"
-        ]
-    },
-    {
-        "text": "How much did I spend on groceries this month and can you confirm the payment was credited to my account?",
-        "intents": [
-            "transfer_payment_deposit",
-            "how_much"
-        ]
-    },
-    {
-        "text": "My appointment is scheduled for Thursday December 3rd, at 4:30 PM, but I need to cancel. Can you help me with that?",
-        "intents": [
-            "appointment"
-        ]
-    },
-    {
-        "text": "I'd like to take out a loan but I have some questions about the terms and conditions, can you provide me with more information or transfer me to a loan officer?",
-        "intents": [
-            "loan",
-            "cancel_close_leave_freeze",
-            "handoff"
-        ]
-    },
-    {
-        "text": "Remind me to pick up my dry cleaning on the way home and search for the nearest gas station.",
-        "intents": []
-    },
-    {
-        "text": "My payment did not go through and I cannot see the transaction in my balance history, what could be the issue?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "balance",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "How long does the journey take and can you recommend any good restaurants along the way?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "My computer crashed, and I can't get it to reboot. I think I need to close all my applications and restart it, but I'm not sure how to proceed. Can you help me?",
-        "intents": [
-            "cancel_close_leave_freeze"
-        ]
-    },
-    {
-        "text": "She needs to get at least five more clients by the end of the month, if not fewer.",
-        "intents": [
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "How long does a deposit usually take to process? (intents: deposit, transfer)",
-        "intents": [
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I think my wallet, including my credit cards, got lost at the mall. Who do I call to report it and order new ones?",
+        "text": "I lost my wallet, can you help me cancel my cards?",
         "intents": [
             "lost_stolen",
-            "credit",
-            "card",
-            "when",
-            "arrival",
-            "new"
-        ]
-    },
-    {
-        "text": "Should I always enter my pin even when I'm not withdrawing money and just checking my account balance? Also, can you explain how overdraft protection works?",
-        "intents": [
-            "pin",
-            "overdraft",
-            "why"
-        ]
-    },
-    {
-        "text": "Sorry, I have to go now. Let's end the call here.",
-        "intents": [
-            "end_call"
-        ]
-    },
-    {
-        "text": "Can you explain the fees associated with transferring money to a different account?",
-        "intents": [
-            "transfer_payment_deposit",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "Could you connect me with someone who can help me with a refund and assist me with another issue?",
-        "intents": [
-            "refund",
-            "handoff"
-        ]
-    },
-    {
-        "text": "The TV remote is not working and some of the buttons are missing.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I'm interested in your services, but I prefer to pay by cheque. Has something changed, or is that still an option?",
-        "intents": [
-            "request_info",
-            "cheque"
-        ]
-    },
-    {
-        "text": "I noticed some unauthorized transactions on my account, and I also want to know if my recent payment was successful or not.",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "How many times did I withdraw cash from my account last month? And is there a way to reduce the fees for such transactions?",
-        "intents": [
-            "request_info",
-            "more_higher_after",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you transfer $100 to John Doe's account for the rent this month?",
-        "intents": [
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you please give me the contact details of the customer support department?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "I received a payment from overseas, but it's not showing in my account history, and I'm worried it got lost in transaction.",
-        "intents": [
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing",
-            "international"
-        ]
-    },
-    {
-        "text": "Is it possible to use contactless payments with a debit card, and if so, are there any additional fees?",
-        "intents": [
-            "contactless",
-            "request_info",
-            "debit",
+            "cancel_close_leave_freeze",
             "card"
         ]
     },
     {
-        "text": "Can I withdraw money from my account and also set up a new savings account with your bank?",
+        "text": "I think I lost my debit card, what should I do?",
         "intents": [
-            "withdrawal",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "After verifying my existing account details, I can affirm that the information provided is correct",
-        "intents": [
-            "account",
-            "affirm",
-            "existing"
-        ]
-    },
-    {
-        "text": "I'm not getting the help I need from your website, can I speak with a human instead?",
-        "intents": [
-            "handoff"
-        ]
-    },
-    {
-        "text": "The maximum weight limit for this elevator is 1000 pounds.",
-        "intents": [
-            "limits"
-        ]
-    },
-    {
-        "text": "My card got blocked and I need to know my balance during the time it was not showing.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "balance",
-            "card"
-        ]
-    },
-    {
-        "text": "No, that's not what I asked for. Can you please change the delivery address to 1600 Pennsylvania Avenue instead?",
-        "intents": [
-            "deny",
-            "change"
-        ]
-    },
-    {
-        "text": "What are the benefits of signing up for a business account with your company?",
-        "intents": [
-            "business"
-        ]
-    },
-    {
-        "text": "Why is the withdrawal limit for international transactions lower on my debit card than my credit card?",
-        "intents": [
-            "withdrawal",
-            "card",
-            "debit",
-            "international",
-            "why",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "My phone's screen is cracked and it won't turn on anymore.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Can you add apples to my grocery list and also tell me how many calories are in a banana?",
-        "intents": []
-    },
-    {
-        "text": "What's the highest credit limit available for this credit card?",
-        "intents": [
-            "limits"
-        ]
-    },
-    {
-        "text": "Can you apply for a vacation day on the 23rd so I can schedule an appointment at the dentist?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "appointment"
-        ]
-    },
-    {
-        "text": "I need to transfer money from my savings to my checking account. Could I use an ATM with contactless technology to do that?",
-        "intents": [
-            "transfer_payment_deposit",
-            "contactless"
-        ]
-    },
-    {
-        "text": "When is the deadline for the application, and when can I expect to hear back?",
-        "intents": [
-            "when"
-        ]
-    },
-    {
-        "text": "Can you provide me the account number for the existing bank account I have set up?",
-        "intents": [
-            "existing"
-        ]
-    },
-    {
-        "text": "I need to do a transfer, but I'm not sure which account to use. Can you help me decide?\" ['transfer_payment_deposit', 'dont_know']",
-        "intents": [
-            "transfer_payment_deposit",
-            "dont_know"
-        ]
-    },
-    {
-        "text": "My card was charged twice for the same purchase. Can you help me resolve this issue?",
-        "intents": [
-            "card",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "My debit card is not showing up on the contactless payment device, is there something wrong with it?",
-        "intents": [
-            "debit",
-            "contactless",
-            "card",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "You bet, the reservation for two is confirmed and ready.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "How much money is left in my deposit account, and can I transfer some of it to my credit card account to pay off my balance?",
-        "intents": [
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can I make a credit card payment using the funds from a withdrawal I made earlier today?",
-        "intents": [
-            "withdrawal",
-            "card",
-            "change",
-            "credit"
-        ]
-    },
-    {
-        "text": "Before my meeting, I need to reply to some emails and grab a coffee.",
-        "intents": []
-    },
-    {
-        "text": "I signed up for a new workout class that's supposed to be a challenging but fun experience.",
-        "intents": [
-            "new"
-        ]
-    },
-    {
-        "text": "Absolutely, I agree with you.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "I'm having trouble with my phone battery, can you suggest me a way to save the battery life?",
-        "intents": [
-            "less_lower_before",
-            "make_open_apply_setup_get_activate",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I didn't eat the last piece of cake, someone else must have had it.",
-        "intents": [
-            "deny"
-        ]
-    },
-    {
-        "text": "I'm interested in buying a new smartphone, can you recommend one and tell me how much it costs?",
-        "intents": [
-            "how_much"
-        ]
-    },
-    {
-        "text": "I need to transfer some money into my account before I get charged an overdraft fee.",
-        "intents": [
-            "overdraft",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Could you please give me the prices for the gym membership? Thank you. Actually, on second thought, I don't think I'm interested.",
-        "intents": [
-            "request_info",
-            "deny"
-        ]
-    },
-    {
-        "text": "The coffee machine is not working and it is not showing any error message.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Can you guide me on how to apply for a personal loan and activate the automatic payment option?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Sorry, but I won't be able to attend the party tonight. Can we make plans to do something else next weekend instead?",
-        "intents": [
-            "acknowledge"
-        ]
-    },
-    {
-        "text": "That's all I wanted to say, have a good day.",
-        "intents": [
-            "end_call"
-        ]
-    },
-    {
-        "text": "Can you explain why the interest rates have increased so significantly?",
-        "intents": [
-            "fees_interests",
-            "why",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "Roger that, I got your message and will take necessary action.",
-        "intents": [
-            "acknowledge"
-        ]
-    },
-    {
-        "text": "To enroll in direct debit, you will need to provide your account and bank routing numbers.",
-        "intents": [
-            "direct_debit"
-        ]
-    },
-    {
-        "text": "Is it possible to change the business address associated with my account and update it with the latest address?",
-        "intents": [
-            "change",
-            "business",
-            "account"
-        ]
-    },
-    {
-        "text": "I'm having trouble accessing my new account, it keeps saying my password is incorrect. (wrong_notworking_notshowing, account, new)",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "account",
-            "new"
-        ]
-    },
-    {
-        "text": "Every time I try to make an online purchase, my card is getting declined and I don't know why. Can you help me solve this and deposit my funds securely?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "My account was charged twice for a transaction, can you please check the balance and let me know when the refund will be processed?",
-        "intents": [
-            "how_much",
-            "balance",
-            "savings",
-            "account"
-        ]
-    },
-    {
-        "text": "Can you help me close my account and provide me with a confirmation number for my records?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "account"
-        ]
-    },
-    {
-        "text": "I need to make a deposit into my account, but could you also let me know what is the minimum amount required to maintain the account balance?",
-        "intents": [
-            "transfer_payment_deposit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you provide me with information on opening a business account and the types of accounts available?",
-        "intents": [
-            "request_info",
-            "business",
-            "account"
-        ]
-    },
-    {
-        "text": "I don't remember if I have enough money for the payment, should I transfer more funds?\" ['transfer_payment_deposit', 'dont_know']",
-        "intents": [
-            "transfer_payment_deposit",
-            "dont_know"
-        ]
-    },
-    {
-        "text": "Certainly, I think you're making a wise decision.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "Are there any incentives for customers to take out larger mortgages with lower interest rates later?",
-        "intents": [
-            "more_higher_after",
-            "mortgage",
-            "fees_interests",
-            "how_much"
-        ]
-    },
-    {
-        "text": "I'm curious about the fees associated with my auto loan and the interest rate I am paying. Can you provide that information?",
-        "intents": [
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "What's the maximum amount I can write a cheque for without it bouncing?",
-        "intents": [
-            "cheque"
-        ]
-    },
-    {
-        "text": "I am trying to set up a new account for my business, can you guide me through the process?",
-        "intents": [
-            "affirm",
-            "business",
-            "account"
-        ]
-    },
-    {
-        "text": "Can you remind me about my doctor's appointment this Thursday at 2 PM?",
-        "intents": [
-            "when",
-            "appointment"
-        ]
-    },
-    {
-        "text": "I have a question about my insurance policy, and I also need some advice on how to fix a leaky faucet. Can you assist me with both of those things?",
-        "intents": []
-    },
-    {
-        "text": "I need to pay my rent tomorrow, how much money do I currently have in my account and are there any pending transactions that may affect it?",
-        "intents": [
-            "account",
-            "current",
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I'm interested in switching to your bank and I'd like to know more about the fees for your checking accounts and savings accounts, as well as the interest rates.",
-        "intents": [
-            "fees_interests",
-            "savings",
-            "account",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you tell me if there are any appointments available this week with a specialist doctor?",
-        "intents": [
-            "appointment"
-        ]
-    },
-    {
-        "text": "How do I check the balance on my gift card? Is there a way to get a refund on the remaining amount?",
-        "intents": [
-            "refund",
-            "fees_interests",
-            "request_info",
-            "card"
-        ]
-    },
-    {
-        "text": "How much time will it take for me to get to the airport? I don't want to be late for my flight.",
-        "intents": [
-            "how_much"
-        ]
-    },
-    {
-        "text": "My card was charged twice for the same transaction, so something is wrong with the payment processing.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit",
-            "existing"
-        ]
-    },
-    {
-        "text": "Can you tell me when my next standing order for grocery delivery from Waitrose is due?",
-        "intents": [
-            "when",
-            "standing_order"
-        ]
-    },
-    {
-        "text": "I tried to make a payment on my mortgage, but the transfer didn't go through and now my account is not showing the updated balance.",
-        "intents": [
-            "mortgage",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "How much can I withdraw from my account without having to pay an overdraft fee?",
-        "intents": [
-            "overdraft",
-            "withdrawal",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I want to know the balance of my credit card account. Is it possible to lower my balance before the end of the month?",
-        "intents": [
-            "request_info",
-            "arrival",
-            "card",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "Can you please provide me with a list of your credit card APRs? Also, can you tell me the process to apply for one?",
-        "intents": [
-            "fees_interests",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I'm curious about how much money I can withdraw from my account at once, can you help me with that?",
-        "intents": [
-            "international",
-            "request_info",
-            "withdrawal",
-            "how_much"
-        ]
-    },
-    {
-        "text": "I'm interested in applying for a mortgage, but first, can you tell me what paperwork I need to submit?",
-        "intents": [
-            "request_info",
-            "mortgage"
-        ]
-    },
-    {
-        "text": "Absolutely, I have no doubt that the cheque was issued to the correct recipient.",
-        "intents": [
-            "cheque",
-            "affirm"
-        ]
-    },
-    {
-        "text": "I need to buy groceries and withdraw some cash from the ATM.",
-        "intents": []
-    },
-    {
-        "text": "Set a reminder for my dentist appointment next week and search for pizza places nearby.",
-        "intents": []
-    },
-    {
-        "text": "I need to know the maximum number of characters allowed in this field.",
-        "intents": [
-            "limits"
-        ]
-    },
-    {
-        "text": "The direct debit payment due date is wrong on my account.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "direct_debit"
-        ]
-    },
-    {
-        "text": "The payment for the car loan has been deducted from my account, but the funds have not been transferred yet. Can you please investigate?",
-        "intents": [
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I want to calculate my monthly mortgage payments. Can you help me with that? And while you're at it, could you provide me with some general guidelines on how to negotiate mortgage terms?",
-        "intents": [
-            "mortgage",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I would like to know if there have been any deposits made to my account in the past week, and if so, what is the amount and source of the deposit?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "The cost of living has gone up significantly in recent years.",
-        "intents": [
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "What is the penalty for closing my credit card before the end of the term?",
-        "intents": [
-            "fees_interests",
-            "how_much"
-        ]
-    },
-    {
-        "text": "I want this direct debit to be cancelled immediately, and I reject any suggestion of a payment plan or negotiation.",
-        "intents": [
-            "direct_debit",
-            "deny"
-        ]
-    },
-    {
-        "text": "I'm interested in opening an account with your bank, can you tell me which ones are available for savings?",
-        "intents": [
-            "request_info",
-            "savings",
-            "account"
-        ]
-    },
-    {
-        "text": "I received a payment but it's not showing up on my card statement, can you help me check what's wrong?",
-        "intents": [
-            "contactless",
-            "transfer_payment_deposit",
-            "card",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Could you provide me information on airfares to Europe? I'm planning a vacation overseas.",
-        "intents": [
-            "international",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you please tell me my current account balance and the status of my recent transaction?",
-        "intents": [
-            "current"
-        ]
-    },
-    {
-        "text": "Alright, I gotta go now. Speak to you later.",
-        "intents": [
-            "end_call"
-        ]
-    },
-    {
-        "text": "I received an email about a suspicious money transfer from my account, could you check it for me?",
-        "intents": [
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I want to switch my account from a personal one to a business one and update my contact details. Can you help me with that?",
-        "intents": [
-            "change",
-            "business",
-            "account"
-        ]
-    },
-    {
-        "text": "I can't seem to locate the customer support number on your website, and I have some important questions about my mortgage. Can you provide me with the number and help me troubleshoot the app issue I'm experiencing?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "mortgage",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I don't want to use this debit card because it has too many fees.",
-        "intents": [
-            "debit",
-            "card",
-            "deny"
-        ]
-    },
-    {
-        "text": "My transaction was not successful and now my money is stuck in limbo.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I need to make a deposit to my savings account, can I transfer the money now, and how much time it will take to reflect?",
-        "intents": [
-            "when",
-            "mortgage",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "How much time do I have to repay my overdraft loan and what happens if I miss a payment?",
-        "intents": [
-            "how_much",
-            "overdraft"
-        ]
-    },
-    {
-        "text": "I'm not interested in taking out a loan with your company, but could you help me with a different matter?",
-        "intents": [
-            "loan",
-            "deny",
-            "handoff"
-        ]
-    },
-    {
-        "text": "What is the room rate and availability for next weekend?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "This product was advertised as brand new, but it arrived with scratches and damage. How can I get my money back? I need to speak to someone who can assist me with this matter.",
-        "intents": [
-            "refund",
-            "handoff"
-        ]
-    },
-    {
-        "text": "Can I deposit this cheque into my savings account and can you also tell me the amount of my current balance?",
-        "intents": [
-            "cheque",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Do I need to provide any collateral for the loan, or is it an unsecured loan?",
-        "intents": [
-            "loan"
-        ]
-    },
-    {
-        "text": "This deposit was made internationally so there may be some delays.",
-        "intents": [
-            "international",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "How long will it take for my deposit to reflect in my account balance?",
-        "intents": [
-            "transfer_payment_deposit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you tell me if my deposit for last week went through and what is my current balance?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I realized the direct debit payment didn't go through when I wrongfully entered the wrong bank details, can you advise what I need to do to fix this?",
-        "intents": [
-            "affirm",
-            "wrong_notworking_notshowing",
-            "direct_debit"
-        ]
-    },
-    {
-        "text": "I need to deposit this check, but can I also get a new debit card since my old one is expiring soon? (intents: transfer_payment_deposit, make_open_apply_setup_get_activate)",
-        "intents": [
-            "transfer_payment_deposit",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "My overdraft has been maxed out and I need to know if there's anything I can do to increase the limit and avoid any fees in the future.",
-        "intents": [
-            "more_higher_after",
-            "overdraft",
-            "limits",
-            "dont_know",
-            "change",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I don\u2019t know why the login button is not showing up on my screen",
-        "intents": [
-            "dont_know",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I need to deposit a check into my checking account, can you confirm if the funds will be available immediately?",
-        "intents": [
-            "request_info",
-            "card",
-            "credit",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I think there might be an issue with my overdraft limit, and I also need to make a deposit into my account, but I'm not sure how.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "balance",
-            "overdraft",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "We don't need to purchase more paper, we have enough in the storage room.",
-        "intents": [
-            "existing"
-        ]
-    },
-    {
-        "text": "The system is showing that I have an appointment on the wrong date, and some features are not working on the website.",
-        "intents": [
-            "appointment",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Thanks, I got your message loud and clear. Is it possible to schedule the meeting for next week instead?",
-        "intents": [
-            "acknowledge"
-        ]
-    },
-    {
-        "text": "Hmm, I'm not entirely sure what you're asking for.",
-        "intents": [
-            "dont_know"
-        ]
-    },
-    {
-        "text": "The recent global political tensions and conflicts are a cause for concern, and everyone should try to promote peace and harmony at an international level.",
-        "intents": [
-            "international"
-        ]
-    },
-    {
-        "text": "I just wanted to say thank you for fitting me into your schedule. I know it was a tight squeeze.",
-        "intents": [
-            "appointment",
-            "thank"
-        ]
-    },
-    {
-        "text": "Why do I need to wake up so early for the meeting?",
-        "intents": [
-            "why"
-        ]
-    },
-    {
-        "text": "Book a table for two at the Italian restaurant on Main Street and send a message to John to see if he wants to join us.",
-        "intents": []
-    },
-    {
-        "text": "I regret making that purchase, can I cancel the payment and transfer the funds back to my account?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I'm sorry to say that the payment system is not working at the moment, but I can affirm that your order has been received.",
-        "intents": [
-            "affirm",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Could you give me some information on how to transfer money to my card and how long it takes to process the transaction?",
-        "intents": [
-            "request_info",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Could you book me a table for two at the Italian restaurant on Main Street for 7 PM tomorrow and remind me to pick up dry cleaning at 3 PM?",
-        "intents": []
-    },
-    {
-        "text": "Where can I find more details about the company's mission and values?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "I have a meeting at 3 pm, but I also need to go to the bank. Can you help me schedule an appointment and let me know when the bank closes?",
-        "intents": [
-            "appointment",
-            "when"
-        ]
-    },
-    {
-        "text": "How can I set up an international account and what information do I need to provide?",
-        "intents": [
-            "account",
-            "request_info",
-            "international",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "I never opened that account, so I want to deny any charges on it and have it canceled immediately.",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "deny",
-            "account"
-        ]
-    },
-    {
-        "text": "The temperature outside is gradually decreasing and the leaves are falling.",
-        "intents": [
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "I'm wondering if my new card will be delivered today, what time should I expect it, and will I need to show ID to receive it?",
-        "intents": [
-            "when",
-            "card",
-            "arrival"
-        ]
-    },
-    {
-        "text": "What are the steps to make a deposit through the banking app as well as how do I change my account password?",
-        "intents": [
-            "transfer_payment_deposit",
-            "how",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "I need to open a new checking account with overdraft coverage and set up direct deposit for my paycheck.",
-        "intents": [
-            "overdraft",
-            "make_open_apply_setup_get_activate",
-            "new"
-        ]
-    },
-    {
-        "text": "I want to thank you for your kind words and time.",
-        "intents": [
-            "thank"
-        ]
-    },
-    {
-        "text": "The application is not performing as it should, and no, I'm not interested in upgrading to the latest version.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "deny"
-        ]
-    },
-    {
-        "text": "You're right, I remember seeing the debit transaction on my account statement.",
-        "intents": [
-            "debit",
-            "affirm"
-        ]
-    },
-    {
-        "text": "Can you help me with this deposit, I don't know how to do it?\" ['transfer_payment_deposit', 'dont_know']",
-        "intents": [
-            "transfer_payment_deposit",
-            "dont_know"
-        ]
-    },
-    {
-        "text": "Can you give me more details on why the number of participants for the conference has increased this year compared to the previous year?",
-        "intents": [
-            "more_higher_after",
-            "why"
-        ]
-    },
-    {
-        "text": "What time will the courier deliver my important documents?",
-        "intents": [
-            "arrival",
-            "when"
-        ]
-    },
-    {
-        "text": "My withdrawal transaction failed and the ATM is not showing anything on the screen.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "withdrawal"
-        ]
-    },
-    {
-        "text": "Can I withdraw money abroad? If yes, what's the daily withdrawal limit and can I change it?",
-        "intents": [
-            "withdrawal",
-            "change",
-            "international",
-            "limits"
-        ]
-    },
-    {
-        "text": "I'd like to activate the new software I received, can you guide me through the setup process?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "request_info",
-            "account",
-            "business"
-        ]
-    },
-    {
-        "text": "I need to schedule a meeting with John for next Monday and find a recipe for chicken alfredo for dinner tonight.",
-        "intents": []
-    },
-    {
-        "text": "I don't want to transfer money to my mortgage account.",
-        "intents": [
-            "mortgage",
-            "deny",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "The phone I ordered online hasn\u2019t arrived yet, and I'm starting to worry.",
-        "intents": [
-            "arrival"
-        ]
-    },
-    {
-        "text": "Please deposit some money into my savings account and set up a direct debit for my monthly expenses.",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I am trying to withdraw cash from my account, but the balance is not showing up correctly on the ATM screen.",
-        "intents": [
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Can you help me find a good movie to watch tonight and also tell me how to make the perfect margarita?",
-        "intents": []
-    },
-    {
-        "text": "Could you tell me if there are any fees associated with transferring money from my checking account to my savings account?",
-        "intents": [
-            "request_info",
-            "savings",
-            "account",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "My deposit was successful, but my balance is not updated and my contactless payment is not working.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit",
-            "contactless",
-            "balance"
-        ]
-    },
-    {
-        "text": "Bye-bye, speak to you soon and end the call.",
-        "intents": [
-            "end_call"
-        ]
-    },
-    {
-        "text": "Did you remember to take the chicken out of the freezer and reply to my email from yesterday?",
-        "intents": []
-    },
-    {
-        "text": "I need to activate my new credit card, could you please guide me through the process?",
-        "intents": [
-            "card",
-            "make_open_apply_setup_get_activate",
-            "new"
-        ]
-    },
-    {
-        "text": "What is the process to apply for a personal loan and open a savings account at the same time?",
-        "intents": [
-            "loan",
-            "make_open_apply_setup_get_activate",
-            "how"
-        ]
-    },
-    {
-        "text": "Is an overdraft the best option for short-term borrowing? (intents: request_info, overdraft)",
-        "intents": [
-            "request_info",
-            "overdraft"
-        ]
-    },
-    {
-        "text": "What do I need to do to initiate an international wire transfer, and can you provide me with the exchange rate between USD and EUR?",
-        "intents": [
-            "request_info",
-            "more_higher_after",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Good to see you, it's been a while. Would you like some coffee?",
-        "intents": [
-            "greet"
-        ]
-    },
-    {
-        "text": "What's the address of the new restaurant and is it open for lunch?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "Yes, I want to affirm that I made the transfer and also need help setting up online banking.",
-        "intents": [
-            "affirm",
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "My debit card was stolen, can you help me cancel it and transfer the remaining balance to a new one?",
-        "intents": [
-            "debit",
-            "affirm",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you guide me on how to transfer funds from my savings account to my debit account online?",
-        "intents": [
-            "debit"
-        ]
-    },
-    {
-        "text": "What is your name, where are you from, and what do you do for work?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you tell me when the concert is and how much the tickets cost?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "How can I check if my standing order for gym membership has been processed?",
-        "intents": [
-            "standing_order"
-        ]
-    },
-    {
-        "text": "Do I need to touch the keypad to use contactless payments at this restaurant? (intents: contactless, request_info)",
-        "intents": [
-            "contactless",
-            "transfer_payment_deposit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you recommend a good book to read, preferably in the romance or thriller genre and available in audiobook format?",
-        "intents": []
-    },
-    {
-        "text": "I can't deny the fact that it was in my possession, but it definitely wasn't lost or stolen.",
-        "intents": [
-            "lost_stolen",
-            "deny"
-        ]
-    },
-    {
-        "text": "Hi there, thank you so much for taking the time to meet up with me today!",
-        "intents": [
-            "thank",
-            "greet"
-        ]
-    },
-    {
-        "text": "Nice to see you, and I also confirm that I have sent the documentation regarding the proposal.",
-        "intents": [
-            "affirm",
-            "greet"
-        ]
-    },
-    {
-        "text": "Could you please give me a breakdown of my account activity for the last month, including any deposits, transactions, and current balance?",
-        "intents": [
-            "account",
-            "current",
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you explain how I can set up an automatic payment plan for my monthly business subscription fee?",
-        "intents": [
-            "business"
-        ]
-    },
-    {
-        "text": "Can you please assist me in applying for a credit card for my business account and also let me know the fees for international transactions?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit",
-            "business",
-            "account"
-        ]
-    },
-    {
-        "text": "I'm having difficulties navigating your online support, would you be able to put me in touch with a real person to assist me?",
-        "intents": [
-            "handoff"
-        ]
-    },
-    {
-        "text": "Can you confirm if the payment has been made through a transfer or direct debit?",
-        "intents": [
-            "direct_debit",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I can see the contactless symbol on the payment terminal, but it's not acknowledging when I try to pay with my card.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "contactless"
-        ]
-    },
-    {
-        "text": "Could you please provide me with the details of the latest project progress report?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "I'd like to request information on your loan options, including interest rates and any associated fees.",
-        "intents": [
-            "request_info",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "This device is not working, but I don't want a replacement.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "deny"
-        ]
-    },
-    {
-        "text": "Unfortunately, I have urgent matters to attend to, so I'm going to have to end the call now. Take care, bye.",
-        "intents": [
-            "end_call"
-        ]
-    },
-    {
-        "text": "I noticed that there is an error on my account statement, and I would appreciate it if you could correct it. Additionally, I was wondering if you could provide me with information about any upcoming promotions.",
-        "intents": [
-            "account",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can you help me set up a new credit card and activate it before next week?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "arrival",
-            "card",
-            "less_lower_before",
-            "new"
-        ]
-    },
-    {
-        "text": "Are there fewer tickets left for the show or has the availability increased?",
-        "intents": [
-            "request_info",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "I want to set up a meeting with your team to discuss a project and apply for a job opening at your company.",
-        "intents": [
-            "appointment",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "That's not what I meant to say.",
-        "intents": [
-            "deny"
-        ]
-    },
-    {
-        "text": "My debit card is not working, can you tell me how to deposit cash instead?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "savings",
-            "account",
-            "refund",
-            "transfer_payment_deposit",
-            "how"
-        ]
-    },
-    {
-        "text": "Good afternoon, can you help me understand the credit card application process and greet me?",
-        "intents": [
-            "request_info",
-            "greet",
-            "card"
-        ]
-    },
-    {
-        "text": "Okay, I transferred the money last week, but when will it be deposited into his account?",
-        "intents": [
-            "acknowledge",
-            "transfer_payment_deposit",
-            "when"
-        ]
-    },
-    {
-        "text": "I'm sorry, I can't give you another card as your account balance is too low to debit the annual fee.",
-        "intents": [
-            "debit",
-            "deny",
-            "card"
-        ]
-    },
-    {
-        "text": "The transfer I made to Jane's account is not showing up in my transaction history, did it go through correctly?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I tried to transfer money from my savings account to my checking account, but the system is not showing any updates. Why is this happening?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "account",
-            "overdraft",
-            "why",
-            "more_higher_after",
-            "savings"
-        ]
-    },
-    {
-        "text": "My debit card was stolen, but I cannot withdraw money from the ATM, what is wrong with my account?",
-        "intents": [
-            "withdrawal",
-            "card",
-            "debit",
-            "international",
-            "why",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I want to open a new account and know more about the transfer fees and the options available to transfer money between accounts.",
-        "intents": [
-            "cheque",
-            "request_info",
-            "transfer_payment_deposit",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "My package arrived but the product inside was missing parts and it won't turn on. Can I request a refund?",
-        "intents": [
-            "refund",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Can you schedule a meeting with my clients next Monday at 10 am and send them an email about the agenda?",
-        "intents": []
-    },
-    {
-        "text": "I think there might be some fraudulent activity on my account and I'm afraid that someone else has been using my card, can you help me freeze my accounts immediately? Additionally, can you tell me how to make a complaint?",
-        "intents": [
-            "debit",
-            "make_open_apply_setup_get_activate",
-            "card",
-            "affirm"
-        ]
-    },
-    {
-        "text": "My card is not showing any recent transactions, even ones that I made yesterday, can you help me understand what is wrong with it and how I can check for its balance?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Is it possible to withdraw cash from an ATM using my savings account debit card instead of my credit card, and also change the daily withdrawal limit?",
-        "intents": [
-            "withdrawal",
-            "card",
-            "change",
-            "credit"
-        ]
-    },
-    {
-        "text": "Can you recommend a good Italian restaurant near my office? And also, what time is it?",
-        "intents": []
-    },
-    {
-        "text": "Can you please schedule an appointment with Dr. Smith next week at 2 pm?",
-        "intents": [
-            "appointment"
-        ]
-    },
-    {
-        "text": "My recent withdrawal from the ATM did not dispense the correct amount of money, can you please help me sort this out?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "withdrawal",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I want to make a payment using my account, can you tell me what my current balance is before I proceed?",
-        "intents": [
-            "balance",
-            "how_much",
-            "current",
-            "account",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I need to increase my overdraft limit and change my billing address to the new one.",
-        "intents": [
-            "limits",
-            "more_higher_after",
-            "change",
-            "overdraft"
-        ]
-    },
-    {
-        "text": "I transferred money to my account from my card, but I accidentally sent it to the wrong account. What's the process for reversing the transfer and getting the funds back on my card?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "request_info",
-            "credit",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you order my usual coffee for pickup at the cafe down the street? And can you also add 'buy birthday gift for mom' to my task list?",
-        "intents": []
-    },
-    {
-        "text": "What's the status of my recent loan application? Also, can you explain the different fees associated with the loan?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I am not denying the possibility of a payment transfer error occurring, but I need further clarification before confirming.",
-        "intents": [
-            "transfer_payment_deposit",
-            "deny"
-        ]
-    },
-    {
-        "text": "I have no interest in a mortgage right now, but I also don't want to rule it out completely.",
-        "intents": [
-            "deny",
-            "mortgage"
-        ]
-    },
-    {
-        "text": "Why was $50 deducted from my account for a transfer to John on the 14th of last month?",
-        "intents": [
-            "why",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I received a notification stating that a deposit was made to my account, but I do not recall making any such deposit. Can you help me investigate and verify if this is a mistake or if there is something that I am unaware of?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "savings",
-            "account",
-            "refund",
-            "transfer_payment_deposit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "What's the process to transfer money from one account to another and how long does it take to set up?",
-        "intents": [
-            "how",
-            "transfer_payment_deposit",
-            "savings",
-            "account",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "I want to increase my loan amount by $10,000 and change the payment schedule to bi-weekly.",
-        "intents": [
-            "loan",
-            "change",
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "I didn't approve any payment, and I don't want to deposit any funds to my savings account.",
-        "intents": [
-            "deny",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you freeze the direct debit for my gym membership until further notice?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "direct_debit"
-        ]
-    },
-    {
-        "text": "Using contactless to pay for groceries has become my new normal during the pandemic.",
-        "intents": [
-            "contactless"
-        ]
-    },
-    {
-        "text": "Can I please be transferred to someone who can assist me better?",
-        "intents": [
-            "handoff"
-        ]
-    },
-    {
-        "text": "I would like to cancel the order due to the delay in its arrival and receive a partial refund.",
-        "intents": [
-            "arrival",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "I want to request information about the new promotions, and I can affirm that my balance is in good standing.",
-        "intents": [
-            "affirm",
-            "balance",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Could you explain how I can increase the credit limit on my account, and if doing so will require any changes to my current overdraft setup?",
-        "intents": [
-            "overdraft",
-            "more_higher_after",
-            "current",
-            "how",
-            "account",
-            "change"
-        ]
-    },
-    {
-        "text": "Can you modify the due date to Friday at 5 pm?",
-        "intents": [
-            "change"
-        ]
-    },
-    {
-        "text": "I'm afraid that's not the right size and I don't want to keep it.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "deny"
-        ]
-    },
-    {
-        "text": "I deny making any payment for this service.",
-        "intents": [
-            "deny",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I lost my debit card, can you freeze it and issue me a new one?",
-        "intents": [
-            "debit",
-            "cancel_close_leave_freeze",
-            "current",
-            "card",
-            "account"
-        ]
-    },
-    {
-        "text": "I'm interested in upgrading my account, can you tell me what the new limits would be and if there's an option for an overdraft?",
-        "intents": [
-            "more_higher_after",
-            "overdraft",
-            "limits",
-            "change"
-        ]
-    },
-    {
-        "text": "I can't deny that my credit card has a high interest rate, but I need it for emergencies.",
-        "intents": [
-            "debit",
-            "card",
-            "deny"
-        ]
-    },
-    {
-        "text": "Is there a discount available on this product today or has the price increased?",
-        "intents": [
-            "request_info",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "Can you provide me with details on the last transfer I made to my savings account?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I need to know how to adjust my payment schedule to ensure a lower overall interest expense in the long run.",
-        "intents": [
-            "less_lower_before",
-            "fees_interests",
-            "how",
-            "change"
-        ]
-    },
-    {
-        "text": "Can you provide me with some information on how to set up a recurring payment on my card and what options I have for automatic transfers?",
-        "intents": [
-            "request_info",
-            "card",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Get a new debit card and make a payment of $200 for my phone bill.",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "The payment I made from my account yesterday has not yet been deposited into the recipient's account, can you check the status please?",
-        "intents": [
-            "current",
-            "account",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "The service at this restaurant was terrible and the food was cold. I'm not satisfied and would like a refund.",
-        "intents": [
-            "refund"
-        ]
-    },
-    {
-        "text": "When will I receive the card that I applied for, and can you confirm its details?",
-        "intents": [
-            "arrival",
-            "card",
-            "when"
-        ]
-    },
-    {
-        "text": "Can I get information on international fees for ATM withdrawals and also request a new debit card?",
-        "intents": [
-            "withdrawal",
             "handoff",
-            "card",
             "debit",
-            "international",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Can I set up a loan payment plan starting next month?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "loan"
-        ]
-    },
-    {
-        "text": "Is there any way to reverse the deposit I made yesterday, and can you provide me with information on how to spend less on groceries?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "Could you clarify if my monthly payments will be higher after the loan terms change due to the increase in fees?",
-        "intents": [
-            "more_higher_after",
-            "why",
-            "loan",
-            "fees_interests"
-        ]
-    },
-    {
-        "text": "The stock prices surged by about 10% after the announcement of a new product.",
-        "intents": [
-            "more_higher_after"
-        ]
-    },
-    {
-        "text": "Can you tell me my account balance and how much I need to deposit to cover the rent?",
-        "intents": [
-            "how_much",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "The video game is not running smoothly, and I'm not sure if it's because of my computer's hardware or if there's a software issue.",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I need to cancel my flight because my bag that has my passport and credit card has been stolen and I do not feel comfortable traveling without it, how can I get a refund? (intents: cancel_close_leave_freeze, international, how, lost_stolen)",
-        "intents": [
-            "lost_stolen",
-            "cancel_close_leave_freeze",
-            "card",
-            "international",
-            "how"
-        ]
-    },
-    {
-        "text": "How do I set up my new checking account and get a debit card?",
-        "intents": [
-            "debit",
-            "make_open_apply_setup_get_activate"
-        ]
-    },
-    {
-        "text": "I'm thinking about switching to a different bank and want to know the steps to close my business account.",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "account",
-            "business"
-        ]
-    },
-    {
-        "text": "When should I arrive for my job interview appointment and where should I park my car?",
-        "intents": [
-            "when",
-            "appointment"
-        ]
-    },
-    {
-        "text": "Do I have to close my savings account if I want to open a new checking account?",
-        "intents": [
-            "cancel_close_leave_freeze",
-            "savings",
-            "account"
-        ]
-    },
-    {
-        "text": "How do I transfer money internationally? I need to send a payment to a supplier in China.",
-        "intents": [
-            "how",
-            "international",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Is it possible to change my account mailing address and inquire about the status of a recent deposit and transfer from my savings account?",
-        "intents": [
-            "change",
-            "account",
-            "transfer_payment_deposit",
-            "current"
-        ]
-    },
-    {
-        "text": "How can I cancel a direct debit for a magazine subscription and get a refund as well?",
-        "intents": [
-            "direct_debit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "I accidentally placed an order and I want to cancel it now.",
-        "intents": [
-            "cancel_close_leave_freeze"
-        ]
-    },
-    {
-        "text": "I need to set up automatic deposits to my savings account, can you assist me with that and also let me know if I can withdraw from it anytime?",
-        "intents": [
-            "savings"
-        ]
-    },
-    {
-        "text": "I need some information regarding my recent transfer request. I am not sure if it has been processed yet or if there is an issue with it. Can you please track it down for me?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "savings",
-            "account",
-            "refund",
-            "transfer_payment_deposit",
-            "request_info"
-        ]
-    },
-    {
-        "text": "As a traveler, I want to make sure that I have all the necessary documents and vaccinations to visit another country.",
-        "intents": [
-            "international"
-        ]
-    },
-    {
-        "text": "Can I set a daily limit on my debit card for online purchases?",
-        "intents": [
-            "debit",
-            "how_much",
-            "card",
-            "limits"
-        ]
-    },
-    {
-        "text": "Can you tell me if the deposit was made successfully and if the payment date can be extended by a few days?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "The temperature outside seems to be lower, and we hope that the delivery time of the package will not increase.",
-        "intents": [
-            "arrival",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "Turn up the temperature on the thermostat to 72 degrees and tell me the latest news headlines.",
-        "intents": []
-    },
-    {
-        "text": "I received an email notification about a successful money transfer to my account but the balance is yet to reflect the deposit.",
-        "intents": [
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Is there a way to reset my pin without having to call customer service? I don't know what my pin is.",
-        "intents": [
-            "pin",
-            "dont_know"
-        ]
-    },
-    {
-        "text": "Could you please inform me about the menu options for dinner and the parking options available at the restaurant?",
-        "intents": [
-            "request_info"
-        ]
-    },
-    {
-        "text": "I need to transfer money from my checking to my savings account, what is the process and is there a fee?",
-        "intents": [
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "My computer won't turn on and my printer won't print - what's wrong with them?",
-        "intents": [
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I transferred money to my friend's account last night, but the balance is still showing the same and hasn't changed.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I've been looking for my purse all day, but I can't seem to find it.",
-        "intents": [
             "lost_stolen"
         ]
     },
     {
-        "text": "Will I be charged any fees when checking my balance and transactions history?",
+        "text": "Can you tell me how to activate my new debit card?",
         "intents": [
-            "balance"
+            "make_open_apply_setup_get_activate",
+            "card",
+            "how"
         ]
     },
     {
-        "text": "I must affirm that I appreciate your help, thank you so much.",
+        "text": "Can you explain how to make a new standing order from my current account?",
         "intents": [
-            "thank",
-            "affirm"
+            "standing_order",
+            "current",
+            "how"
         ]
     },
     {
-        "text": "My card got declined while making a deposit, could you tell me why that happened?",
+        "text": "My debit card seems to be not working, can you help me?",
         "intents": [
             "debit",
-            "contactless",
-            "card",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
+            "wrong_notworking_notshowing",
+            "contactless"
         ]
     },
     {
-        "text": "Let's decrease the weight on the bench press by ten pounds. I need to work on my form before I add more weight.",
-        "intents": [
-            "change",
-            "less_lower_before"
-        ]
-    },
-    {
-        "text": "Yes, this direct debit has been in existence for quite some time, but I deny authorizing its charges.",
-        "intents": [
-            "direct_debit",
-            "deny",
-            "existing"
-        ]
-    },
-    {
-        "text": "Please bear with me as I'm not certain which account is currently active, can you provide more information?",
+        "text": "I am not sure what happened with my appointment, can you help me reschedule it?",
         "intents": [
             "dont_know",
-            "current"
-        ]
-    },
-    {
-        "text": "My direct deposit from work hasn't gone through and my paycheck is supposed to be deposited today.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "My card isn't showing up on my account. Is something wrong with the system?",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "card",
-            "why"
-        ]
-    },
-    {
-        "text": "I tried to transfer money but it's showing up as pending, which is not what I expected.",
-        "intents": [
-            "cheque",
-            "wrong_notworking_notshowing",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can I add my contactless card to Apple Pay and how does it work?",
-        "intents": [
-            "contactless",
-            "request_info",
-            "card"
-        ]
-    },
-    {
-        "text": "I'm trying to apply for a personal loan, but I'm not sure which documents I need to provide. Can you help me with the setup and let me know the process?",
-        "intents": [
-            "current",
-            "make_open_apply_setup_get_activate",
-            "transfer_payment_deposit",
-            "account"
-        ]
-    },
-    {
-        "text": "I'm interested in buying a house. What are the requirements for getting a mortgage and what type of properties are available?",
-        "intents": [
-            "mortgage",
-            "request_info"
-        ]
-    },
-    {
-        "text": "Is it possible to make a deposit at the bank's ATM instead of going in person?",
-        "intents": [
-            "transfer_payment_deposit",
-            "make_open_apply_setup_get_activate",
-            "new"
-        ]
-    },
-    {
-        "text": "I understand that you are trying to help, but I don't feel comfortable sharing this information online. Can you provide me with a phone number or email address where I can discuss my refund claim with a representative in private?",
-        "intents": [
-            "refund",
-            "handoff",
-            "deny"
-        ]
-    },
-    {
-        "text": "I need to adjust my subscription and billing details for this service.",
-        "intents": [
+            "appointment",
             "change"
         ]
     },
     {
-        "text": "Absolutely agree with you, the website is not working at all and certain features are missing.",
+        "text": "I want to cancel my appointment for next week as I won't be able to make it.",
         "intents": [
-            "affirm",
-            "wrong_notworking_notshowing"
+            "cancel_close_leave_freeze",
+            "appointment"
         ]
     },
     {
-        "text": "Can you tell me what my daily withdrawal limit is and how I can reset my pin number?",
+        "text": "I think my card has been stolen, what should I do now?",
         "intents": [
-            "pin",
+            "lost_stolen",
+            "account",
+            "debit"
+        ]
+    },
+    {
+        "text": "Can you tell me what my current account balance is?",
+        "intents": [
+            "account",
+            "balance",
+            "request_info"
+        ]
+    },
+    {
+        "text": "Can you please cancel my appointment for tomorrow?",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "appointment"
+        ]
+    },
+    {
+        "text": "I want to know more about the overdraft fees and rules.",
+        "intents": [
+            "overdraft",
+            "fees_interests",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I'd like to set up a new credit card, can you help me with that?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "credit",
+            "new"
+        ]
+    },
+    {
+        "text": "Goodbye, I need to leave now.",
+        "intents": [
+            "end_call",
+            "greet"
+        ]
+    },
+    {
+        "text": "How much is the overdraft limit for my account?",
+        "intents": [
             "overdraft",
             "request_info",
             "limits"
         ]
     },
     {
-        "text": "Can you provide me with information on the types of checking accounts you offer and schedule an appointment for me to open one?",
+        "text": "I'm interested in applying for a loan, but I'm not sure about the interest rates.",
         "intents": [
-            "appointment",
+            "make_open_apply_setup_get_activate",
+            "loan",
+            "fees_interests",
             "request_info"
         ]
     },
     {
-        "text": "I lost my card and need to order a replacement, but I am not sure if there are any pending transactions on my account. Can you help me check my transaction history and order a new card?",
+        "text": "I lost my credit card, what should I do now?",
+        "intents": [
+            "lost_stolen",
+            "credit"
+        ]
+    },
+    {
+        "text": "Can you please explain how to set up a direct debit?",
+        "intents": [
+            "how",
+            "direct_debit"
+        ]
+    },
+    {
+        "text": "My debit card is not working, I need to check the balance in my account. Can you help me with that?",
         "intents": [
             "card",
-            "transfer_payment_deposit",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "Can you please add eggs, bread, and milk to my shopping list and send it to me via email?",
-        "intents": []
-    },
-    {
-        "text": "My account was recently hacked, and I need to report the fraudulent activity. I also have a question about the fees associated with my account.",
-        "intents": [
-            "account",
+            "debit",
+            "wrong_notworking_notshowing",
+            "balance",
             "request_info"
         ]
     },
     {
-        "text": "Can you tell me why my transfer to John's account failed last week and if I need to do anything to fix it?",
+        "text": "My account balance seems off. Can you help me check it?",
         "intents": [
-            "why",
-            "standing_order",
-            "less_lower_before",
-            "transfer_payment_deposit"
+            "balance",
+            "request_info"
         ]
     },
     {
-        "text": "Could you please tell me what documents I need to provide to apply for the loan and when the decision will be made?",
+        "text": "What's the limit on my credit card?",
         "intents": [
-            "loan",
+            "limits",
+            "credit",
+            "request_info"
+        ]
+    },
+    {
+        "text": "What's the balance on my savings account as of yesterday?",
+        "intents": [
+            "balance",
+            "request_info",
+            "savings",
             "when"
         ]
     },
     {
-        "text": "What is the population of New York City and how many boroughs does it have?",
+        "text": "What's the interest rate for a mortgage?",
         "intents": [
+            "mortgage",
+            "fees_interests",
             "request_info"
         ]
     },
     {
-        "text": "I'm sorry, but I have to deny your loan request as you don't meet the eligibility criteria.",
+        "text": "Hi, can you tell me about the account limits?",
         "intents": [
-            "loan",
-            "deny"
+            "account",
+            "limits",
+            "request_info"
         ]
     },
     {
-        "text": "I have some questions about my account. Can I speak to a human?",
+        "text": "I need to change my address on file. Can you help me with that?",
         "intents": [
-            "handoff"
+            "change",
+            "request_info"
         ]
     },
     {
-        "text": "Buy milk, eggs, and bread at the grocery store and remind me to pick up my dry cleaning.",
-        "intents": []
-    },
-    {
-        "text": "There seems to be an issue with my deposit not showing up in my account even though it was processed.",
+        "text": "Could you please explain why my account is overdrawn?",
         "intents": [
-            "wrong_notworking_notshowing",
-            "current",
-            "transfer_payment_deposit",
+            "overdraft",
+            "request_info",
+            "why",
             "account"
         ]
     },
     {
-        "text": "When does my mortgage term end, and how much is left to pay?",
+        "text": "Can you explain why I was charged a fee last month?",
         "intents": [
-            "mortgage",
-            "when"
+            "fees_interests",
+            "request_info"
         ]
     },
     {
-        "text": "Thank you for your chatbot service, but can you connect me to a live agent, please?",
+        "text": "How long does it take to transfer money from my savings account to my current account?",
+        "intents": [
+            "how_long",
+            "transfer_payment_deposit",
+            "savings",
+            "current"
+        ]
+    },
+    {
+        "text": "Thank you for the assistance.",
         "intents": [
             "thank",
-            "handoff"
+            "acknowledge"
         ]
     },
     {
-        "text": "There is one direct debit payment that I need to cancel as I'm no longer using that service, and I'd like to replace it with a new one for my car loan with a different bank.",
+        "text": "Hello, how are you doing today?",
         "intents": [
-            "direct_debit",
-            "change",
-            "existing"
+            "greet"
         ]
     },
     {
-        "text": "Yes, I heard you and I agree with your suggestion.",
-        "intents": [
-            "affirm"
-        ]
-    },
-    {
-        "text": "My card was stolen, and I need to report it ASAP. Also, I want to know if there is any credit available on my account.",
-        "intents": [
-            "wrong_notworking_notshowing",
-            "credit",
-            "card",
-            "request_info",
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "I need to make a transfer from my savings account to my checking account and deposit some money into my Paypal account.",
-        "intents": [
-            "transfer_payment_deposit"
-        ]
-    },
-    {
-        "text": "Can you tell me when will I receive my ATM card in the mail?",
-        "intents": [
-            "debit",
-            "arrival",
-            "card",
-            "when"
-        ]
-    },
-    {
-        "text": "I received a cheque from my employer, but it hasn't arrived yet and it's already past the due date.",
-        "intents": [
-            "cheque",
-            "wrong_notworking_notshowing"
-        ]
-    },
-    {
-        "text": "I'm interested in applying for a loan, can you provide me with some details about the process and requirements?",
-        "intents": [
-            "make_open_apply_setup_get_activate",
-            "request_info",
-            "account",
-            "business"
-        ]
-    },
-    {
-        "text": "I transferred money to someone, but for some reason, it hasn't reached the recipient yet.",
+        "text": "I need to transfer some money to my savings account. Can you guide me through the process?",
         "intents": [
             "transfer_payment_deposit",
+            "savings",
+            "how"
+        ]
+    },
+    {
+        "text": "How much money can I transfer from my current account to a savings account?",
+        "intents": [
+            "limits",
+            "current",
+            "savings"
+        ]
+    },
+    {
+        "text": "I'd like to cancel my appointment for tomorrow, please.",
+        "intents": [
+            "cancel_close_leave_freeze",
+            "appointment"
+        ]
+    },
+    {
+        "text": "I want to apply for a mortgage, could you guide me through the process?",
+        "intents": [
+            "mortgage",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "I want to know the interest rate of my savings account",
+        "intents": [
+            "savings",
+            "request_info",
+            "fees_interests"
+        ]
+    },
+    {
+        "text": "My payment was refunded, but I haven't received it yet. What should I do?",
+        "intents": [
+            "refund",
+            "wrong_notworking_notshowing",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I'd like to open a savings account, what are the requirements?",
+        "intents": [
+            "account",
+            "make_open_apply_setup_get_activate",
+            "savings",
+            "request_info"
+        ]
+    },
+    {
+        "text": "My credit card was stolen and there are unauthorized charges on it.",
+        "intents": [
+            "credit",
+            "lost_stolen",
             "wrong_notworking_notshowing"
         ]
     },
     {
-        "text": "I've decided to leave my current job because I'm not getting paid enough.",
+        "text": "What is the current interest rate for a mortgage?",
         "intents": [
-            "cancel_close_leave_freeze",
-            "more_higher_after"
+            "mortgage",
+            "request_info",
+            "current"
+        ]
+    },
+    {
+        "text": "I just opened a new account and need to transfer some funds.",
+        "intents": [
+            "transfer_payment_deposit",
+            "new",
+            "make_open_apply_setup_get_activate"
+        ]
+    },
+    {
+        "text": "Can you explain the process of getting a credit card?",
+        "intents": [
+            "credit",
+            "make_open_apply_setup_get_activate",
+            "how"
+        ]
+    },
+    {
+        "text": "I'd like to open a new savings account with your bank, please.",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "savings",
+            "account"
+        ]
+    },
+    {
+        "text": "I need to set up a new direct debit for my mortgage payments. Can you help me with that?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "direct_debit",
+            "mortgage"
+        ]
+    },
+    {
+        "text": "I need to activate a new savings account, how can I do it?",
+        "intents": [
+            "make_open_apply_setup_get_activate",
+            "savings",
+            "how"
+        ]
+    },
+    {
+        "text": "I think I accidentally deleted an important file. How can I recover it?",
+        "intents": [
+            "request_info",
+            "how"
+        ]
+    },
+    {
+        "text": "My credit card has been stolen. What should I do?",
+        "intents": [
+            "lost_stolen",
+            "card"
+        ]
+    },
+    {
+        "text": "When is the deadline for submitting my mortgage application?",
+        "intents": [
+            "when",
+            "mortgage",
+            "request_info"
+        ]
+    },
+    {
+        "text": "I need to cancel my appointment, can you help me with that?",
+        "intents": [
+            "appointment",
+            "cancel_close_leave_freeze"
         ]
     }
 ]

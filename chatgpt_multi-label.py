@@ -2,10 +2,13 @@ import json
 import openai
 from tqdm import trange
 import random
+import time
 
 items = ['banking', 'hotels']
 
-openai.api_key = ''
+openai.api_key = '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'
+NUM_DATA_PER_BATCH = 5
+TOTAL_BATCH = 20
 
 # Collect descriptions of intents
 with open('nlupp/data/ontology.json') as f:
@@ -14,16 +17,33 @@ with open('nlupp/data/ontology.json') as f:
         json.dump(data, f2, indent=4)
 
     data = data['intents']
-    intent_des = {}
+    intent_des = {
+        'banking': {},
+        'hotels': {}
+    }
     for i in data.keys():
-        intent_des[i] = data[i]["description"]
+        if data[i]['domain'][0] == 'general':
+            intent_des['banking'][i] = data[i]["description"]
+            intent_des['hotels'][i] = data[i]["description"]
+        elif data[i]['domain'][0] == 'banking':
+            intent_des['banking'][i] = data[i]["description"]
+        else:
+            intent_des['hotels'][i] = data[i]["description"]
+
+descriptions = {
+    'banking': 'Here are the descriptions of the intents:',
+    'hotels': 'Here are the descriptions of the intents:'
+}
+for item in items:
+    for i in intent_des[item]:
+        descriptions[item] += f'\n\"{i}\": {intent_des[item][i]}'
 
 for item in items:
-    intents, texts = [], []
-    for i in range(20):
+    for i in trange(20):
         with open(f'nlupp/data/{item}/fold{i}.json') as f:
             data = json.load(f)
 
+        intents, texts = [], []
         for j in data:
             texts.append(j["text"])
             if 'intents' in j.keys():
@@ -31,50 +51,73 @@ for item in items:
             else:
                 intents.append([])
 
-    with open(f'{item}_temp.json') as f:
-        new_data = json.load(f)
-
-    start_ind = len(new_data) // 5
-    for i in trange(start_ind, len(intents)):
-        descriptions = 'Here are the descriptions of the intents:'
-        for j in intents[i]:
-            descriptions += f'\n{j}: {intent_des[j]}'
+        with open(f'nlupp/chatGPT_data/{item}/fold{i}.json') as f:
+            temp_data = json.load(f)
         
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "assistant", "content": descriptions},
-                {"role": "assistant", "content": f"""Here is an example of sentences with multiple intents:
-                "text": "{texts[i]}"
-                "intents": {intents[i]}"""},
-                {"role": "user", "content": f"""Give me five sentences with multiple intents: {intents[i]}. Do not repeat the intents. Follow the following format:
-                1.
-                2.
-                3.
-                4.
-                5."""},
-            ]
-        )
-        cnt=0
-        for s in response['choices'][0]['message']['content'].split('\n'):
-            if s.strip()[:1].isnumeric() and s.strip()[1] == '.':
-                new_data.append({
-                    "text": s.strip()[2:].strip(' \"\''),
-                    "intents": intents[i]
-                })
-                cnt+=1
+        for j in trange(TOTAL_BATCH - len(temp_data) // NUM_DATA_PER_BATCH):
+            pick = random.sample(range(0, len(data)),  5)
 
-        if cnt!=5:
-            print(response['choices'][0]['message']['content'])
-    
-        with open(f'{item}_temp.json', 'w') as f:
-            json.dump(new_data, f, indent=4)
+            while 1:
+                response = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo",
+                    messages=[
+                        {"role": "system", "content": "You are a helpful assistant."},
+                        {"role": "assistant", "content": descriptions[item]},
+                        {"role": "assistant", "content": f"""Here are 5 examples of texts with multiple intents.
+                        Example 1:
+                        text: {texts[pick[0]]}
+                        intents: {intents[pick[0]]}
+                        Example 2:
+                        text: {texts[pick[1]]}
+                        intents: {intents[pick[1]]}
+                        Example 3:
+                        text: {texts[pick[2]]}
+                        intents: {intents[pick[2]]}
+                        Example 4:
+                        text: {texts[pick[3]]}
+                        intents: {intents[pick[3]]}
+                        Example 5:
+                        text: {texts[pick[4]]}
+                        intents: {intents[pick[4]]}
+                        """},
+                        {"role": "user", "content": f"""Generate five texts with some randomly picked intents. Follow the following format:
+                        text:
+                        intents:"""},
+                    ]
+                )
+                lines = response['choices'][0]['message']['content'].split('\n')
+                temp_text, temp_intent = [], []
+                for k in range(len(lines)):
+                    s = lines[k].strip()
+                    if s.lower().find('text:') != -1:
+                        temp_text.append(s[s.lower().find('text:') + 5:].strip(' \"\''))
+                        s = lines[k+1].strip()
+                        intent = list(s[s.lower().find('intents:') + 8:].strip(' []').split(','))
+                        intent = [ii.strip(' \'\"') for ii in intent]
+                        temp_intent.append(intent)
 
-    random.shuffle(new_data)
+                ok = True
+                for k in temp_intent:
+                    for l in k:
+                        if l not in intent_des[item].keys():
+                            ok = False
 
-    for i in range(20):
-        with open(f'nlupp/chatGPT_data/{item}/fold{i}.json', 'w') as f:
-            l, r = len(new_data) // 20 * i, min(len(new_data) // 20 * (i + 1), len(new_data))
-            json.dump(new_data[l:r], f, indent=4)
+                if ok: break
 
+
+            #print('-' * 20)
+            #print(response['choices'][0]['message']['content'])
+            
+            for k in range(len(temp_text)):
+                temp_data.append(
+                    {
+                        'text': temp_text[k],
+                        'intents': temp_intent[k]
+                    }
+                )
+
+            random.shuffle(temp_data)
+            with open(f'nlupp/chatGPT_data/{item}/fold{i}.json', 'w') as f:
+                json.dump(temp_data, f, indent=4)
+
+        print(f'finish {item}: fold {i}')

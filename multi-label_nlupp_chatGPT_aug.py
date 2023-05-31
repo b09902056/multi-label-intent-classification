@@ -202,7 +202,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
         train_output = [output.cpu().detach().numpy() for output in train_output]
         eval_labels = [label.cpu().detach().numpy() for label in eval_labels]
         eval_output = [output.cpu().detach().numpy() for output in eval_output]
-        print(f'Epochs: {epoch_num + 1} | Train Loss: {total_loss_train / len(train_data["text"]): .3f} | Val Loss: {total_loss_val / len(test_data["text"]): .3f}')
+        print(f'Epochs: {epoch_num + 1} | Train Loss: {total_loss_train / len(train_data["text"]): .4f} | Val Loss: {total_loss_val / len(test_data["text"]): .4f}')
         train_accuracy = accuracy_score(train_labels, train_output)
         train_f1_score_micro = f1_score(train_labels, train_output, average='micro')
         train_f1_score_macro = f1_score(train_labels, train_output, average='macro')
@@ -301,7 +301,7 @@ for i in range(fold):
         train_data['labels'].append(labels)
 
     # add original data to train data
-    for j in range(len(ori_data[i]['train'])):
+    for j in range(len(aug_data[i]['train'])):
         x = ori_data[i]['train'][j]
         if 'intents' not in x: x['intents'] = []
         train_data['text'].append(x['text'])

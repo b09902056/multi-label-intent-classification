@@ -1,240 +1,240 @@
-{"text": "That is indeed the case, right?", "intents": ["affirm"]}
-{"text": "It is true that affirm is the intent to confirm something, isn't it?", "intents": ["affirm"]}
-{"text": "Could you please clarify if affirm means a confirmation of a statement or a decision?", "intents": ["affirm"]}
-{"text": "Would it be accurate to say that the affirm intent is for confirming a previously stated fact?", "intents": ["affirm"]}
-{"text": "Is it correct to assume that affirm is used to acknowledge or validate a customer's statement or opinion?", "intents": ["affirm"]}
-{"text": "I'm sorry, but I have to decline your invitation. Is there anything else I can do for you?", "intents": ["deny"]}
-{"text": "That's not something I can agree with, but I'm open to hearing other options. Can you suggest any alternatives?", "intents": ["deny"]}
-{"text": "I'm afraid that's not possible, but could you explain to me why it's important?", "intents": ["deny"]}
-{"text": "I can't say for sure, but I don't think that's the case. Would you like me to look into it further?", "intents": ["deny"]}
-{"text": "I don't believe that's accurate, but have you considered seeking a second opinion?", "intents": ["deny"]}
-{"text": "Can you clarify that for me? ", "intents": ["dont_know"]}
-{"text": "I'm not certain, can you explain that further? ", "intents": ["dont_know"]}
-{"text": "Could you repeat the question? ", "intents": ["dont_know"]}
-{"text": "Would you mind elaborating on that? ", "intents": ["dont_know"]}
-{"text": "Is there any way you could provide more information?", "intents": ["dont_know"]}
-{"text": "I hear you, but can you clarify what you meant?", "intents": ["acknowledge"]}
-{"text": "Got it. Is there anything else you'd like to add?", "intents": ["acknowledge"]}
-{"text": "Thanks for letting me know. What's the next step?", "intents": ["acknowledge"]}
-{"text": "Understood. Can you confirm the details of the plan?", "intents": ["acknowledge"]}
-{"text": "Acknowledged. What can I do to assist you further?", "intents": ["acknowledge"]}
-{"text": "Hi there, how are you doing today? ", "intents": ["greet"]}
-{"text": "Good morning, did you have a good weekend?", "intents": ["greet"]}
-{"text": "Hey, how's it going? ", "intents": ["greet"]}
-{"text": "Hello, how may I assist you? ", "intents": ["greet"]}
-{"text": "What's up, how has your day been so far?", "intents": ["greet"]}
-{"text": "Thanks for chatting, have a great day!", "intents": ["end_call"]}
-{"text": "It was nice talking to you, goodbye!", "intents": ["end_call"]}
-{"text": "Before we end this call, is there anything else I can help you with?", "intents": ["end_call"]}
-{"text": "Alright, I'll let you go now. Take care!", "intents": ["end_call"]}
-{"text": "Before we say goodbye, is there anything else you need assistance with?", "intents": ["end_call"]}
-{"text": "Can I speak to a customer support agent to resolve my issue?", "intents": ["handoff"]}
-{"text": "Who should I talk to about canceling my subscription?", "intents": ["handoff"]}
-{"text": "Is there a live chat option where I can speak to someone in real-time?", "intents": ["handoff"]}
-{"text": "Can you transfer me to a representative who can assist me with billing questions?", "intents": ["handoff"]}
-{"text": "What is the best way to get in touch with a human for further assistance?", "intents": ["handoff"]}
-{"text": "Thank you so much for your help today! It really meant a lot to me.", "intents": ["thank"]}
-{"text": "I wanted to express my gratitude for your kindness. You really went above and beyond.", "intents": ["thank"]}
-{"text": "Could you please pass along my thanks to the team for all their hard work?", "intents": ["thank"]}
-{"text": "I just wanted to say thank you for taking the time to meet with me today. I really appreciate it.", "intents": ["thank"]}
-{"text": "Would it be appropriate to send a thank-you note to show my appreciation?", "intents": ["thank"]}
-{"text": "I'm sorry I didn't catch that, could you please say that again?", "intents": ["repeat"]}
-{"text": "Can you repeat what you just said for clarity?", "intents": ["repeat"]}
-{"text": "Pardon me, could you rephrase that last sentence?", "intents": ["repeat"]}
-{"text": "I didn't quite understand, could you say it again?", "intents": ["repeat"]}
-{"text": "Could you please repeat the previous sentence?", "intents": ["repeat"]}
-{"text": "Will I be penalized if I cancel my reservation?", "intents": ["cancel_close_leave_freeze"]}
-{"text": "Can you provide me with the steps to close my account?", "intents": ["cancel_close_leave_freeze"]}
-{"text": "Is there a fee for freezing my gym membership?", "intents": ["cancel_close_leave_freeze"]}
-{"text": "What are the consequences of leaving my job without notice?", "intents": ["cancel_close_leave_freeze"]}
-{"text": "How do I cancel my subscription without affecting my credit score?", "intents": ["cancel_close_leave_freeze"]}
-{"text": "Can you update the delivery address and change the shipping method for this order?", "intents": ["change"]}
-{"text": "I need to modify my reservation dates and add an additional room, can you help me with that?", "intents": ["change"]}
-{"text": "How can I adjust the font size and change the background color of my website?", "intents": ["change"]}
-{"text": "My flight was cancelled, can you assist me in rebooking it for a different day and changing the departure time?", "intents": ["change"]}
-{"text": "Can you show me how to edit the formatting of this document and change the font style for certain sections?", "intents": ["change"]}
-{"text": "Can you guide me through the process of setting up my new computer and activating the software?", "intents": ["make_open_apply_setup_get_activate"]}
-{"text": "I would like to make a reservation and apply my discount code, can you assist me with that?", "intents": ["make_open_apply_setup_get_activate"]}
-{"text": "How can I open multiple tabs on this web browser and set it as my default?", "intents": ["make_open_apply_setup_get_activate"]}
-{"text": "Can you help me make a payment and activate my account for online banking?", "intents": ["make_open_apply_setup_get_activate"]}
-{"text": "I want to make a purchase and open a new credit card account, can you walk me through the steps and apply my rewards points?", "intents": ["make_open_apply_setup_get_activate"]}
-{"text": "Can you provide me with details on the pricing for your services and products?", "intents": ["request_info"]}
-{"text": "I need more information on your company's return policy, can you assist me with that?", "intents": ["request_info"]}
-{"text": "What is your company's process for handling customer complaints and issues?", "intents": ["request_info"]}
-{"text": "Can you tell me about any ongoing promotions or sales that your company is currently offering?", "intents": ["request_info"]}
-{"text": "What other products or services does your company offer besides what is listed on your website?", "intents": ["request_info"]}
-{"text": "Can you explain how to bake a cake and decorate it with frosting and sprinkles?", "intents": ["how"]}
-{"text": "How would you recommend organizing a closet to maximize space and efficiency?", "intents": ["how"]}
-{"text": "What steps do I need to take to learn the basics of playing guitar?", "intents": ["how"]}
-{"text": "Could you describe how to change a flat tire on a car?", "intents": ["how"]}
-{"text": "How can I properly clean and maintain a leather jacket?", "intents": ["how"]}
-{"text": "Can you explain why the project deadline got pushed back?", "intents": ["why"]}
-{"text": "I don't understand why the company decided to go with that marketing strategy. Can you clarify?", "intents": ["why"]}
-{"text": "Could you tell me why we need to attend this meeting?", "intents": ["why"]}
-{"text": "Why did the professor assign such a difficult reading for us?", "intents": ["why"]}
-{"text": "What's the reason behind why the budget was cut for this department?", "intents": ["why"]}
-{"text": "What time does the concert start tonight and when is it scheduled to end?", "intents": ["when"]}
-{"text": "When is the store closing tonight and what time does it open tomorrow?", "intents": ["when"]}
-{"text": "Could you please tell me the deadline for the project and when it is expected to be completed?", "intents": ["when"]}
-{"text": "When is the next train arriving and how often do they run during rush hour?", "intents": ["when"]}
-{"text": "What time is the meeting scheduled for and when should I arrive?", "intents": ["when"]}
-{"text": "Can you tell me how much sugar is needed for this recipe?", "intents": ["how_much"]}
-{"text": "What's the quantity of water needed to make this drink?", "intents": ["how_much"]}
-{"text": "How much time do I need to allocate for this task?", "intents": ["how_much"]}
-{"text": "How many units of this product do I need to order?", "intents": ["how_much"]}
-{"text": "Can you give me an estimate of how much it would cost to rent this equipment?", "intents": ["how_much"]}
-{"text": "How much time does it take to complete the project?", "intents": ["how_long"]}
-{"text": "Can you tell me the duration of the trip?", "intents": ["how_long"]}
-{"text": "How long will the workshop last?", "intents": ["how_long"]}
-{"text": "What is the estimated time for the software installation to complete?", "intents": ["how_long"]}
-{"text": "How many hours are required to finish the task?", "intents": ["how_long"]}
-{"text": "My laptop screen is blank, and it doesn't power on. The keyboard lights in with the caps lock on, but nothing else happens. What could be the issue?", "intents": ["wrong_notworking_notshowing"]}
-{"text": "My phone was working fine until I updated it yesterday, but ever since, it keeps freezing and crashing. How can I fix this?", "intents": ["wrong_notworking_notshowing"]}
-{"text": "I bought a new printer, but it won't print anything. The status says it's connected, but it's not communicating with my computer. Do you know what could be causing this?", "intents": ["wrong_notworking_notshowing"]}
-{"text": "My TV remote suddenly stopped working. I replaced the batteries, but it's still not responding. What else can I try to get it to work again?", "intents": ["wrong_notworking_notshowing"]}
-{"text": "I'm trying to make a call on my phone, but it keeps saying \"call failed.\" I have full bars, so it's not the signal. What else could be causing this issue?", "intents": ["wrong_notworking_notshowing"]}
-{"text": "I can't seem to find my wallet anywhere, can you advise me on what to do if it's been lost or stolen?", "intents": ["lost_stolen"]}
-{"text": "My phone was taken from my car earlier, do I need to report it as stolen to the police or just to my service provider?", "intents": ["lost_stolen"]}
-{"text": "I realized my passport is missing after coming back from my trip, could it have been lost or stolen in the airport?", "intents": ["lost_stolen"]}
-{"text": "My friend's laptop got stolen at a coffee shop, do you know any good ways to prevent something like this from happening?", "intents": ["lost_stolen"]}
-{"text": "I left my jacket at the party last night but now it's not where I left it, is there a way to check if someone took it without my knowledge?", "intents": ["lost_stolen"]}
-{"text": "Can you provide me with additional information that is even more comprehensive than what you've already told me?", "intents": ["more_higher_after"]}
-{"text": "Is there a product similar to this but with a higher capacity or a greater range of features?", "intents": ["more_higher_after"]}
-{"text": "Are there any upcoming promotions or sales that will offer better deals than the current ones?", "intents": ["more_higher_after"]}
-{"text": "Could you recommend a book or resource that delves deeper into this topic?", "intents": ["more_higher_after"]}
-{"text": "What steps can I take to further improve the performance or quality of the outcome?", "intents": ["more_higher_after"]}
-{"text": "The temperature dropped by five degrees in the afternoon. Did it get less or did it increase?", "intents": ["less_lower_before"]}
-{"text": "The sales of the new product decreased by 20% last month. Is this an example of the intent to indicate something less or to indicate something more?", "intents": ["less_lower_before"]}
-{"text": "I used to work out for an hour, but now I only have time for 30 minutes. Would this be considered less or more exercise?", "intents": ["less_lower_before"]}
-{"text": "The number of attendees at the conference was lower than expected. Was this an occurrence of the \"less_lower_before\" intent?", "intents": ["less_lower_before"]}
-{"text": "My bank account balance decreased by $100 this week. Does this align with the intent of something getting less, lower, before or decreasing?", "intents": ["less_lower_before"]}
-{"text": "Can you tell me about the latest updates?", "intents": ["new"]}
-{"text": "What is the newest release from your company?", "intents": ["new"]}
-{"text": "Is there anything new or notable to mention?", "intents": ["new"]}
-{"text": "What recent developments have there been in this area?", "intents": ["new"]}
-{"text": "Could you describe any new features that have been added recently?", "intents": ["new"]}
-{"text": "Please provide information on the current status of the project?", "intents": ["existing"]}
-{"text": "Can you tell me about the features of the new product launch?", "intents": ["existing"]}
-{"text": "What kind of support is available for the existing customers?", "intents": ["existing"]}
-{"text": "Can you provide some details about the previous version of the software?", "intents": ["existing"]}
-{"text": "How can I upgrade my subscription plan?", "intents": ["existing"]}
-{"text": "What are the limits on how much I can withdraw from my account per day and per transaction? Can I change these limits?", "intents": ["limits"]}
-{"text": "Are there limits on the size and weight of baggage I can bring on my flight? How can I find out about any additional fees for exceeding these limits?", "intents": ["limits"]}
-{"text": "Can you explain the limits on the amount of data I can use each month on my mobile plan? How do I check how much data I have already used?", "intents": ["limits"]}
-{"text": "What are the limits on the number of participants in a Zoom meeting? Can I increase this limit for a large event?", "intents": ["limits"]}
-{"text": "Are there any limits on the size or types of files I can upload to my cloud storage account? How can I check my remaining storage space and upgrade if necessary?", "intents": ["limits"]}
-{"text": "What are the benefits of opening a savings account?", "intents": ["savings"]}
-{"text": "Can you recommend a savings account with a high interest rate?", "intents": ["savings"]}
-{"text": "Are there any fees associated with opening a savings account?", "intents": ["savings"]}
-{"text": "How much money do I need to open a savings account?", "intents": ["savings"]}
-{"text": "What documents do I need to provide to open a savings account?", "intents": ["savings"]}
-{"text": "Can you tell me the balance in my account right now and how recent is this transaction history?", "intents": ["current"]}
-{"text": "What is the status of my account and are there any pending transactions at the moment?", "intents": ["current"]}
-{"text": "Can you give me a breakdown of my recent transactions and the current available balance?", "intents": ["current"]}
-{"text": "Is my account up-to-date and can you provide me with an overview of my statement for this month?", "intents": ["current"]}
-{"text": "Are there any alerts or notifications that have been triggered for my account and is everything in order currently?", "intents": ["current"]}
-{"text": "Can you provide me with more information on the business account features available?", "intents": ["business"]}
-{"text": "How can I upgrade my business account to access additional benefits?", "intents": ["business"]}
-{"text": "Which documents are required to set up a business account?", "intents": ["business"]}
-{"text": "Are there any limitations on the number of transactions allowed on a business account?", "intents": ["business"]}
-{"text": "What are the fees associated with maintaining a business account?", "intents": ["business"]}
-{"text": "Can you explain how credit scores are calculated and what factors affect them?", "intents": ["credit"]}
-{"text": "What are some common credit reporting errors and how can they be corrected?", "intents": ["credit"]}
-{"text": "Can you provide tips on how to improve one's credit score and maintain good credit?", "intents": ["credit"]}
-{"text": "What are the consequences of missing a credit card payment and how can one avoid them?", "intents": ["credit"]}
-{"text": "How does credit utilization ratio impact credit score and what is considered a good ratio?", "intents": ["credit"]}
-{"text": "I'd like to know the maximum withdrawal limit for my debit card at ATMs and stores, can you help me with that? ", "intents": ["debit"]}
-{"text": "How do I report suspicious activity on my debit card and prevent unauthorized transactions? ", "intents": ["debit"]}
-{"text": "What types of fees do banks typically charge for using a debit card abroad? ", "intents": ["debit"]}
-{"text": "Can I use my debit card to purchase items online, and if so, how secure is it? ", "intents": ["debit"]}
-{"text": "Are there any rewards or cashback programs available for using a debit card frequently, and how do I enroll in them?", "intents": ["debit"]}
-{"text": "Can you tell me more about your contactless payment options and how to use them?", "intents": ["contactless"]}
-{"text": "Do I need to have a specific type of card to make contactless payments?", "intents": ["contactless"]}
-{"text": "Is there a limit on the amount I can spend using contactless payment?", "intents": ["contactless"]}
-{"text": "What is the difference between contactless payment and mobile payment?", "intents": ["contactless"]}
-{"text": "Can I use contactless payment at all of your store locations?", "intents": ["contactless"]}
-{"text": "What countries are currently involved in the international trade dispute?", "intents": ["international"]}
-{"text": "Can you recommend any international organizations that focus on climate change?", "intents": ["international"]}
-{"text": "How do international laws differ from domestic laws?", "intents": ["international"]}
-{"text": "What are some current global events that have significant international implications?", "intents": ["international"]}
-{"text": "In your opinion, what steps can be taken to improve international cooperation on issues such as poverty and inequality?", "intents": ["international"]}
-{"text": "Can you help me reset my password for my account and update my billing information?", "intents": ["account"]}
-{"text": "I need to update the email associated with my account and add a new shipping address. How can I do that?", "intents": ["account"]}
-{"text": "My account was hacked and unauthorized transactions were made. How do I report this and get my money back?", "intents": ["account"]}
-{"text": "I have multiple accounts with your service. Can I merge them into one account and still keep my information intact?", "intents": ["account"]}
-{"text": "I want to cancel my subscription and delete my account. Will I receive a refund and how do I make sure my personal information is deleted?", "intents": ["account"]}
-{"text": "Can you tell me how I can transfer money to another account and make a deposit? ", "intents": ["transfer_payment_deposit"]}
-{"text": "What are the payment options available for transferring funds and where can I access them?", "intents": ["transfer_payment_deposit"]}
-{"text": "Would you explain the process of transferring funds and what details are needed for making a deposit?", "intents": ["transfer_payment_deposit"]}
-{"text": "Can you clarify which types of payments are accepted for deposits and how to initiate a transfer?", "intents": ["transfer_payment_deposit"]}
-{"text": "Are there any fees associated with transferring funds and making a deposit, and how can I avoid them?", "intents": ["transfer_payment_deposit"]}
-{"text": "Can you confirm my appointment with Dr. Smith on Thursday at 2 PM and provide me with the address?", "intents": ["appointment"]}
-{"text": "I need to reschedule my appointment for next week, can you give me some available times?", "intents": ["appointment"]}
-{"text": "What should I bring with me to my appointment tomorrow?", "intents": ["appointment"]}
-{"text": "Can I book an appointment for a dental cleaning and also ask some questions about teeth whitening?", "intents": ["appointment"]}
-{"text": "Can you help me find a specialist who can see me today for an urgent medical concern?", "intents": ["appointment"]}
-{"text": "What time will my flight arrive?", "intents": ["arrival"]}
-{"text": "Can you tell me if the package has arrived yet and who signed for it?", "intents": ["arrival"]}
-{"text": "When is the next train due to arrive at the station?", "intents": ["arrival"]}
-{"text": "Is there any update on what time the food delivery will arrive?", "intents": ["arrival"]}
-{"text": "Will the performer arrive before or after the event starts?", "intents": ["arrival"]}
-{"text": "Can you tell me how much money I have in my account right now and what my credit card balance is?", "intents": ["balance"]}
-{"text": "I am trying to figure out if I can afford a vacation next month. What is my current balance and how much credit do I have available?", "intents": ["balance"]}
-{"text": "Could you let me know if there are any pending charges on my account and if my balance reflects them?", "intents": ["balance"]}
-{"text": "What is my account balance and can you also confirm my available balance for my checking and savings accounts?", "intents": ["balance"]}
-{"text": "I need to know my current balance and available credit limit for my credit card. Can you provide me with that information?", "intents": ["balance"]}
-{"text": "Can you tell me more about the different types of cards available?", "intents": ["card"]}
-{"text": "How do I go about requesting for a new card?", "intents": ["card"]}
-{"text": "What should I do if my card expires soon?", "intents": ["card"]}
-{"text": "Are there any rewards or benefits associated with having a card?", "intents": ["card"]}
-{"text": "Can I use my card for online transactions?", "intents": ["card"]}
-{"text": "Can I deposit a cheque without visiting the bank?", "intents": ["cheque"]}
-{"text": "How long does it take for a cheque to clear?", "intents": ["cheque"]}
-{"text": "What should I do if my cheque has been lost or stolen?", "intents": ["cheque"]}
-{"text": "Is there a fee for stopping payment of a cheque?", "intents": ["cheque"]}
-{"text": "Can I deposit a post-dated cheque before the date written on it?", "intents": ["cheque"]}
-{"text": "Can you explain how I can set up a direct debit for my account?", "intents": ["direct_debit"]}
-{"text": "Which bank accounts are eligible for direct debit and how do I apply for it?", "intents": ["direct_debit"]}
-{"text": "What are the advantages and disadvantages of using direct debit as a payment method?", "intents": ["direct_debit"]}
-{"text": "Is it possible to cancel a direct debit and how do I go about doing that?", "intents": ["direct_debit"]}
-{"text": "How can I check if a direct debit payment has been successfully processed?", "intents": ["direct_debit"]}
-{"text": "Can I set up a recurring payment through my online banking?", "intents": ["standing_order"]}
-{"text": "How frequently can I schedule a standing order to be executed?", "intents": ["standing_order"]}
-{"text": "Is there a minimum amount required for setting up a standing order?", "intents": ["standing_order"]}
-{"text": "Could you guide me through the process of creating a standing order?", "intents": ["standing_order"]}
-{"text": "Are standing orders the same as direct debits, or are there any differences between the two?", "intents": ["standing_order"]}
-{"text": "What are the fees and interests associated with opening a savings account?", "intents": ["fees_interests"]}
-{"text": "Could you break down the fees and interests for a student credit card?", "intents": ["fees_interests"]}
-{"text": "How do the fees and interests differ between a personal loan and a line of credit?", "intents": ["fees_interests"]}
-{"text": "What are the penalty fees for missing a credit card payment, and what is the annual interest rate?", "intents": ["fees_interests"]}
-{"text": "Can you explain the fees and interests related to a mortgage refinancing?", "intents": ["fees_interests"]}
-{"text": "Can you guide me with the eligibility criteria for a personal loan and what documents are required to apply?", "intents": ["loan"]}
-{"text": "I am interested in taking a loan, but I have a low credit score. Can you suggest some options for me?", "intents": ["loan"]}
-{"text": "What is the maximum loan amount that I can apply for, and what are the repayment terms for it?", "intents": ["loan"]}
-{"text": "Can you explain the difference between a fixed and a variable interest rate for a loan, and which one is better?", "intents": ["loan"]}
-{"text": "Is there any penalty for pre-paying my loan, and can I track my repayment schedule through an online portal?", "intents": ["loan"]}
-{"text": "What are the different types of mortgages available?", "intents": ["mortgage"]}
-{"text": "Can you explain the process of getting pre-approved for a mortgage?", "intents": ["mortgage"]}
-{"text": "Are there any special programs or incentives for first-time homebuyers to obtain a mortgage?", "intents": ["mortgage"]}
-{"text": "How does my credit score affect my eligibility for a mortgage?", "intents": ["mortgage"]}
-{"text": "What documents will I need to provide when applying for a mortgage?", "intents": ["mortgage"]}
-{"text": "Can I still use my debit card if I have an overdraft protection plan?", "intents": ["overdraft"]}
-{"text": "How is an overdraft fee calculated and when does it apply?", "intents": ["overdraft"]}
-{"text": "What happens if I exceed my overdraft limit?", "intents": ["overdraft"]}
-{"text": "Can I request to have my overdraft protection removed from my account?", "intents": ["overdraft"]}
-{"text": "Does having an overdraft protection plan affect my credit score?", "intents": ["overdraft"]}
-{"text": "How can I withdraw my funds from my account?", "intents": ["withdrawal"]}
-{"text": "Are there any withdrawal fees associated with my account?", "intents": ["withdrawal"]}
-{"text": "Can I set up automatic withdrawals for my account?", "intents": ["withdrawal"]}
-{"text": "What is the minimum amount I can withdraw from my account?", "intents": ["withdrawal"]}
-{"text": "How long does it usually take for a withdrawal to be processed and completed?", "intents": ["withdrawal"]}
-{"text": "What is my pin number for my debit card and credit card?", "intents": ["pin"]}
-{"text": "Can you remind me how to change my pin number for my online banking account and my ATM?", "intents": ["pin"]}
-{"text": "Is it safe to share my pin number with someone over the phone?", "intents": ["pin"]}
-{"text": "How can I unlock my account if I enter the wrong pin number multiple times?", "intents": ["pin"]}
-{"text": "Do I need to use my pin number for all transactions or just certain ones?", "intents": ["pin"]}
-{"text": "Can I get a refund for this product if I'm not satisfied with it?", "intents": ["refund"]}
-{"text": "How long does it typically take for a refund to process after I request one?", "intents": ["refund"]}
-{"text": "Could you please explain the refund policy for this product?", "intents": ["refund"]}
-{"text": "What is the process for returning an item and receiving a refund?", "intents": ["refund"]}
-{"text": "Is it possible to exchange an item instead of receiving a refund?", "intents": ["refund"]}
+{"text": "That is indeed the case, right?", "intents": ["affirm"], "pvi": {"total": 3.4599547386169434, "avg": 3.4599547386169434, "max": 3.4599547386169434, "indi": {"affirm": 3.4599547386169434}}}
+{"text": "It is true that affirm is the intent to confirm something, isn't it?", "intents": ["affirm"], "pvi": {"total": 3.356377124786377, "avg": 3.356377124786377, "max": 3.356377124786377, "indi": {"affirm": 3.356377124786377}}}
+{"text": "Could you please clarify if affirm means a confirmation of a statement or a decision?", "intents": ["affirm"], "pvi": {"total": -5.1518754959106445, "avg": -5.1518754959106445, "max": -5.1518754959106445, "indi": {"affirm": -5.1518754959106445}}}
+{"text": "Would it be accurate to say that the affirm intent is for confirming a previously stated fact?", "intents": ["affirm"], "pvi": {"total": -5.189802169799805, "avg": -5.189802169799805, "max": -5.189802169799805, "indi": {"affirm": -5.189802169799805}}}
+{"text": "Is it correct to assume that affirm is used to acknowledge or validate a customer's statement or opinion?", "intents": ["affirm"], "pvi": {"total": -6.775045394897461, "avg": -6.775045394897461, "max": -6.775045394897461, "indi": {"affirm": -6.775045394897461}}}
+{"text": "I'm sorry, but I have to decline your invitation. Is there anything else I can do for you?", "intents": ["deny"], "pvi": {"total": -3.8753528594970703, "avg": -3.8753528594970703, "max": -3.8753528594970703, "indi": {"deny": -3.8753528594970703}}}
+{"text": "That's not something I can agree with, but I'm open to hearing other options. Can you suggest any alternatives?", "intents": ["deny"], "pvi": {"total": -0.9966740608215332, "avg": -0.9966740608215332, "max": -0.9966740608215332, "indi": {"deny": -0.9966740608215332}}}
+{"text": "I'm afraid that's not possible, but could you explain to me why it's important?", "intents": ["deny"], "pvi": {"total": -2.0969409942626953, "avg": -2.0969409942626953, "max": -2.0969409942626953, "indi": {"deny": -2.0969409942626953}}}
+{"text": "I can't say for sure, but I don't think that's the case. Would you like me to look into it further?", "intents": ["deny"], "pvi": {"total": -0.1916673183441162, "avg": -0.1916673183441162, "max": -0.1916673183441162, "indi": {"deny": -0.1916673183441162}}}
+{"text": "I don't believe that's accurate, but have you considered seeking a second opinion?", "intents": ["deny"], "pvi": {"total": -4.298358917236328, "avg": -4.298358917236328, "max": -4.298358917236328, "indi": {"deny": -4.298358917236328}}}
+{"text": "Can you clarify that for me? ", "intents": ["dont_know"], "pvi": {"total": -3.91957950592041, "avg": -3.91957950592041, "max": -3.91957950592041, "indi": {"dont_know": -3.91957950592041}}}
+{"text": "I'm not certain, can you explain that further? ", "intents": ["dont_know"], "pvi": {"total": 3.9254984855651855, "avg": 3.9254984855651855, "max": 3.9254984855651855, "indi": {"dont_know": 3.9254984855651855}}}
+{"text": "Could you repeat the question? ", "intents": ["dont_know"], "pvi": {"total": -5.180164813995361, "avg": -5.180164813995361, "max": -5.180164813995361, "indi": {"dont_know": -5.180164813995361}}}
+{"text": "Would you mind elaborating on that? ", "intents": ["dont_know"], "pvi": {"total": -4.753156661987305, "avg": -4.753156661987305, "max": -4.753156661987305, "indi": {"dont_know": -4.753156661987305}}}
+{"text": "Is there any way you could provide more information?", "intents": ["dont_know"], "pvi": {"total": -0.5381112098693848, "avg": -0.5381112098693848, "max": -0.5381112098693848, "indi": {"dont_know": -0.5381112098693848}}}
+{"text": "I hear you, but can you clarify what you meant?", "intents": ["acknowledge"], "pvi": {"total": -3.700516700744629, "avg": -3.700516700744629, "max": -3.700516700744629, "indi": {"acknowledge": -3.700516700744629}}}
+{"text": "Got it. Is there anything else you'd like to add?", "intents": ["acknowledge"], "pvi": {"total": -2.3236494064331055, "avg": -2.3236494064331055, "max": -2.3236494064331055, "indi": {"acknowledge": -2.3236494064331055}}}
+{"text": "Thanks for letting me know. What's the next step?", "intents": ["acknowledge"], "pvi": {"total": -1.6954917907714844, "avg": -1.6954917907714844, "max": -1.6954917907714844, "indi": {"acknowledge": -1.6954917907714844}}}
+{"text": "Understood. Can you confirm the details of the plan?", "intents": ["acknowledge"], "pvi": {"total": -2.989142417907715, "avg": -2.989142417907715, "max": -2.989142417907715, "indi": {"acknowledge": -2.989142417907715}}}
+{"text": "Acknowledged. What can I do to assist you further?", "intents": ["acknowledge"], "pvi": {"total": -5.146970272064209, "avg": -5.146970272064209, "max": -5.146970272064209, "indi": {"acknowledge": -5.146970272064209}}}
+{"text": "Hi there, how are you doing today? ", "intents": ["greet"], "pvi": {"total": 4.273874759674072, "avg": 4.273874759674072, "max": 4.273874759674072, "indi": {"greet": 4.273874759674072}}}
+{"text": "Good morning, did you have a good weekend?", "intents": ["greet"], "pvi": {"total": 4.354625701904297, "avg": 4.354625701904297, "max": 4.354625701904297, "indi": {"greet": 4.354625701904297}}}
+{"text": "Hey, how's it going? ", "intents": ["greet"], "pvi": {"total": 5.034529209136963, "avg": 5.034529209136963, "max": 5.034529209136963, "indi": {"greet": 5.034529209136963}}}
+{"text": "Hello, how may I assist you? ", "intents": ["greet"], "pvi": {"total": 6.027238368988037, "avg": 6.027238368988037, "max": 6.027238368988037, "indi": {"greet": 6.027238368988037}}}
+{"text": "What's up, how has your day been so far?", "intents": ["greet"], "pvi": {"total": -4.010883331298828, "avg": -4.010883331298828, "max": -4.010883331298828, "indi": {"greet": -4.010883331298828}}}
+{"text": "Thanks for chatting, have a great day!", "intents": ["end_call"], "pvi": {"total": -0.20688486099243164, "avg": -0.20688486099243164, "max": -0.20688486099243164, "indi": {"end_call": -0.20688486099243164}}}
+{"text": "It was nice talking to you, goodbye!", "intents": ["end_call"], "pvi": {"total": 3.190157175064087, "avg": 3.190157175064087, "max": 3.190157175064087, "indi": {"end_call": 3.190157175064087}}}
+{"text": "Before we end this call, is there anything else I can help you with?", "intents": ["end_call"], "pvi": {"total": -5.832230091094971, "avg": -5.832230091094971, "max": -5.832230091094971, "indi": {"end_call": -5.832230091094971}}}
+{"text": "Alright, I'll let you go now. Take care!", "intents": ["end_call"], "pvi": {"total": -0.0531620979309082, "avg": -0.0531620979309082, "max": -0.0531620979309082, "indi": {"end_call": -0.0531620979309082}}}
+{"text": "Before we say goodbye, is there anything else you need assistance with?", "intents": ["end_call"], "pvi": {"total": -0.12874460220336914, "avg": -0.12874460220336914, "max": -0.12874460220336914, "indi": {"end_call": -0.12874460220336914}}}
+{"text": "Can I speak to a customer support agent to resolve my issue?", "intents": ["handoff"], "pvi": {"total": -0.4739561080932617, "avg": -0.4739561080932617, "max": -0.4739561080932617, "indi": {"handoff": -0.4739561080932617}}}
+{"text": "Who should I talk to about canceling my subscription?", "intents": ["handoff"], "pvi": {"total": -3.7013425827026367, "avg": -3.7013425827026367, "max": -3.7013425827026367, "indi": {"handoff": -3.7013425827026367}}}
+{"text": "Is there a live chat option where I can speak to someone in real-time?", "intents": ["handoff"], "pvi": {"total": -2.7839393615722656, "avg": -2.7839393615722656, "max": -2.7839393615722656, "indi": {"handoff": -2.7839393615722656}}}
+{"text": "Can you transfer me to a representative who can assist me with billing questions?", "intents": ["handoff"], "pvi": {"total": -0.9866228103637695, "avg": -0.9866228103637695, "max": -0.9866228103637695, "indi": {"handoff": -0.9866228103637695}}}
+{"text": "What is the best way to get in touch with a human for further assistance?", "intents": ["handoff"], "pvi": {"total": 2.5964126586914062, "avg": 2.5964126586914062, "max": 2.5964126586914062, "indi": {"handoff": 2.5964126586914062}}}
+{"text": "Thank you so much for your help today! It really meant a lot to me.", "intents": ["thank"], "pvi": {"total": 4.627849578857422, "avg": 4.627849578857422, "max": 4.627849578857422, "indi": {"thank": 4.627849578857422}}}
+{"text": "I wanted to express my gratitude for your kindness. You really went above and beyond.", "intents": ["thank"], "pvi": {"total": 4.741049766540527, "avg": 4.741049766540527, "max": 4.741049766540527, "indi": {"thank": 4.741049766540527}}}
+{"text": "Could you please pass along my thanks to the team for all their hard work?", "intents": ["thank"], "pvi": {"total": 4.265347480773926, "avg": 4.265347480773926, "max": 4.265347480773926, "indi": {"thank": 4.265347480773926}}}
+{"text": "I just wanted to say thank you for taking the time to meet with me today. I really appreciate it.", "intents": ["thank"], "pvi": {"total": 4.496973514556885, "avg": 4.496973514556885, "max": 4.496973514556885, "indi": {"thank": 4.496973514556885}}}
+{"text": "Would it be appropriate to send a thank-you note to show my appreciation?", "intents": ["thank"], "pvi": {"total": 4.8248701095581055, "avg": 4.8248701095581055, "max": 4.8248701095581055, "indi": {"thank": 4.8248701095581055}}}
+{"text": "I'm sorry I didn't catch that, could you please say that again?", "intents": ["repeat"], "pvi": {"total": -1.809218406677246, "avg": -1.809218406677246, "max": -1.809218406677246, "indi": {"repeat": -1.809218406677246}}}
+{"text": "Can you repeat what you just said for clarity?", "intents": ["repeat"], "pvi": {"total": -0.6405739784240723, "avg": -0.6405739784240723, "max": -0.6405739784240723, "indi": {"repeat": -0.6405739784240723}}}
+{"text": "Pardon me, could you rephrase that last sentence?", "intents": ["repeat"], "pvi": {"total": -2.1634154319763184, "avg": -2.1634154319763184, "max": -2.1634154319763184, "indi": {"repeat": -2.1634154319763184}}}
+{"text": "I didn't quite understand, could you say it again?", "intents": ["repeat"], "pvi": {"total": -1.842195987701416, "avg": -1.842195987701416, "max": -1.842195987701416, "indi": {"repeat": -1.842195987701416}}}
+{"text": "Could you please repeat the previous sentence?", "intents": ["repeat"], "pvi": {"total": -2.5239310264587402, "avg": -2.5239310264587402, "max": -2.5239310264587402, "indi": {"repeat": -2.5239310264587402}}}
+{"text": "Will I be penalized if I cancel my reservation?", "intents": ["cancel_close_leave_freeze"], "pvi": {"total": 3.650681734085083, "avg": 3.650681734085083, "max": 3.650681734085083, "indi": {"cancel_close_leave_freeze": 3.650681734085083}}}
+{"text": "Can you provide me with the steps to close my account?", "intents": ["cancel_close_leave_freeze"], "pvi": {"total": 2.8321547508239746, "avg": 2.8321547508239746, "max": 2.8321547508239746, "indi": {"cancel_close_leave_freeze": 2.8321547508239746}}}
+{"text": "Is there a fee for freezing my gym membership?", "intents": ["cancel_close_leave_freeze"], "pvi": {"total": -1.404296875, "avg": -1.404296875, "max": -1.404296875, "indi": {"cancel_close_leave_freeze": -1.404296875}}}
+{"text": "What are the consequences of leaving my job without notice?", "intents": ["cancel_close_leave_freeze"], "pvi": {"total": -1.6895017623901367, "avg": -1.6895017623901367, "max": -1.6895017623901367, "indi": {"cancel_close_leave_freeze": -1.6895017623901367}}}
+{"text": "How do I cancel my subscription without affecting my credit score?", "intents": ["cancel_close_leave_freeze"], "pvi": {"total": 3.390390396118164, "avg": 3.390390396118164, "max": 3.390390396118164, "indi": {"cancel_close_leave_freeze": 3.390390396118164}}}
+{"text": "Can you update the delivery address and change the shipping method for this order?", "intents": ["change"], "pvi": {"total": 3.107999801635742, "avg": 3.107999801635742, "max": 3.107999801635742, "indi": {"change": 3.107999801635742}}}
+{"text": "I need to modify my reservation dates and add an additional room, can you help me with that?", "intents": ["change"], "pvi": {"total": 3.2632508277893066, "avg": 3.2632508277893066, "max": 3.2632508277893066, "indi": {"change": 3.2632508277893066}}}
+{"text": "How can I adjust the font size and change the background color of my website?", "intents": ["change"], "pvi": {"total": 3.614591360092163, "avg": 3.614591360092163, "max": 3.614591360092163, "indi": {"change": 3.614591360092163}}}
+{"text": "My flight was cancelled, can you assist me in rebooking it for a different day and changing the departure time?", "intents": ["change"], "pvi": {"total": 1.817762851715088, "avg": 1.817762851715088, "max": 1.817762851715088, "indi": {"change": 1.817762851715088}}}
+{"text": "Can you show me how to edit the formatting of this document and change the font style for certain sections?", "intents": ["change"], "pvi": {"total": 0.07100319862365723, "avg": 0.07100319862365723, "max": 0.07100319862365723, "indi": {"change": 0.07100319862365723}}}
+{"text": "Can you guide me through the process of setting up my new computer and activating the software?", "intents": ["make_open_apply_setup_get_activate"], "pvi": {"total": 2.6529502868652344, "avg": 2.6529502868652344, "max": 2.6529502868652344, "indi": {"make_open_apply_setup_get_activate": 2.6529502868652344}}}
+{"text": "I would like to make a reservation and apply my discount code, can you assist me with that?", "intents": ["make_open_apply_setup_get_activate"], "pvi": {"total": -3.8902111053466797, "avg": -3.8902111053466797, "max": -3.8902111053466797, "indi": {"make_open_apply_setup_get_activate": -3.8902111053466797}}}
+{"text": "How can I open multiple tabs on this web browser and set it as my default?", "intents": ["make_open_apply_setup_get_activate"], "pvi": {"total": -0.7343382835388184, "avg": -0.7343382835388184, "max": -0.7343382835388184, "indi": {"make_open_apply_setup_get_activate": -0.7343382835388184}}}
+{"text": "Can you help me make a payment and activate my account for online banking?", "intents": ["make_open_apply_setup_get_activate"], "pvi": {"total": 2.8073418140411377, "avg": 2.8073418140411377, "max": 2.8073418140411377, "indi": {"make_open_apply_setup_get_activate": 2.8073418140411377}}}
+{"text": "I want to make a purchase and open a new credit card account, can you walk me through the steps and apply my rewards points?", "intents": ["make_open_apply_setup_get_activate"], "pvi": {"total": -1.0858144760131836, "avg": -1.0858144760131836, "max": -1.0858144760131836, "indi": {"make_open_apply_setup_get_activate": -1.0858144760131836}}}
+{"text": "Can you provide me with details on the pricing for your services and products?", "intents": ["request_info"], "pvi": {"total": 2.643766403198242, "avg": 2.643766403198242, "max": 2.643766403198242, "indi": {"request_info": 2.643766403198242}}}
+{"text": "I need more information on your company's return policy, can you assist me with that?", "intents": ["request_info"], "pvi": {"total": 1.5993491411209106, "avg": 1.5993491411209106, "max": 1.5993491411209106, "indi": {"request_info": 1.5993491411209106}}}
+{"text": "What is your company's process for handling customer complaints and issues?", "intents": ["request_info"], "pvi": {"total": 1.4558498859405518, "avg": 1.4558498859405518, "max": 1.4558498859405518, "indi": {"request_info": 1.4558498859405518}}}
+{"text": "Can you tell me about any ongoing promotions or sales that your company is currently offering?", "intents": ["request_info"], "pvi": {"total": 1.907300591468811, "avg": 1.907300591468811, "max": 1.907300591468811, "indi": {"request_info": 1.907300591468811}}}
+{"text": "What other products or services does your company offer besides what is listed on your website?", "intents": ["request_info"], "pvi": {"total": 1.5826606750488281, "avg": 1.5826606750488281, "max": 1.5826606750488281, "indi": {"request_info": 1.5826606750488281}}}
+{"text": "Can you explain how to bake a cake and decorate it with frosting and sprinkles?", "intents": ["how"], "pvi": {"total": -1.467287540435791, "avg": -1.467287540435791, "max": -1.467287540435791, "indi": {"how": -1.467287540435791}}}
+{"text": "How would you recommend organizing a closet to maximize space and efficiency?", "intents": ["how"], "pvi": {"total": -0.5262775421142578, "avg": -0.5262775421142578, "max": -0.5262775421142578, "indi": {"how": -0.5262775421142578}}}
+{"text": "What steps do I need to take to learn the basics of playing guitar?", "intents": ["how"], "pvi": {"total": -4.385822772979736, "avg": -4.385822772979736, "max": -4.385822772979736, "indi": {"how": -4.385822772979736}}}
+{"text": "Could you describe how to change a flat tire on a car?", "intents": ["how"], "pvi": {"total": -4.699094295501709, "avg": -4.699094295501709, "max": -4.699094295501709, "indi": {"how": -4.699094295501709}}}
+{"text": "How can I properly clean and maintain a leather jacket?", "intents": ["how"], "pvi": {"total": -1.101243019104004, "avg": -1.101243019104004, "max": -1.101243019104004, "indi": {"how": -1.101243019104004}}}
+{"text": "Can you explain why the project deadline got pushed back?", "intents": ["why"], "pvi": {"total": -5.5531110763549805, "avg": -5.5531110763549805, "max": -5.5531110763549805, "indi": {"why": -5.5531110763549805}}}
+{"text": "I don't understand why the company decided to go with that marketing strategy. Can you clarify?", "intents": ["why"], "pvi": {"total": -3.6358537673950195, "avg": -3.6358537673950195, "max": -3.6358537673950195, "indi": {"why": -3.6358537673950195}}}
+{"text": "Could you tell me why we need to attend this meeting?", "intents": ["why"], "pvi": {"total": -5.614574909210205, "avg": -5.614574909210205, "max": -5.614574909210205, "indi": {"why": -5.614574909210205}}}
+{"text": "Why did the professor assign such a difficult reading for us?", "intents": ["why"], "pvi": {"total": -2.9513769149780273, "avg": -2.9513769149780273, "max": -2.9513769149780273, "indi": {"why": -2.9513769149780273}}}
+{"text": "What's the reason behind why the budget was cut for this department?", "intents": ["why"], "pvi": {"total": -6.328341007232666, "avg": -6.328341007232666, "max": -6.328341007232666, "indi": {"why": -6.328341007232666}}}
+{"text": "What time does the concert start tonight and when is it scheduled to end?", "intents": ["when"], "pvi": {"total": 5.139360427856445, "avg": 5.139360427856445, "max": 5.139360427856445, "indi": {"when": 5.139360427856445}}}
+{"text": "When is the store closing tonight and what time does it open tomorrow?", "intents": ["when"], "pvi": {"total": 2.529515027999878, "avg": 2.529515027999878, "max": 2.529515027999878, "indi": {"when": 2.529515027999878}}}
+{"text": "Could you please tell me the deadline for the project and when it is expected to be completed?", "intents": ["when"], "pvi": {"total": 1.184842586517334, "avg": 1.184842586517334, "max": 1.184842586517334, "indi": {"when": 1.184842586517334}}}
+{"text": "When is the next train arriving and how often do they run during rush hour?", "intents": ["when"], "pvi": {"total": 4.028815746307373, "avg": 4.028815746307373, "max": 4.028815746307373, "indi": {"when": 4.028815746307373}}}
+{"text": "What time is the meeting scheduled for and when should I arrive?", "intents": ["when"], "pvi": {"total": 3.092909336090088, "avg": 3.092909336090088, "max": 3.092909336090088, "indi": {"when": 3.092909336090088}}}
+{"text": "Can you tell me how much sugar is needed for this recipe?", "intents": ["how_much"], "pvi": {"total": -4.453584671020508, "avg": -4.453584671020508, "max": -4.453584671020508, "indi": {"how_much": -4.453584671020508}}}
+{"text": "What's the quantity of water needed to make this drink?", "intents": ["how_much"], "pvi": {"total": -5.365393161773682, "avg": -5.365393161773682, "max": -5.365393161773682, "indi": {"how_much": -5.365393161773682}}}
+{"text": "How much time do I need to allocate for this task?", "intents": ["how_much"], "pvi": {"total": 1.0061051845550537, "avg": 1.0061051845550537, "max": 1.0061051845550537, "indi": {"how_much": 1.0061051845550537}}}
+{"text": "How many units of this product do I need to order?", "intents": ["how_much"], "pvi": {"total": -3.553959846496582, "avg": -3.553959846496582, "max": -3.553959846496582, "indi": {"how_much": -3.553959846496582}}}
+{"text": "Can you give me an estimate of how much it would cost to rent this equipment?", "intents": ["how_much"], "pvi": {"total": -2.1768360137939453, "avg": -2.1768360137939453, "max": -2.1768360137939453, "indi": {"how_much": -2.1768360137939453}}}
+{"text": "How much time does it take to complete the project?", "intents": ["how_long"], "pvi": {"total": -1.6977944374084473, "avg": -1.6977944374084473, "max": -1.6977944374084473, "indi": {"how_long": -1.6977944374084473}}}
+{"text": "Can you tell me the duration of the trip?", "intents": ["how_long"], "pvi": {"total": -4.650735855102539, "avg": -4.650735855102539, "max": -4.650735855102539, "indi": {"how_long": -4.650735855102539}}}
+{"text": "How long will the workshop last?", "intents": ["how_long"], "pvi": {"total": -1.513120174407959, "avg": -1.513120174407959, "max": -1.513120174407959, "indi": {"how_long": -1.513120174407959}}}
+{"text": "What is the estimated time for the software installation to complete?", "intents": ["how_long"], "pvi": {"total": -1.8546504974365234, "avg": -1.8546504974365234, "max": -1.8546504974365234, "indi": {"how_long": -1.8546504974365234}}}
+{"text": "How many hours are required to finish the task?", "intents": ["how_long"], "pvi": {"total": -3.25546932220459, "avg": -3.25546932220459, "max": -3.25546932220459, "indi": {"how_long": -3.25546932220459}}}
+{"text": "My laptop screen is blank, and it doesn't power on. The keyboard lights in with the caps lock on, but nothing else happens. What could be the issue?", "intents": ["wrong_notworking_notshowing"], "pvi": {"total": 3.2251198291778564, "avg": 3.2251198291778564, "max": 3.2251198291778564, "indi": {"wrong_notworking_notshowing": 3.2251198291778564}}}
+{"text": "My phone was working fine until I updated it yesterday, but ever since, it keeps freezing and crashing. How can I fix this?", "intents": ["wrong_notworking_notshowing"], "pvi": {"total": -0.14291810989379883, "avg": -0.14291810989379883, "max": -0.14291810989379883, "indi": {"wrong_notworking_notshowing": -0.14291810989379883}}}
+{"text": "I bought a new printer, but it won't print anything. The status says it's connected, but it's not communicating with my computer. Do you know what could be causing this?", "intents": ["wrong_notworking_notshowing"], "pvi": {"total": 2.9461770057678223, "avg": 2.9461770057678223, "max": 2.9461770057678223, "indi": {"wrong_notworking_notshowing": 2.9461770057678223}}}
+{"text": "My TV remote suddenly stopped working. I replaced the batteries, but it's still not responding. What else can I try to get it to work again?", "intents": ["wrong_notworking_notshowing"], "pvi": {"total": 2.981943368911743, "avg": 2.981943368911743, "max": 2.981943368911743, "indi": {"wrong_notworking_notshowing": 2.981943368911743}}}
+{"text": "I'm trying to make a call on my phone, but it keeps saying \"call failed.\" I have full bars, so it's not the signal. What else could be causing this issue?", "intents": ["wrong_notworking_notshowing"], "pvi": {"total": 3.0492193698883057, "avg": 3.0492193698883057, "max": 3.0492193698883057, "indi": {"wrong_notworking_notshowing": 3.0492193698883057}}}
+{"text": "I can't seem to find my wallet anywhere, can you advise me on what to do if it's been lost or stolen?", "intents": ["lost_stolen"], "pvi": {"total": -0.07956838607788086, "avg": -0.07956838607788086, "max": -0.07956838607788086, "indi": {"lost_stolen": -0.07956838607788086}}}
+{"text": "My phone was taken from my car earlier, do I need to report it as stolen to the police or just to my service provider?", "intents": ["lost_stolen"], "pvi": {"total": -0.08823299407958984, "avg": -0.08823299407958984, "max": -0.08823299407958984, "indi": {"lost_stolen": -0.08823299407958984}}}
+{"text": "I realized my passport is missing after coming back from my trip, could it have been lost or stolen in the airport?", "intents": ["lost_stolen"], "pvi": {"total": 2.741159200668335, "avg": 2.741159200668335, "max": 2.741159200668335, "indi": {"lost_stolen": 2.741159200668335}}}
+{"text": "My friend's laptop got stolen at a coffee shop, do you know any good ways to prevent something like this from happening?", "intents": ["lost_stolen"], "pvi": {"total": -3.3819580078125, "avg": -3.3819580078125, "max": -3.3819580078125, "indi": {"lost_stolen": -3.3819580078125}}}
+{"text": "I left my jacket at the party last night but now it's not where I left it, is there a way to check if someone took it without my knowledge?", "intents": ["lost_stolen"], "pvi": {"total": -4.900062084197998, "avg": -4.900062084197998, "max": -4.900062084197998, "indi": {"lost_stolen": -4.900062084197998}}}
+{"text": "Can you provide me with additional information that is even more comprehensive than what you've already told me?", "intents": ["more_higher_after"], "pvi": {"total": -0.9116992950439453, "avg": -0.9116992950439453, "max": -0.9116992950439453, "indi": {"more_higher_after": -0.9116992950439453}}}
+{"text": "Is there a product similar to this but with a higher capacity or a greater range of features?", "intents": ["more_higher_after"], "pvi": {"total": -1.2457594871520996, "avg": -1.2457594871520996, "max": -1.2457594871520996, "indi": {"more_higher_after": -1.2457594871520996}}}
+{"text": "Are there any upcoming promotions or sales that will offer better deals than the current ones?", "intents": ["more_higher_after"], "pvi": {"total": -3.7031214237213135, "avg": -3.7031214237213135, "max": -3.7031214237213135, "indi": {"more_higher_after": -3.7031214237213135}}}
+{"text": "Could you recommend a book or resource that delves deeper into this topic?", "intents": ["more_higher_after"], "pvi": {"total": -2.2816171646118164, "avg": -2.2816171646118164, "max": -2.2816171646118164, "indi": {"more_higher_after": -2.2816171646118164}}}
+{"text": "What steps can I take to further improve the performance or quality of the outcome?", "intents": ["more_higher_after"], "pvi": {"total": -0.931328296661377, "avg": -0.931328296661377, "max": -0.931328296661377, "indi": {"more_higher_after": -0.931328296661377}}}
+{"text": "The temperature dropped by five degrees in the afternoon. Did it get less or did it increase?", "intents": ["less_lower_before"], "pvi": {"total": -2.981142520904541, "avg": -2.981142520904541, "max": -2.981142520904541, "indi": {"less_lower_before": -2.981142520904541}}}
+{"text": "The sales of the new product decreased by 20% last month. Is this an example of the intent to indicate something less or to indicate something more?", "intents": ["less_lower_before"], "pvi": {"total": -4.955472946166992, "avg": -4.955472946166992, "max": -4.955472946166992, "indi": {"less_lower_before": -4.955472946166992}}}
+{"text": "I used to work out for an hour, but now I only have time for 30 minutes. Would this be considered less or more exercise?", "intents": ["less_lower_before"], "pvi": {"total": -3.1447200775146484, "avg": -3.1447200775146484, "max": -3.1447200775146484, "indi": {"less_lower_before": -3.1447200775146484}}}
+{"text": "The number of attendees at the conference was lower than expected. Was this an occurrence of the \"less_lower_before\" intent?", "intents": ["less_lower_before"], "pvi": {"total": -5.699536323547363, "avg": -5.699536323547363, "max": -5.699536323547363, "indi": {"less_lower_before": -5.699536323547363}}}
+{"text": "My bank account balance decreased by $100 this week. Does this align with the intent of something getting less, lower, before or decreasing?", "intents": ["less_lower_before"], "pvi": {"total": -0.9110503196716309, "avg": -0.9110503196716309, "max": -0.9110503196716309, "indi": {"less_lower_before": -0.9110503196716309}}}
+{"text": "Can you tell me about the latest updates?", "intents": ["new"], "pvi": {"total": -1.0145263671875, "avg": -1.0145263671875, "max": -1.0145263671875, "indi": {"new": -1.0145263671875}}}
+{"text": "What is the newest release from your company?", "intents": ["new"], "pvi": {"total": -1.7062311172485352, "avg": -1.7062311172485352, "max": -1.7062311172485352, "indi": {"new": -1.7062311172485352}}}
+{"text": "Is there anything new or notable to mention?", "intents": ["new"], "pvi": {"total": -1.0835976600646973, "avg": -1.0835976600646973, "max": -1.0835976600646973, "indi": {"new": -1.0835976600646973}}}
+{"text": "What recent developments have there been in this area?", "intents": ["new"], "pvi": {"total": -3.2147417068481445, "avg": -3.2147417068481445, "max": -3.2147417068481445, "indi": {"new": -3.2147417068481445}}}
+{"text": "Could you describe any new features that have been added recently?", "intents": ["new"], "pvi": {"total": -0.14686250686645508, "avg": -0.14686250686645508, "max": -0.14686250686645508, "indi": {"new": -0.14686250686645508}}}
+{"text": "Please provide information on the current status of the project?", "intents": ["existing"], "pvi": {"total": -4.492408752441406, "avg": -4.492408752441406, "max": -4.492408752441406, "indi": {"existing": -4.492408752441406}}}
+{"text": "Can you tell me about the features of the new product launch?", "intents": ["existing"], "pvi": {"total": -4.185337066650391, "avg": -4.185337066650391, "max": -4.185337066650391, "indi": {"existing": -4.185337066650391}}}
+{"text": "What kind of support is available for the existing customers?", "intents": ["existing"], "pvi": {"total": -2.1061716079711914, "avg": -2.1061716079711914, "max": -2.1061716079711914, "indi": {"existing": -2.1061716079711914}}}
+{"text": "Can you provide some details about the previous version of the software?", "intents": ["existing"], "pvi": {"total": -4.015203952789307, "avg": -4.015203952789307, "max": -4.015203952789307, "indi": {"existing": -4.015203952789307}}}
+{"text": "How can I upgrade my subscription plan?", "intents": ["existing"], "pvi": {"total": -2.6250181198120117, "avg": -2.6250181198120117, "max": -2.6250181198120117, "indi": {"existing": -2.6250181198120117}}}
+{"text": "What are the limits on how much I can withdraw from my account per day and per transaction? Can I change these limits?", "intents": ["limits"], "pvi": {"total": 1.4110889434814453, "avg": 1.4110889434814453, "max": 1.4110889434814453, "indi": {"limits": 1.4110889434814453}}}
+{"text": "Are there limits on the size and weight of baggage I can bring on my flight? How can I find out about any additional fees for exceeding these limits?", "intents": ["limits"], "pvi": {"total": 4.986894130706787, "avg": 4.986894130706787, "max": 4.986894130706787, "indi": {"limits": 4.986894130706787}}}
+{"text": "Can you explain the limits on the amount of data I can use each month on my mobile plan? How do I check how much data I have already used?", "intents": ["limits"], "pvi": {"total": 2.8245015144348145, "avg": 2.8245015144348145, "max": 2.8245015144348145, "indi": {"limits": 2.8245015144348145}}}
+{"text": "What are the limits on the number of participants in a Zoom meeting? Can I increase this limit for a large event?", "intents": ["limits"], "pvi": {"total": 4.705211639404297, "avg": 4.705211639404297, "max": 4.705211639404297, "indi": {"limits": 4.705211639404297}}}
+{"text": "Are there any limits on the size or types of files I can upload to my cloud storage account? How can I check my remaining storage space and upgrade if necessary?", "intents": ["limits"], "pvi": {"total": -0.9166378974914551, "avg": -0.9166378974914551, "max": -0.9166378974914551, "indi": {"limits": -0.9166378974914551}}}
+{"text": "What are the benefits of opening a savings account?", "intents": ["savings"], "pvi": {"total": 4.953545570373535, "avg": 4.953545570373535, "max": 4.953545570373535, "indi": {"savings": 4.953545570373535}}}
+{"text": "Can you recommend a savings account with a high interest rate?", "intents": ["savings"], "pvi": {"total": 3.7485997676849365, "avg": 3.7485997676849365, "max": 3.7485997676849365, "indi": {"savings": 3.7485997676849365}}}
+{"text": "Are there any fees associated with opening a savings account?", "intents": ["savings"], "pvi": {"total": 4.308474540710449, "avg": 4.308474540710449, "max": 4.308474540710449, "indi": {"savings": 4.308474540710449}}}
+{"text": "How much money do I need to open a savings account?", "intents": ["savings"], "pvi": {"total": 5.161686420440674, "avg": 5.161686420440674, "max": 5.161686420440674, "indi": {"savings": 5.161686420440674}}}
+{"text": "What documents do I need to provide to open a savings account?", "intents": ["savings"], "pvi": {"total": 5.721363067626953, "avg": 5.721363067626953, "max": 5.721363067626953, "indi": {"savings": 5.721363067626953}}}
+{"text": "Can you tell me the balance in my account right now and how recent is this transaction history?", "intents": ["current"], "pvi": {"total": -1.2127490043640137, "avg": -1.2127490043640137, "max": -1.2127490043640137, "indi": {"current": -1.2127490043640137}}}
+{"text": "What is the status of my account and are there any pending transactions at the moment?", "intents": ["current"], "pvi": {"total": -0.8837661743164062, "avg": -0.8837661743164062, "max": -0.8837661743164062, "indi": {"current": -0.8837661743164062}}}
+{"text": "Can you give me a breakdown of my recent transactions and the current available balance?", "intents": ["current"], "pvi": {"total": -3.671992778778076, "avg": -3.671992778778076, "max": -3.671992778778076, "indi": {"current": -3.671992778778076}}}
+{"text": "Is my account up-to-date and can you provide me with an overview of my statement for this month?", "intents": ["current"], "pvi": {"total": -0.2716798782348633, "avg": -0.2716798782348633, "max": -0.2716798782348633, "indi": {"current": -0.2716798782348633}}}
+{"text": "Are there any alerts or notifications that have been triggered for my account and is everything in order currently?", "intents": ["current"], "pvi": {"total": -0.20377063751220703, "avg": -0.20377063751220703, "max": -0.20377063751220703, "indi": {"current": -0.20377063751220703}}}
+{"text": "Can you provide me with more information on the business account features available?", "intents": ["business"], "pvi": {"total": 2.6467807292938232, "avg": 2.6467807292938232, "max": 2.6467807292938232, "indi": {"business": 2.6467807292938232}}}
+{"text": "How can I upgrade my business account to access additional benefits?", "intents": ["business"], "pvi": {"total": 2.3238348960876465, "avg": 2.3238348960876465, "max": 2.3238348960876465, "indi": {"business": 2.3238348960876465}}}
+{"text": "Which documents are required to set up a business account?", "intents": ["business"], "pvi": {"total": 1.559628963470459, "avg": 1.559628963470459, "max": 1.559628963470459, "indi": {"business": 1.559628963470459}}}
+{"text": "Are there any limitations on the number of transactions allowed on a business account?", "intents": ["business"], "pvi": {"total": 1.3001656532287598, "avg": 1.3001656532287598, "max": 1.3001656532287598, "indi": {"business": 1.3001656532287598}}}
+{"text": "What are the fees associated with maintaining a business account?", "intents": ["business"], "pvi": {"total": -0.37581777572631836, "avg": -0.37581777572631836, "max": -0.37581777572631836, "indi": {"business": -0.37581777572631836}}}
+{"text": "Can you explain how credit scores are calculated and what factors affect them?", "intents": ["credit"], "pvi": {"total": 3.761721611022949, "avg": 3.761721611022949, "max": 3.761721611022949, "indi": {"credit": 3.761721611022949}}}
+{"text": "What are some common credit reporting errors and how can they be corrected?", "intents": ["credit"], "pvi": {"total": 0.564899206161499, "avg": 0.564899206161499, "max": 0.564899206161499, "indi": {"credit": 0.564899206161499}}}
+{"text": "Can you provide tips on how to improve one's credit score and maintain good credit?", "intents": ["credit"], "pvi": {"total": 3.431002140045166, "avg": 3.431002140045166, "max": 3.431002140045166, "indi": {"credit": 3.431002140045166}}}
+{"text": "What are the consequences of missing a credit card payment and how can one avoid them?", "intents": ["credit"], "pvi": {"total": 4.02774715423584, "avg": 4.02774715423584, "max": 4.02774715423584, "indi": {"credit": 4.02774715423584}}}
+{"text": "How does credit utilization ratio impact credit score and what is considered a good ratio?", "intents": ["credit"], "pvi": {"total": 2.803192615509033, "avg": 2.803192615509033, "max": 2.803192615509033, "indi": {"credit": 2.803192615509033}}}
+{"text": "I'd like to know the maximum withdrawal limit for my debit card at ATMs and stores, can you help me with that? ", "intents": ["debit"], "pvi": {"total": 2.913667678833008, "avg": 2.913667678833008, "max": 2.913667678833008, "indi": {"debit": 2.913667678833008}}}
+{"text": "How do I report suspicious activity on my debit card and prevent unauthorized transactions? ", "intents": ["debit"], "pvi": {"total": 4.357860088348389, "avg": 4.357860088348389, "max": 4.357860088348389, "indi": {"debit": 4.357860088348389}}}
+{"text": "What types of fees do banks typically charge for using a debit card abroad? ", "intents": ["debit"], "pvi": {"total": 4.502026557922363, "avg": 4.502026557922363, "max": 4.502026557922363, "indi": {"debit": 4.502026557922363}}}
+{"text": "Can I use my debit card to purchase items online, and if so, how secure is it? ", "intents": ["debit"], "pvi": {"total": 4.584010124206543, "avg": 4.584010124206543, "max": 4.584010124206543, "indi": {"debit": 4.584010124206543}}}
+{"text": "Are there any rewards or cashback programs available for using a debit card frequently, and how do I enroll in them?", "intents": ["debit"], "pvi": {"total": 4.114576816558838, "avg": 4.114576816558838, "max": 4.114576816558838, "indi": {"debit": 4.114576816558838}}}
+{"text": "Can you tell me more about your contactless payment options and how to use them?", "intents": ["contactless"], "pvi": {"total": 5.8794379234313965, "avg": 5.8794379234313965, "max": 5.8794379234313965, "indi": {"contactless": 5.8794379234313965}}}
+{"text": "Do I need to have a specific type of card to make contactless payments?", "intents": ["contactless"], "pvi": {"total": 4.971925258636475, "avg": 4.971925258636475, "max": 4.971925258636475, "indi": {"contactless": 4.971925258636475}}}
+{"text": "Is there a limit on the amount I can spend using contactless payment?", "intents": ["contactless"], "pvi": {"total": 4.988902568817139, "avg": 4.988902568817139, "max": 4.988902568817139, "indi": {"contactless": 4.988902568817139}}}
+{"text": "What is the difference between contactless payment and mobile payment?", "intents": ["contactless"], "pvi": {"total": 4.9128522872924805, "avg": 4.9128522872924805, "max": 4.9128522872924805, "indi": {"contactless": 4.9128522872924805}}}
+{"text": "Can I use contactless payment at all of your store locations?", "intents": ["contactless"], "pvi": {"total": 5.063913822174072, "avg": 5.063913822174072, "max": 5.063913822174072, "indi": {"contactless": 5.063913822174072}}}
+{"text": "What countries are currently involved in the international trade dispute?", "intents": ["international"], "pvi": {"total": 3.959318161010742, "avg": 3.959318161010742, "max": 3.959318161010742, "indi": {"international": 3.959318161010742}}}
+{"text": "Can you recommend any international organizations that focus on climate change?", "intents": ["international"], "pvi": {"total": 3.920823097229004, "avg": 3.920823097229004, "max": 3.920823097229004, "indi": {"international": 3.920823097229004}}}
+{"text": "How do international laws differ from domestic laws?", "intents": ["international"], "pvi": {"total": 4.757965564727783, "avg": 4.757965564727783, "max": 4.757965564727783, "indi": {"international": 4.757965564727783}}}
+{"text": "What are some current global events that have significant international implications?", "intents": ["international"], "pvi": {"total": 3.9958338737487793, "avg": 3.9958338737487793, "max": 3.9958338737487793, "indi": {"international": 3.9958338737487793}}}
+{"text": "In your opinion, what steps can be taken to improve international cooperation on issues such as poverty and inequality?", "intents": ["international"], "pvi": {"total": 4.492865562438965, "avg": 4.492865562438965, "max": 4.492865562438965, "indi": {"international": 4.492865562438965}}}
+{"text": "Can you help me reset my password for my account and update my billing information?", "intents": ["account"], "pvi": {"total": 3.5069596767425537, "avg": 3.5069596767425537, "max": 3.5069596767425537, "indi": {"account": 3.5069596767425537}}}
+{"text": "I need to update the email associated with my account and add a new shipping address. How can I do that?", "intents": ["account"], "pvi": {"total": 2.965064764022827, "avg": 2.965064764022827, "max": 2.965064764022827, "indi": {"account": 2.965064764022827}}}
+{"text": "My account was hacked and unauthorized transactions were made. How do I report this and get my money back?", "intents": ["account"], "pvi": {"total": 3.246114492416382, "avg": 3.246114492416382, "max": 3.246114492416382, "indi": {"account": 3.246114492416382}}}
+{"text": "I have multiple accounts with your service. Can I merge them into one account and still keep my information intact?", "intents": ["account"], "pvi": {"total": 3.685720205307007, "avg": 3.685720205307007, "max": 3.685720205307007, "indi": {"account": 3.685720205307007}}}
+{"text": "I want to cancel my subscription and delete my account. Will I receive a refund and how do I make sure my personal information is deleted?", "intents": ["account"], "pvi": {"total": 3.488417148590088, "avg": 3.488417148590088, "max": 3.488417148590088, "indi": {"account": 3.488417148590088}}}
+{"text": "Can you tell me how I can transfer money to another account and make a deposit? ", "intents": ["transfer_payment_deposit"], "pvi": {"total": 2.1611225605010986, "avg": 2.1611225605010986, "max": 2.1611225605010986, "indi": {"transfer_payment_deposit": 2.1611225605010986}}}
+{"text": "What are the payment options available for transferring funds and where can I access them?", "intents": ["transfer_payment_deposit"], "pvi": {"total": 1.9207183122634888, "avg": 1.9207183122634888, "max": 1.9207183122634888, "indi": {"transfer_payment_deposit": 1.9207183122634888}}}
+{"text": "Would you explain the process of transferring funds and what details are needed for making a deposit?", "intents": ["transfer_payment_deposit"], "pvi": {"total": 1.8768633604049683, "avg": 1.8768633604049683, "max": 1.8768633604049683, "indi": {"transfer_payment_deposit": 1.8768633604049683}}}
+{"text": "Can you clarify which types of payments are accepted for deposits and how to initiate a transfer?", "intents": ["transfer_payment_deposit"], "pvi": {"total": 2.123849868774414, "avg": 2.123849868774414, "max": 2.123849868774414, "indi": {"transfer_payment_deposit": 2.123849868774414}}}
+{"text": "Are there any fees associated with transferring funds and making a deposit, and how can I avoid them?", "intents": ["transfer_payment_deposit"], "pvi": {"total": -0.5569586753845215, "avg": -0.5569586753845215, "max": -0.5569586753845215, "indi": {"transfer_payment_deposit": -0.5569586753845215}}}
+{"text": "Can you confirm my appointment with Dr. Smith on Thursday at 2 PM and provide me with the address?", "intents": ["appointment"], "pvi": {"total": 4.968765735626221, "avg": 4.968765735626221, "max": 4.968765735626221, "indi": {"appointment": 4.968765735626221}}}
+{"text": "I need to reschedule my appointment for next week, can you give me some available times?", "intents": ["appointment"], "pvi": {"total": 4.988342761993408, "avg": 4.988342761993408, "max": 4.988342761993408, "indi": {"appointment": 4.988342761993408}}}
+{"text": "What should I bring with me to my appointment tomorrow?", "intents": ["appointment"], "pvi": {"total": 4.7180962562561035, "avg": 4.7180962562561035, "max": 4.7180962562561035, "indi": {"appointment": 4.7180962562561035}}}
+{"text": "Can I book an appointment for a dental cleaning and also ask some questions about teeth whitening?", "intents": ["appointment"], "pvi": {"total": 4.705289840698242, "avg": 4.705289840698242, "max": 4.705289840698242, "indi": {"appointment": 4.705289840698242}}}
+{"text": "Can you help me find a specialist who can see me today for an urgent medical concern?", "intents": ["appointment"], "pvi": {"total": 0.7892417907714844, "avg": 0.7892417907714844, "max": 0.7892417907714844, "indi": {"appointment": 0.7892417907714844}}}
+{"text": "What time will my flight arrive?", "intents": ["arrival"], "pvi": {"total": -1.3365259170532227, "avg": -1.3365259170532227, "max": -1.3365259170532227, "indi": {"arrival": -1.3365259170532227}}}
+{"text": "Can you tell me if the package has arrived yet and who signed for it?", "intents": ["arrival"], "pvi": {"total": 0.5468006134033203, "avg": 0.5468006134033203, "max": 0.5468006134033203, "indi": {"arrival": 0.5468006134033203}}}
+{"text": "When is the next train due to arrive at the station?", "intents": ["arrival"], "pvi": {"total": 0.9555373191833496, "avg": 0.9555373191833496, "max": 0.9555373191833496, "indi": {"arrival": 0.9555373191833496}}}
+{"text": "Is there any update on what time the food delivery will arrive?", "intents": ["arrival"], "pvi": {"total": -3.1227588653564453, "avg": -3.1227588653564453, "max": -3.1227588653564453, "indi": {"arrival": -3.1227588653564453}}}
+{"text": "Will the performer arrive before or after the event starts?", "intents": ["arrival"], "pvi": {"total": -0.6862583160400391, "avg": -0.6862583160400391, "max": -0.6862583160400391, "indi": {"arrival": -0.6862583160400391}}}
+{"text": "Can you tell me how much money I have in my account right now and what my credit card balance is?", "intents": ["balance"], "pvi": {"total": 4.165656089782715, "avg": 4.165656089782715, "max": 4.165656089782715, "indi": {"balance": 4.165656089782715}}}
+{"text": "I am trying to figure out if I can afford a vacation next month. What is my current balance and how much credit do I have available?", "intents": ["balance"], "pvi": {"total": 2.626723527908325, "avg": 2.626723527908325, "max": 2.626723527908325, "indi": {"balance": 2.626723527908325}}}
+{"text": "Could you let me know if there are any pending charges on my account and if my balance reflects them?", "intents": ["balance"], "pvi": {"total": 3.0398881435394287, "avg": 3.0398881435394287, "max": 3.0398881435394287, "indi": {"balance": 3.0398881435394287}}}
+{"text": "What is my account balance and can you also confirm my available balance for my checking and savings accounts?", "intents": ["balance"], "pvi": {"total": 3.8389480113983154, "avg": 3.8389480113983154, "max": 3.8389480113983154, "indi": {"balance": 3.8389480113983154}}}
+{"text": "I need to know my current balance and available credit limit for my credit card. Can you provide me with that information?", "intents": ["balance"], "pvi": {"total": -3.44490385055542, "avg": -3.44490385055542, "max": -3.44490385055542, "indi": {"balance": -3.44490385055542}}}
+{"text": "Can you tell me more about the different types of cards available?", "intents": ["card"], "pvi": {"total": 2.38702392578125, "avg": 2.38702392578125, "max": 2.38702392578125, "indi": {"card": 2.38702392578125}}}
+{"text": "How do I go about requesting for a new card?", "intents": ["card"], "pvi": {"total": 2.1954221725463867, "avg": 2.1954221725463867, "max": 2.1954221725463867, "indi": {"card": 2.1954221725463867}}}
+{"text": "What should I do if my card expires soon?", "intents": ["card"], "pvi": {"total": 3.102952241897583, "avg": 3.102952241897583, "max": 3.102952241897583, "indi": {"card": 3.102952241897583}}}
+{"text": "Are there any rewards or benefits associated with having a card?", "intents": ["card"], "pvi": {"total": 2.813063621520996, "avg": 2.813063621520996, "max": 2.813063621520996, "indi": {"card": 2.813063621520996}}}
+{"text": "Can I use my card for online transactions?", "intents": ["card"], "pvi": {"total": 2.4375808238983154, "avg": 2.4375808238983154, "max": 2.4375808238983154, "indi": {"card": 2.4375808238983154}}}
+{"text": "Can I deposit a cheque without visiting the bank?", "intents": ["cheque"], "pvi": {"total": 4.511481285095215, "avg": 4.511481285095215, "max": 4.511481285095215, "indi": {"cheque": 4.511481285095215}}}
+{"text": "How long does it take for a cheque to clear?", "intents": ["cheque"], "pvi": {"total": 5.075681686401367, "avg": 5.075681686401367, "max": 5.075681686401367, "indi": {"cheque": 5.075681686401367}}}
+{"text": "What should I do if my cheque has been lost or stolen?", "intents": ["cheque"], "pvi": {"total": 5.3125457763671875, "avg": 5.3125457763671875, "max": 5.3125457763671875, "indi": {"cheque": 5.3125457763671875}}}
+{"text": "Is there a fee for stopping payment of a cheque?", "intents": ["cheque"], "pvi": {"total": 2.253291606903076, "avg": 2.253291606903076, "max": 2.253291606903076, "indi": {"cheque": 2.253291606903076}}}
+{"text": "Can I deposit a post-dated cheque before the date written on it?", "intents": ["cheque"], "pvi": {"total": 4.253782272338867, "avg": 4.253782272338867, "max": 4.253782272338867, "indi": {"cheque": 4.253782272338867}}}
+{"text": "Can you explain how I can set up a direct debit for my account?", "intents": ["direct_debit"], "pvi": {"total": 2.848513126373291, "avg": 2.848513126373291, "max": 2.848513126373291, "indi": {"direct_debit": 2.848513126373291}}}
+{"text": "Which bank accounts are eligible for direct debit and how do I apply for it?", "intents": ["direct_debit"], "pvi": {"total": 0.2175731658935547, "avg": 0.2175731658935547, "max": 0.2175731658935547, "indi": {"direct_debit": 0.2175731658935547}}}
+{"text": "What are the advantages and disadvantages of using direct debit as a payment method?", "intents": ["direct_debit"], "pvi": {"total": 5.2369608879089355, "avg": 5.2369608879089355, "max": 5.2369608879089355, "indi": {"direct_debit": 5.2369608879089355}}}
+{"text": "Is it possible to cancel a direct debit and how do I go about doing that?", "intents": ["direct_debit"], "pvi": {"total": 5.232349395751953, "avg": 5.232349395751953, "max": 5.232349395751953, "indi": {"direct_debit": 5.232349395751953}}}
+{"text": "How can I check if a direct debit payment has been successfully processed?", "intents": ["direct_debit"], "pvi": {"total": 5.576336860656738, "avg": 5.576336860656738, "max": 5.576336860656738, "indi": {"direct_debit": 5.576336860656738}}}
+{"text": "Can I set up a recurring payment through my online banking?", "intents": ["standing_order"], "pvi": {"total": -3.0110020637512207, "avg": -3.0110020637512207, "max": -3.0110020637512207, "indi": {"standing_order": -3.0110020637512207}}}
+{"text": "How frequently can I schedule a standing order to be executed?", "intents": ["standing_order"], "pvi": {"total": 5.528201580047607, "avg": 5.528201580047607, "max": 5.528201580047607, "indi": {"standing_order": 5.528201580047607}}}
+{"text": "Is there a minimum amount required for setting up a standing order?", "intents": ["standing_order"], "pvi": {"total": 4.0579633712768555, "avg": 4.0579633712768555, "max": 4.0579633712768555, "indi": {"standing_order": 4.0579633712768555}}}
+{"text": "Could you guide me through the process of creating a standing order?", "intents": ["standing_order"], "pvi": {"total": 5.3683552742004395, "avg": 5.3683552742004395, "max": 5.3683552742004395, "indi": {"standing_order": 5.3683552742004395}}}
+{"text": "Are standing orders the same as direct debits, or are there any differences between the two?", "intents": ["standing_order"], "pvi": {"total": 2.8242955207824707, "avg": 2.8242955207824707, "max": 2.8242955207824707, "indi": {"standing_order": 2.8242955207824707}}}
+{"text": "What are the fees and interests associated with opening a savings account?", "intents": ["fees_interests"], "pvi": {"total": 2.3284902572631836, "avg": 2.3284902572631836, "max": 2.3284902572631836, "indi": {"fees_interests": 2.3284902572631836}}}
+{"text": "Could you break down the fees and interests for a student credit card?", "intents": ["fees_interests"], "pvi": {"total": 0.315230131149292, "avg": 0.315230131149292, "max": 0.315230131149292, "indi": {"fees_interests": 0.315230131149292}}}
+{"text": "How do the fees and interests differ between a personal loan and a line of credit?", "intents": ["fees_interests"], "pvi": {"total": 4.333489894866943, "avg": 4.333489894866943, "max": 4.333489894866943, "indi": {"fees_interests": 4.333489894866943}}}
+{"text": "What are the penalty fees for missing a credit card payment, and what is the annual interest rate?", "intents": ["fees_interests"], "pvi": {"total": -2.2262914180755615, "avg": -2.2262914180755615, "max": -2.2262914180755615, "indi": {"fees_interests": -2.2262914180755615}}}
+{"text": "Can you explain the fees and interests related to a mortgage refinancing?", "intents": ["fees_interests"], "pvi": {"total": 5.129405498504639, "avg": 5.129405498504639, "max": 5.129405498504639, "indi": {"fees_interests": 5.129405498504639}}}
+{"text": "Can you guide me with the eligibility criteria for a personal loan and what documents are required to apply?", "intents": ["loan"], "pvi": {"total": 4.843760013580322, "avg": 4.843760013580322, "max": 4.843760013580322, "indi": {"loan": 4.843760013580322}}}
+{"text": "I am interested in taking a loan, but I have a low credit score. Can you suggest some options for me?", "intents": ["loan"], "pvi": {"total": 5.039893627166748, "avg": 5.039893627166748, "max": 5.039893627166748, "indi": {"loan": 5.039893627166748}}}
+{"text": "What is the maximum loan amount that I can apply for, and what are the repayment terms for it?", "intents": ["loan"], "pvi": {"total": 3.185006618499756, "avg": 3.185006618499756, "max": 3.185006618499756, "indi": {"loan": 3.185006618499756}}}
+{"text": "Can you explain the difference between a fixed and a variable interest rate for a loan, and which one is better?", "intents": ["loan"], "pvi": {"total": 4.77031946182251, "avg": 4.77031946182251, "max": 4.77031946182251, "indi": {"loan": 4.77031946182251}}}
+{"text": "Is there any penalty for pre-paying my loan, and can I track my repayment schedule through an online portal?", "intents": ["loan"], "pvi": {"total": 4.598114967346191, "avg": 4.598114967346191, "max": 4.598114967346191, "indi": {"loan": 4.598114967346191}}}
+{"text": "What are the different types of mortgages available?", "intents": ["mortgage"], "pvi": {"total": 4.714855194091797, "avg": 4.714855194091797, "max": 4.714855194091797, "indi": {"mortgage": 4.714855194091797}}}
+{"text": "Can you explain the process of getting pre-approved for a mortgage?", "intents": ["mortgage"], "pvi": {"total": 5.463228702545166, "avg": 5.463228702545166, "max": 5.463228702545166, "indi": {"mortgage": 5.463228702545166}}}
+{"text": "Are there any special programs or incentives for first-time homebuyers to obtain a mortgage?", "intents": ["mortgage"], "pvi": {"total": 5.733993053436279, "avg": 5.733993053436279, "max": 5.733993053436279, "indi": {"mortgage": 5.733993053436279}}}
+{"text": "How does my credit score affect my eligibility for a mortgage?", "intents": ["mortgage"], "pvi": {"total": 4.159784317016602, "avg": 4.159784317016602, "max": 4.159784317016602, "indi": {"mortgage": 4.159784317016602}}}
+{"text": "What documents will I need to provide when applying for a mortgage?", "intents": ["mortgage"], "pvi": {"total": 4.490201473236084, "avg": 4.490201473236084, "max": 4.490201473236084, "indi": {"mortgage": 4.490201473236084}}}
+{"text": "Can I still use my debit card if I have an overdraft protection plan?", "intents": ["overdraft"], "pvi": {"total": 2.911606788635254, "avg": 2.911606788635254, "max": 2.911606788635254, "indi": {"overdraft": 2.911606788635254}}}
+{"text": "How is an overdraft fee calculated and when does it apply?", "intents": ["overdraft"], "pvi": {"total": 4.179314136505127, "avg": 4.179314136505127, "max": 4.179314136505127, "indi": {"overdraft": 4.179314136505127}}}
+{"text": "What happens if I exceed my overdraft limit?", "intents": ["overdraft"], "pvi": {"total": 4.346712112426758, "avg": 4.346712112426758, "max": 4.346712112426758, "indi": {"overdraft": 4.346712112426758}}}
+{"text": "Can I request to have my overdraft protection removed from my account?", "intents": ["overdraft"], "pvi": {"total": 3.9983301162719727, "avg": 3.9983301162719727, "max": 3.9983301162719727, "indi": {"overdraft": 3.9983301162719727}}}
+{"text": "Does having an overdraft protection plan affect my credit score?", "intents": ["overdraft"], "pvi": {"total": 4.330468654632568, "avg": 4.330468654632568, "max": 4.330468654632568, "indi": {"overdraft": 4.330468654632568}}}
+{"text": "How can I withdraw my funds from my account?", "intents": ["withdrawal"], "pvi": {"total": -4.243964672088623, "avg": -4.243964672088623, "max": -4.243964672088623, "indi": {"withdrawal": -4.243964672088623}}}
+{"text": "Are there any withdrawal fees associated with my account?", "intents": ["withdrawal"], "pvi": {"total": -1.6805329322814941, "avg": -1.6805329322814941, "max": -1.6805329322814941, "indi": {"withdrawal": -1.6805329322814941}}}
+{"text": "Can I set up automatic withdrawals for my account?", "intents": ["withdrawal"], "pvi": {"total": -2.156330108642578, "avg": -2.156330108642578, "max": -2.156330108642578, "indi": {"withdrawal": -2.156330108642578}}}
+{"text": "What is the minimum amount I can withdraw from my account?", "intents": ["withdrawal"], "pvi": {"total": -1.4531283378601074, "avg": -1.4531283378601074, "max": -1.4531283378601074, "indi": {"withdrawal": -1.4531283378601074}}}
+{"text": "How long does it usually take for a withdrawal to be processed and completed?", "intents": ["withdrawal"], "pvi": {"total": 2.1209678649902344, "avg": 2.1209678649902344, "max": 2.1209678649902344, "indi": {"withdrawal": 2.1209678649902344}}}
+{"text": "What is my pin number for my debit card and credit card?", "intents": ["pin"], "pvi": {"total": 3.0442471504211426, "avg": 3.0442471504211426, "max": 3.0442471504211426, "indi": {"pin": 3.0442471504211426}}}
+{"text": "Can you remind me how to change my pin number for my online banking account and my ATM?", "intents": ["pin"], "pvi": {"total": 3.3250489234924316, "avg": 3.3250489234924316, "max": 3.3250489234924316, "indi": {"pin": 3.3250489234924316}}}
+{"text": "Is it safe to share my pin number with someone over the phone?", "intents": ["pin"], "pvi": {"total": 4.949437618255615, "avg": 4.949437618255615, "max": 4.949437618255615, "indi": {"pin": 4.949437618255615}}}
+{"text": "How can I unlock my account if I enter the wrong pin number multiple times?", "intents": ["pin"], "pvi": {"total": 4.875346660614014, "avg": 4.875346660614014, "max": 4.875346660614014, "indi": {"pin": 4.875346660614014}}}
+{"text": "Do I need to use my pin number for all transactions or just certain ones?", "intents": ["pin"], "pvi": {"total": 5.440375328063965, "avg": 5.440375328063965, "max": 5.440375328063965, "indi": {"pin": 5.440375328063965}}}
+{"text": "Can I get a refund for this product if I'm not satisfied with it?", "intents": ["refund"], "pvi": {"total": 5.533191204071045, "avg": 5.533191204071045, "max": 5.533191204071045, "indi": {"refund": 5.533191204071045}}}
+{"text": "How long does it typically take for a refund to process after I request one?", "intents": ["refund"], "pvi": {"total": 5.213547706604004, "avg": 5.213547706604004, "max": 5.213547706604004, "indi": {"refund": 5.213547706604004}}}
+{"text": "Could you please explain the refund policy for this product?", "intents": ["refund"], "pvi": {"total": 5.260493278503418, "avg": 5.260493278503418, "max": 5.260493278503418, "indi": {"refund": 5.260493278503418}}}
+{"text": "What is the process for returning an item and receiving a refund?", "intents": ["refund"], "pvi": {"total": 5.276463031768799, "avg": 5.276463031768799, "max": 5.276463031768799, "indi": {"refund": 5.276463031768799}}}
+{"text": "Is it possible to exchange an item instead of receiving a refund?", "intents": ["refund"], "pvi": {"total": 5.831929683685303, "avg": 5.831929683685303, "max": 5.831929683685303, "indi": {"refund": 5.831929683685303}}}
