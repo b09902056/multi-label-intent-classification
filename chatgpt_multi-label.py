@@ -6,7 +6,7 @@ import time
 
 items = ['banking', 'hotels']
 
-openai.api_key = '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'
+openai.api_key = ''
 NUM_DATA_PER_BATCH = 5
 TOTAL_BATCH = 20
 
