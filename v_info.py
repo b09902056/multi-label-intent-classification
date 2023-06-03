@@ -144,7 +144,7 @@ def v_info(data_fn, model, null_data_fn, null_model, tokenizer, text_key='text',
         total, max_p = 0, -1e9
         indi = {}
         for j in H_yb[i]:
-            p = float(H_yb[i][j] - H_yx[i][j])
+            p = float(H_yb[i][j] + H_yx[i][j])
             total += p
             max_p = max(max_p, p)
             indi[id2label[j]] = p
@@ -259,6 +259,7 @@ def draw_bar(pvi, path):
     x = list(range(len(output)))
     plt.bar(x, output)
     plt.savefig(path)
+    plt.clf()
 
 def add_pvi(data_fn, pvi):
     data = []
@@ -268,7 +269,7 @@ def add_pvi(data_fn, pvi):
 
     with jsonlines.open(data_fn, mode='w') as writer:
         for i in range(len(data)):
-            data[i]['pvi'] = {
+            data[i]['pvipp'] = {
                 'total': pvi['total'][i],
                 'avg': pvi['avg'][i],
                 'max': pvi['max'][i],
@@ -287,11 +288,11 @@ def output_intent_pvi(intent_pvi, path):
         data[intent] = sum(intent_pvi[intent]) / len(intent_pvi[intent])
 
     with open(path, 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4)
 
 if __name__ == '__main__':
     intent_pvi = {intent: [] for intent in label2id}
-    null_data_gen(data_fn, 'data/null_data.jsonl')
+    
     model = BertClassifier(hidden_size, dropout)
 
     null_model = BertClassifier(hidden_size, dropout)
@@ -303,12 +304,13 @@ if __name__ == '__main__':
     tokenizer = RobertaTokenizer.from_pretrained(pretrained_model)
     for i in range(1, 5):
         data_fn = f'data/data_{i}.jsonl'
+        null_data_gen(data_fn, 'data/null_data.jsonl')
 
         pvi = v_info(data_fn, model, 'data/null_data.jsonl', null_model, tokenizer)
-        #draw_bar(pvi, data_fn[5:11] + '.png')
+        #draw_bar(pvi['avg'], data_fn[5:11] + '.png')
         
         add_pvi(data_fn, pvi)
 
         update_intent_pvi(pvi['indi'], intent_pvi)
 
-    output_intent_pvi(intent_pvi, 'data/pvi_avg.json')
+    output_intent_pvi(intent_pvi, 'data/pvipp_avg.json')
